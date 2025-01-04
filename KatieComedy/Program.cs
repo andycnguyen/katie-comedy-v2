@@ -1,4 +1,4 @@
-using KatieComedy.Web.Data;
+using KatieComedy.App.Database;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
