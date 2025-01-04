@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace KatieComedy.Pages;
+namespace KatieComedy.Web.Pages;
 
 public class IndexModel(ILogger<IndexModel> logger) : PageModel
 {
