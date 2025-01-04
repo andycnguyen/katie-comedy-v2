@@ -5,6 +5,10 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatieComedy.Web", "KatieComedy\KatieComedy.Web.csproj", "{858026CF-6303-493F-A6FE-833D793DE61B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatieComedy.App", "KatieComedy.App\KatieComedy.App.csproj", "{BFE70A22-88EA-4992-AAF7-19B8638B3B9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatieComedy.App.Test", "KatieComedy.App.Test\KatieComedy.App.Test.csproj", "{FBFAE5F6-EDFD-4B6D-B776-B7D6D0190ECF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{858026CF-6303-493F-A6FE-833D793DE61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{858026CF-6303-493F-A6FE-833D793DE61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{858026CF-6303-493F-A6FE-833D793DE61B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE70A22-88EA-4992-AAF7-19B8638B3B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE70A22-88EA-4992-AAF7-19B8638B3B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE70A22-88EA-4992-AAF7-19B8638B3B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE70A22-88EA-4992-AAF7-19B8638B3B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFAE5F6-EDFD-4B6D-B776-B7D6D0190ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFAE5F6-EDFD-4B6D-B776-B7D6D0190ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFAE5F6-EDFD-4B6D-B776-B7D6D0190ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFAE5F6-EDFD-4B6D-B776-B7D6D0190ECF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
