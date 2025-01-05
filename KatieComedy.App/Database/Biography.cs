@@ -1,4 +1,8 @@
-﻿namespace KatieComedy.App.Database;
-internal class Biography
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace KatieComedy.App.Database;
+
+[Table(nameof(Biography))]
+public class Biography
 {
 }

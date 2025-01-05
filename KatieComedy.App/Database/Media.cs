@@ -1,5 +1,8 @@
-﻿namespace KatieComedy.App.Database;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-internal class Media
+namespace KatieComedy.App.Database;
+
+[Table(nameof(Media))]
+public class Media
 {
 }

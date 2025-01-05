@@ -1,5 +1,8 @@
-﻿namespace KatieComedy.App.Database;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace KatieComedy.App.Database;
+
+[Table(nameof(Appearance))]
 public class Appearance
 {
     public int Id { get; set; }
