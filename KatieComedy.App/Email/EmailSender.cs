@@ -5,7 +5,7 @@ using MailKit.Net.Smtp;
 
 namespace KatieComedy.App.Email;
 
-public record EmailMessage
+public record EmailRequest
 {
     public required string ToAddress { get; init; }
     public required string ToName { get; init; }
@@ -21,7 +21,7 @@ public class EmailSender(IOptions<EmailOptions> options) : IEmailSender
 
     public Task SendEmailAsync(string email, string subject, string htmlMessage)
     {
-        var emailMessage = new EmailMessage
+        var request = new EmailRequest
         {
             ToAddress = email,
             ToName = email.Split('@').FirstOrDefault() ?? string.Empty,
@@ -29,27 +29,27 @@ public class EmailSender(IOptions<EmailOptions> options) : IEmailSender
             HtmlText = htmlMessage
         };
 
-        return SendEmailAsync(emailMessage, default);
+        return SendEmailAsync(request, default);
     }
 
-    public async Task SendEmailAsync(EmailMessage emailMessage, CancellationToken cancel)
+    public async Task SendEmailAsync(EmailRequest request, CancellationToken cancel)
     {
         var message = new MimeMessage
         {
-            Subject = emailMessage.Subject
+            Subject = request.Subject
         };
 
         message.From.Add(new MailboxAddress(_options.FromName, _options.FromAddress));
-        message.To.Add(new MailboxAddress(emailMessage.ToName, emailMessage.ToAddress));
+        message.To.Add(new MailboxAddress(request.ToName, request.ToAddress));
 
-        if (!string.IsNullOrEmpty(emailMessage.ReplyAddress))
+        if (!string.IsNullOrEmpty(request.ReplyAddress))
         {
-            message.ReplyTo.Add(new MailboxAddress(emailMessage.ReplyName, emailMessage.ReplyAddress));
+            message.ReplyTo.Add(new MailboxAddress(request.ReplyName, request.ReplyAddress));
         }
 
         message.Body = new TextPart("html")
         {
-            Text = emailMessage.HtmlText
+            Text = request.HtmlText
         };
 
         using var client = new SmtpClient();

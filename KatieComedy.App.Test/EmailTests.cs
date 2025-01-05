@@ -20,7 +20,7 @@ public class EmailTests
 
         var sender = new EmailSender(options);
 
-        await sender.SendEmailAsync(new EmailMessage
+        await sender.SendEmailAsync(new EmailRequest
         {
             ToAddress = "badandytowin@gmail.com",
             ToName = "Andy",
