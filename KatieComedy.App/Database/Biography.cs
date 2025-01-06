@@ -5,4 +5,5 @@ namespace KatieComedy.App.Database;
 [Table(nameof(Biography))]
 public class Biography
 {
+    public int Id { get; set; }
 }

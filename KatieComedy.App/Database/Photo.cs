@@ -1,5 +1,5 @@
-﻿using KatieComedy.App.Photos;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using KatieComedy.App.Photos;
 
 namespace KatieComedy.App.Database;
 
@@ -8,7 +8,7 @@ public class Photo
 {
     public int Id { get; set; }
 
-    public PhotoType PhotoType { get; set; }
+    public PhotoType Type { get; set; }
 
     [ForeignKey(nameof(Photo))]
     public int? ThumbnailId { get; set; }
