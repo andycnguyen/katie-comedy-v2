@@ -11,7 +11,7 @@ public class PhotoService(
     IWebHostEnvironment env,
     IOptions<PhotoOptions> options)
 {
-    private string PhotoDirectoryPath => Path.Combine(env.WebRootPath, PhotoDirectoryPath);
+    private string PhotoDirectoryPath => Path.Combine(env.WebRootPath, "photos");
     private readonly PhotoOptions _options = options.Value;
 
     public async Task<IReadOnlyList<Photo>> Get(CancellationToken cancel)
