@@ -1,10 +1,16 @@
-﻿using KatieComedy.App.Database;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using KatieComedy.App.Database;
+using Microsoft.Extensions.Hosting;
 
 namespace KatieComedy.App.Photos;
 
-public class PhotoService(ApplicationDbContext dbContext, IWebHostEnvironment env)
+public class PhotoService(
+    ApplicationDbContext dbContext,
+    IWebHostEnvironment env,
+    IOptions<PhotoOptions> options)
 {
     private const string PhotoDirectory = "photos";
 
@@ -28,9 +34,18 @@ public class PhotoService(ApplicationDbContext dbContext, IWebHostEnvironment en
     {
         var directory = Path.Combine(env.WebRootPath, PhotoDirectory);
         Directory.CreateDirectory(directory);
-        var filename = Guid.NewGuid().ToString() + upload.FileExtension;
-        var filepath = Path.Combine(directory, filename);
-        await File.WriteAllBytesAsync(filepath, upload.Data, cancel);
+        var photoFilename = Guid.NewGuid().ToString() + upload.FileExtension;
+        var photoFilepath = Path.Combine(directory, photoFilename);
+        await File.WriteAllBytesAsync(photoFilepath, upload.Data, cancel);
+
+        using var image = await Image.LoadAsync(photoFilepath, cancel);
+        var length = Math.Min(image.Width, image.Height);
+        image.Mutate(x => x
+            .Crop(new Rectangle(0, 0, length, length))
+            .Resize(options.Value.ThumbnailLength, options.Value.ThumbnailLength));
+        var thumbnailFilename = Guid.NewGuid().ToString() + ".jpg";
+        var thumbnailFilepath = Path.Combine(directory, thumbnailFilename);
+        await image.SaveAsJpegAsync(thumbnailFilepath, cancel);
     }
 
     public async Task Delete(int id)
@@ -44,11 +59,25 @@ public class PhotoService(ApplicationDbContext dbContext, IWebHostEnvironment en
 
     public async Task Update(int id)
     {
-
     }
 
-    public async Task DeleteAll()
+    public void DeleteAll()
     {
+        if (env.IsProduction())
+        {
+            return;
+        }
 
+        var dirInfo = new DirectoryInfo(Path.Combine(env.WebRootPath, PhotoDirectory));
+
+        foreach (var file in dirInfo.GetFiles())
+        {
+            file.Delete();
+        }
+
+        foreach (var dir in dirInfo.GetDirectories())
+        {
+            dir.Delete(true);
+        }
     }
 }

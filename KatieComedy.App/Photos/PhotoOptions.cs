@@ -10,5 +10,8 @@ public record PhotoOptions
     public int MaxFilesizeMegabytes { get; init; }
 
     [Required]
+    public int ThumbnailLength { get; init; }
+
+    [Required]
     public IReadOnlyList<string> AllowedFileExtensions { get; init; } = [];
 }

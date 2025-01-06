@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using KatieComedy.App;
 using KatieComedy.App.Database;
+using KatieComedy.App.Photos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,13 +47,16 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
-await InitializeDatabase();
+await InitializeApp();
 
 app.Run();
 
-async Task InitializeDatabase()
+async Task InitializeApp()
 {
     using var scope = app.Services.CreateScope();
-    var initializer = scope.ServiceProvider.GetRequiredService<DatabaseInitializer>();
-    await initializer.InitializeAsync();
+    var dbInitializer = scope.ServiceProvider.GetRequiredService<DatabaseInitializer>();
+    await dbInitializer.InitializeAsync();
+
+    var photoService = scope.ServiceProvider.GetRequiredService<PhotoService>();
+    photoService.DeleteAll();
 }
