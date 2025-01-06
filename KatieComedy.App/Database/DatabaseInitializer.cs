@@ -6,11 +6,12 @@ public class DatabaseInitializer(ApplicationDbContext dbContext)
 {
     public async Task InitializeAsync()
     {
-        if (dbContext.Database.GetConnectionString()?.Contains("localhost") ?? false)
+        if (dbContext.Database.GetConnectionString()?.Contains("localdb") ?? false)
         {
             await dbContext.Database.EnsureDeletedAsync();
-            await dbContext.Database.EnsureCreatedAsync();
         }
+
+        await dbContext.Database.MigrateAsync();
 
         // initialize identity
     }
