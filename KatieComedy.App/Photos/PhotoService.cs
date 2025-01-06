@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
-using KatieComedy.App.Database;
-using Microsoft.Extensions.Hosting;
 
 namespace KatieComedy.App.Photos;
 
@@ -12,7 +11,8 @@ public class PhotoService(
     IWebHostEnvironment env,
     IOptions<PhotoOptions> options)
 {
-    private const string PhotoDirectory = "photos";
+    private string PhotoDirectoryPath => Path.Combine(env.WebRootPath, PhotoDirectoryPath);
+    private readonly PhotoOptions _options = options.Value;
 
     public async Task<IReadOnlyList<Photo>> Get(CancellationToken cancel)
     {
@@ -32,29 +32,30 @@ public class PhotoService(
 
     public async Task Upload(PhotoUpload upload, CancellationToken cancel)
     {
-        var directory = Path.Combine(env.WebRootPath, PhotoDirectory);
-        Directory.CreateDirectory(directory);
+        Directory.CreateDirectory(PhotoDirectoryPath);
         var photoFilename = Guid.NewGuid().ToString() + upload.FileExtension;
-        var photoFilepath = Path.Combine(directory, photoFilename);
+        var photoFilepath = Path.Combine(PhotoDirectoryPath, photoFilename);
         await File.WriteAllBytesAsync(photoFilepath, upload.Data, cancel);
 
         using var image = await Image.LoadAsync(photoFilepath, cancel);
         var length = Math.Min(image.Width, image.Height);
         image.Mutate(x => x
             .Crop(new Rectangle(0, 0, length, length))
-            .Resize(options.Value.ThumbnailLength, options.Value.ThumbnailLength));
+            .Resize(_options.ThumbnailLength, _options.ThumbnailLength));
         var thumbnailFilename = Guid.NewGuid().ToString() + ".jpg";
-        var thumbnailFilepath = Path.Combine(directory, thumbnailFilename);
+        var thumbnailFilepath = Path.Combine(PhotoDirectoryPath, thumbnailFilename);
         await image.SaveAsJpegAsync(thumbnailFilepath, cancel);
     }
 
     public async Task Delete(int id)
     {
         var photo = await dbContext.Photos.FindAsync(id) ?? throw new FileNotFoundException();
-        var filepath = Path.Combine(env.WebRootPath, PhotoDirectory, photo.Filename);
+        var filepath = Path.Combine(PhotoDirectoryPath, photo.Filename);
         File.Delete(filepath);
         dbContext.Photos.Remove(photo);
         await dbContext.SaveChangesAsync();
+
+        // delete thumbnail too
     }
 
     public async Task Update(int id)
@@ -68,7 +69,7 @@ public class PhotoService(
             return;
         }
 
-        var dirInfo = new DirectoryInfo(Path.Combine(env.WebRootPath, PhotoDirectory));
+        var dirInfo = new DirectoryInfo(PhotoDirectoryPath);
 
         foreach (var file in dirInfo.GetFiles())
         {
