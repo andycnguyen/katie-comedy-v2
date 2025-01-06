@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using KatieComedy.App.Appearances;
 
 namespace KatieComedy.Web.Pages;

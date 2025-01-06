@@ -4,8 +4,6 @@
 
 using System.Text;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account

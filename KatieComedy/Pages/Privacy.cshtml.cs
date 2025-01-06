@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace KatieComedy.Web.Pages
+﻿namespace KatieComedy.Web.Pages
 {
     public class PrivacyModel(ILogger<PrivacyModel> logger) : PageModel
     {
