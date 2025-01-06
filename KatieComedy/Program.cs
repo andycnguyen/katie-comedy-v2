@@ -1,7 +1,7 @@
-using KatieComedy.App;
-using KatieComedy.App.Database;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using KatieComedy.App;
+using KatieComedy.App.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,4 +46,13 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
+await InitializeDatabase();
+
 app.Run();
+
+async Task InitializeDatabase()
+{
+    using var scope = app.Services.CreateScope();
+    var initializer = scope.ServiceProvider.GetRequiredService<DatabaseInitializer>();
+    await initializer.InitializeAsync();
+}
