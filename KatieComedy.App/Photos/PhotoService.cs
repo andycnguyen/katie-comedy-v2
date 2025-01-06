@@ -1,5 +1,6 @@
 ﻿using KatieComedy.App.Database;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace KatieComedy.App.Photos;
 
@@ -9,14 +10,27 @@ public class PhotoService(ApplicationDbContext dbContext, IWebHostEnvironment en
 
     public async Task<IReadOnlyList<Photo>> Get(CancellationToken cancel)
     {
-        return [];
+        var photos = await dbContext.Photos.ToListAsync(cancel);
+
+        return photos
+            .OrderByDescending(x => x.Date.HasValue)
+            .ThenByDescending(x => x.Date)
+            .ThenByDescending(x => x.Id)
+            .Select(x => new Photo
+            {
+                Id = x.Id,
+                Url = string.Empty
+            })
+            .ToList();
     }
 
-    public async Task New(CancellationToken cancel)
+    public async Task Upload(PhotoUpload upload, CancellationToken cancel)
     {
-        var filename = Guid.NewGuid().ToString();
-        var filepath = Path.Combine(env.WebRootPath, PhotoDirectory, filename);
-        Directory.CreateDirectory(filepath);
+        var directory = Path.Combine(env.WebRootPath, PhotoDirectory);
+        Directory.CreateDirectory(directory);
+        var filename = Guid.NewGuid().ToString() + upload.FileExtension;
+        var filepath = Path.Combine(directory, filename);
+        await File.WriteAllBytesAsync(filepath, upload.Data, cancel);
     }
 
     public async Task Delete(int id)
@@ -29,6 +43,11 @@ public class PhotoService(ApplicationDbContext dbContext, IWebHostEnvironment en
     }
 
     public async Task Update(int id)
+    {
+
+    }
+
+    public async Task DeleteAll()
     {
 
     }

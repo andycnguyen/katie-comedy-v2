@@ -8,4 +8,6 @@ public enum PhotoType
 
 public record Photo
 {
+    public required int Id { get; init; }
+    public required string Url { get; init; }
 }

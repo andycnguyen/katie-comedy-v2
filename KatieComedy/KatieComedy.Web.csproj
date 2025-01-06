@@ -21,7 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Admin\" />
+    <Folder Include="Pages\Admin\Biography\" />
+    <Folder Include="Pages\Admin\Appearances\" />
+    <Folder Include="Pages\Admin\Media\" />
+    <Folder Include="Pages\Admin\Users\" />
     <Folder Include="wwwroot\photos\" />
   </ItemGroup>
 

@@ -1,0 +1,22 @@
+﻿@page
+@model KatieComedy.Web.Pages.Admin.Photos.UploadModel
+
+<form enctype="multipart/form-data" method="post" class="border rounded p-3">
+    <fieldset class="row">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="File" class="mb-2"></label>
+            <input asp-for="File" type="file" class="form-control" rows="3">
+            <span asp-validation-for="File" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-1">
+            <button class="btn btn-primary me-1">Upload</button>
+        </div>
+    </fieldset>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -20,7 +20,8 @@ public static class StartupExtensions
             .AddScoped<AppearanceService>();
 
         builder.Services
-            .Configure<EmailOptions>(builder.Configuration.GetSection(EmailOptions.Section));
+            .Configure<EmailOptions>(builder.Configuration.GetSection(EmailOptions.Section))
+            .Configure<PhotoOptions>(builder.Configuration.GetSection(PhotoOptions.Section));
 
         return builder;
     }
