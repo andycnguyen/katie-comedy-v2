@@ -9,6 +9,15 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
     [BindProperty]
     public IFormFile File { get; set; }
 
+    [BindProperty]
+    public DateOnly? Date { get; set; }
+
+    [BindProperty]
+    public string? Caption { get; set; }
+
+    [BindProperty]
+    public string? Credit { get; set; }
+
     public void OnGet()
     {
     }
