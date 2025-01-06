@@ -4,6 +4,8 @@ namespace KatieComedy.App.Email;
 
 public record EmailOptions
 {
+    public static readonly string Section = nameof(EmailOptions);
+
     [Required]
     public required string FromName { get; init; }
 

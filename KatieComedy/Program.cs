@@ -1,3 +1,4 @@
+using KatieComedy.App;
 using KatieComedy.App.Database;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,8 @@ builder.Services
 
 builder.Services
     .AddRazorPages();
+
+builder.AddAppServices();
 
 var app = builder.Build();
 
