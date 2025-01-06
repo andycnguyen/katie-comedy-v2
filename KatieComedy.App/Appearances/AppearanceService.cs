@@ -1,11 +1,10 @@
 ﻿using KatieComedy.App.Database;
-using Microsoft.EntityFrameworkCore;
 
 namespace KatieComedy.App.Appearances;
 
 public class AppearanceService(ApplicationDbContext dbContext)
 {
-    public async Task<IReadOnlyList<Appearance>> Get()
+    public async Task<IReadOnlyList<Appearance>> Get(CancellationToken cancel)
     {
         return null;
     }

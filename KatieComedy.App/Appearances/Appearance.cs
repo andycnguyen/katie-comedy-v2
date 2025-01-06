@@ -1,5 +1,5 @@
 ﻿namespace KatieComedy.App.Appearances;
 
-public class Appearance
+public record Appearance
 {
 }

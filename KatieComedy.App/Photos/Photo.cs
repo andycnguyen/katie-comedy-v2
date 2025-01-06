@@ -6,6 +6,6 @@ public enum PhotoType
     Thumbnail
 }
 
-internal class Photo
+public record Photo
 {
 }
