@@ -1,6 +1,4 @@
-﻿using KatieComedy.App.Database;
-
-namespace KatieComedy.App.Appearances;
+﻿namespace KatieComedy.App.Appearances;
 
 public class AppearanceService(ApplicationDbContext dbContext)
 {

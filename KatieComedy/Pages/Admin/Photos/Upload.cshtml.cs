@@ -24,6 +24,12 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
 
     public async Task<IActionResult> OnPostAsync(CancellationToken cancel)
     {
+        if (File is null || File.Length == 0)
+        {
+            ModelState.AddModelError(nameof(File), $"Invalid file.");
+            return Page();
+        }
+
         using var memoryStream = new MemoryStream();
         await File.CopyToAsync(memoryStream, cancel);
 

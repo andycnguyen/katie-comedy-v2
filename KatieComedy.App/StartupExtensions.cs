@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using KatieComedy.App.Email;
 using KatieComedy.App.Photos;
 using KatieComedy.App.Appearances;
-using KatieComedy.App.Database;
 
 namespace KatieComedy.App;
 
