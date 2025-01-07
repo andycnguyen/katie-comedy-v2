@@ -51,7 +51,10 @@ public class PhotoService(
         {
             Id = photo.Id,
             Url = GetUrl(photo.Filename)!,
-            ThumbnailUrl = GetUrl(photo.Thumbnail?.Filename)
+            ThumbnailUrl = GetUrl(photo.Thumbnail?.Filename),
+            Date = photo.Date,
+            Caption = photo.Caption,
+            Credit = photo.Credit
         };
     }
 
@@ -77,6 +80,7 @@ public class PhotoService(
             Filename = photoFilename,
             Date = upload.Date,
             Caption = upload.Caption,
+            Credit = upload.Credit,
             Thumbnail = new Database.Photo
             {
                 Type = PhotoType.Thumbnail,
@@ -105,8 +109,20 @@ public class PhotoService(
         await dbContext.SaveChangesAsync();
     }
 
-    public async Task Update(int id)
+    public async Task Update(PhotoUpdate update)
     {
+        var photo = await dbContext.Photos.FindAsync(update.Id);
+
+        if (photo is null)
+        {
+            throw new Exception("Photo not found.");
+        }
+
+        photo.Date = update.Date;
+        photo.Caption = update.Caption;
+        photo.Credit = update.Credit;
+
+        await dbContext.SaveChangesAsync();
     }
 
     public void DeleteAll()
@@ -143,7 +159,7 @@ public class PhotoService(
 
         var photoData = File.ReadAllBytes(Path.Join(PhotoDirectoryPath, _options.TestPhotoFilename));
 
-        foreach (var i in Enumerable.Range(0, 5))
+        foreach (var i in Enumerable.Range(0, 7))
         {
             await Upload(new PhotoUpload
             {

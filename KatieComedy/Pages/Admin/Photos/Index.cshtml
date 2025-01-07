@@ -1,7 +1,25 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Photos.IndexModel
 
-@foreach (var photo in Model.Photos)
-{
-    <img src="@photo.ThumbnailUrl" />
-}
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var photo in Model.Photos)
+        {
+            <div class="card me-3 mb-3 p-3" style="width: 18rem;">
+                <img src="@photo.ThumbnailUrl" />
+                <div class="card-body pb-0">
+                    <p class="card-text">
+                        Caption: caption
+                    </p>
+                    <p class="card-text">
+                        Caption:
+                    </p>
+                    <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary" mb-0>Edit</a>
+                    <form method="post" action="~/admin/photos/delete/@photo.Id">
+                        <button class="btn btn-primary">Delete</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -4,8 +4,15 @@ namespace KatieComedy.Web.Pages.Admin.Photos;
 
 public class EditModel(PhotoService service) : PageModel
 {
+    public Photo Photo { get; set; }
+
     public async Task OnGetAsync(int id)
     {
-        var photo = await service.Get(id);
+        Photo = await service.Get(id);
+    }
+
+    public async Task<IActionResult> OnPostAsync()
+    {
+        return Page();
     }
 }
