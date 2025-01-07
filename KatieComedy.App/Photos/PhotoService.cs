@@ -141,25 +141,28 @@ public class PhotoService(
             return;
         }
 
-        var bytes = File.ReadAllBytes(Path.Join(PhotoDirectoryPath, _options.TestPhotoFilename));
+        var photoData = File.ReadAllBytes(Path.Join(PhotoDirectoryPath, _options.TestPhotoFilename));
 
-        await Upload(new PhotoUpload
+        foreach (var i in Enumerable.Range(0, 5))
         {
-            Data = bytes,
-            FileExtension = ".jpg",
-            Caption = "This a test photo",
-            Date = DateOnly.FromDateTime(DateTime.Now)
-        }, default);
+            await Upload(new PhotoUpload
+            {
+                Data = photoData,
+                FileExtension = ".jpg",
+                Caption = "This a test photo",
+                Date = DateOnly.FromDateTime(DateTime.Now)
+            }, default);
+        }
     }
 
     private string? GetUrl(string? filename)
     {
-        if (string.IsNullOrEmpty(filename))
+        if (string.IsNullOrEmpty(filename) || httpContextAccessor.HttpContext is null)
         {
             return null;
         }
 
-        var httpContext = httpContextAccessor.HttpContext!;
+        var httpContext = httpContextAccessor.HttpContext;
         return $"{httpContext.Request.Scheme}://{httpContext.Request.Host.ToUriComponent()}/photos/{filename}";
     }
 }
