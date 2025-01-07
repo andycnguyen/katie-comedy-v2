@@ -9,10 +9,7 @@
                 <img src="@photo.ThumbnailUrl" />
                 <div class="card-body pb-0">
                     <p class="card-text">
-                        Caption: caption
-                    </p>
-                    <p class="card-text">
-                        Caption:
+                        @photo.DisplayText
                     </p>
                     <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary" mb-0>Edit</a>
                     <form method="post" action="~/admin/photos/delete/@photo.Id">

@@ -31,7 +31,10 @@ public class PhotoService(
             {
                 Id = x.Id,
                 Url = GetUrl(x.Filename)!,
-                ThumbnailUrl = GetUrl(x.Thumbnail?.Filename)
+                ThumbnailUrl = GetUrl(x.Thumbnail?.Filename),
+                Date = x.Date,
+                Caption = x.Caption,
+                Credit = x.Credit
             })
             .ToList();
     }
