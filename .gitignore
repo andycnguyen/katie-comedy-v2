@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# photos except original test photo
+/KatieComedy/wwwroot/photos/*
+!/KatieComedy/wwwroot/photos/test-photo.jpg
+
 # User-specific files
 *.rsuser
 *.suo

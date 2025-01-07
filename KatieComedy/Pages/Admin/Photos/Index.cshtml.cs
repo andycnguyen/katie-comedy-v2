@@ -1,8 +1,13 @@
+using KatieComedy.App.Photos;
+
 namespace KatieComedy.Web.Pages.Admin.Photos;
 
-public class IndexModel : PageModel
+public class IndexModel(PhotoService service) : PageModel
 {
-    public void OnGet()
+    public IReadOnlyList<Photo> Photos { get; set; } = [];
+
+    public async Task OnGetAsync(CancellationToken cancel)
     {
+        Photos = await service.Get(cancel);
     }
 }

@@ -12,10 +12,10 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
     [BindProperty]
     public DateOnly? Date { get; set; }
 
-    [BindProperty]
+    [BindProperty, MaxLength(1024)]
     public string? Caption { get; set; }
 
-    [BindProperty]
+    [BindProperty, MaxLength(512)]
     public string? Credit { get; set; }
 
     public void OnGet()
@@ -29,6 +29,7 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
 
         if (memoryStream.Length > Math.Pow(2, 20) * _options.MaxFilesizeMegabytes)
         {
+
             ModelState.AddModelError(nameof(File), $"File exceeds maximum size of {_options.MaxFilesizeMegabytes} MB.");
         }
 
@@ -48,7 +49,10 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
         await service.Upload(new PhotoUpload
         {
             Data = memoryStream.ToArray(),
-            FileExtension = fileExtension
+            FileExtension = fileExtension,
+            Date = Date,
+            Caption = Caption,
+            Credit = Credit
         }, cancel);
 
         return RedirectToPage("Index");

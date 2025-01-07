@@ -14,4 +14,7 @@ public record PhotoOptions
 
     [Required]
     public IReadOnlyList<string> AllowedFileExtensions { get; init; } = [];
+
+    [Required]
+    public required string TestPhotoFilename { get; init; }
 }

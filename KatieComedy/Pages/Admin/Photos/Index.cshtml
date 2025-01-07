@@ -1,4 +1,7 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Photos.IndexModel
-@{
+
+@foreach (var photo in Model.Photos)
+{
+    <img src="@photo.ThumbnailUrl" />
 }

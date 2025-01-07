@@ -59,4 +59,5 @@ async Task InitializeApp()
 
     var photoService = scope.ServiceProvider.GetRequiredService<PhotoService>();
     photoService.DeleteAll();
+    await photoService.InitializeTestPhoto();
 }
