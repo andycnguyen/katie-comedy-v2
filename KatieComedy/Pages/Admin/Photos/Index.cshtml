@@ -5,16 +5,18 @@
     <div class="row">
         @foreach (var photo in Model.Photos)
         {
-            <div class="card me-3 mb-3 p-3" style="width: 18rem;">
+            <div class="card me-3 mb-3 p-3" style="width: 16rem;">
                 <img src="@photo.ThumbnailUrl" />
-                <div class="card-body pb-0">
+                <div class="card-body pb-0 ps-0 pe-0">
                     <p class="card-text">
                         @photo.DisplayText
                     </p>
-                    <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary" mb-0>Edit</a>
-                    <form method="post" action="~/admin/photos/delete/@photo.Id">
-                        <button class="btn btn-primary">Delete</button>
-                    </form>
+                    <div class="col-md-12 d-flex">
+                        <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary me-1">Edit</a>
+                        <form method="post" action="~/admin/photos/delete/@photo.Id">
+                            <button class="btn btn-secondary">Delete</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         }

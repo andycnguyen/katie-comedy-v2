@@ -1,4 +1,48 @@
 ﻿@page "{id:int}"
-
 @model KatieComedy.Web.Pages.Admin.Photos.EditModel
+@inject KatieComedy.App.Photos.PhotoService service
 
+@{
+    var photo = await service.Get(Model.Id);
+
+    if (photo is null)
+    {
+        throw new Exception("Photo not found.");
+    }
+}
+
+<div class="container-sm d-flex justify-content-center">
+    <form method="post" class="border rounded p-3">
+        <a href="@photo.Url" target="_blank">
+            <img src="@photo.Url" class="mb-3" style="width:24rem;" />
+        </a>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="Date" class="mb-2"></label>
+            <input asp-for="Date" class="form-control" />
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="Caption" class="mb-2"></label>
+            <input asp-for="Caption" class="form-control" />
+            <span asp-validation-for="Caption" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="Credit" class="mb-2"></label>
+            <input asp-for="Credit" class="form-control" />
+            <span asp-validation-for="Credit" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-1 d-flex">
+            <button class="btn btn-primary me-1">Save</button>
+            <a class="btn btn-secondary" asp-page="Index">Cancel</a>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
