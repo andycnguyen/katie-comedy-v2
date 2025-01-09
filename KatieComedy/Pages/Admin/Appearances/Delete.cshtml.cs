@@ -1,12 +1,16 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using KatieComedy.App.Appearances;
 
-namespace KatieComedy.Web.Pages.Admin.Appearances
+namespace KatieComedy.Web.Pages.Admin.Appearances;
+
+public class DeleteModel(AppearanceService service) : PageModel
 {
-    public class DeleteModel : PageModel
+    public void OnGet()
     {
-        public void OnGet()
-        {
-        }
+    }
+
+    public async Task<IActionResult> OnPostAsync(int id)
+    {
+        await service.Delete(id);
+        return RedirectToPage("Index");
     }
 }

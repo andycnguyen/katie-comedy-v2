@@ -1,12 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using KatieComedy.App.Appearances;
 
-namespace KatieComedy.Web.Pages.Admin.Appearances
+namespace KatieComedy.Web.Pages.Admin.Appearances;
+
+public class IndexModel(AppearanceService service) : PageModel
 {
-    public class IndexModel : PageModel
+    public IReadOnlyList<Appearance> Appearances { get; set; } = [];
+
+    public async Task OnGetAsync(CancellationToken cancel)
     {
-        public void OnGet()
-        {
-        }
+        Appearances = await service.Get(cancel);
     }
 }

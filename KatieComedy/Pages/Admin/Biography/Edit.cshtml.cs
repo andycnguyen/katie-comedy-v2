@@ -1,12 +1,31 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using KatieComedy.App.Biography;
 
-namespace KatieComedy.Web.Pages.Admin.Biography
+namespace KatieComedy.Web.Pages.Admin.Biography;
+
+public class EditModel(BiographyService service) : PageModel
 {
-    public class EditModel : PageModel
+    [MinLength(1), MaxLength(5000)]
+    public string Text { get; set; } = string.Empty;
+
+    public async Task OnGetAsync()
     {
-        public void OnGet()
+        Text = await service.Get();
+    }
+
+    public async Task<IActionResult> OnPostAsync()
+    {
+        if (Text.Trim().Length == 0)
         {
+            ModelState.AddModelError(nameof(Text), "Text cannot be empty.");
         }
+
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
+        await service.Update(Text);
+        // need success feedback here
+        return RedirectToPage("Edit");
     }
 }
