@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using KatieComedy.App;
 using KatieComedy.App.Database;
 using KatieComedy.App.Photos;
+using KatieComedy.App.Biography;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +48,12 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
+
+app.MapPost("admin/api/biography", (TextInput input) =>
+{
+    return BiographyService.FormatAsHtml(input.Text);
+});
+
 await InitializeApp();
 
 app.Run();
@@ -61,3 +68,8 @@ async Task InitializeApp()
     photoService.DeleteAll();
     await photoService.InitializeTestPhoto();
 }
+
+class TextInput
+{
+    public string Text { get; set; } = string.Empty;
+};

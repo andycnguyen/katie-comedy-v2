@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using KatieComedy.App.Email;
 using KatieComedy.App.Photos;
 using KatieComedy.App.Appearances;
+using KatieComedy.App.Biography;
 
 namespace KatieComedy.App;
 
@@ -15,6 +16,7 @@ public static class StartupExtensions
             .AddScoped<DatabaseInitializer>()
             .AddScoped<EmailSender>()
             .AddScoped<IEmailSender, EmailSender>()
+            .AddScoped<BiographyService>()
             .AddScoped<PhotoService>()
             .AddScoped<AppearanceService>();
 

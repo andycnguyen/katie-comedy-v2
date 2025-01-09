@@ -11,10 +11,10 @@
                     <p class="card-text">
                         @photo.DisplayText
                     </p>
-                    <div class="col-md-12 d-flex">
-                        <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary me-1">Edit</a>
-                        <form method="post" action="~/admin/photos/delete/@photo.Id">
-                            <button class="btn btn-secondary">Delete</button>
+                    <div class="btn-group" role="group">
+                        <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary">Edit</a>
+                        <form method="post" action="~/admin/appearances/delete/@photo.Id">
+                            <button class="btn btn-secondary rounded-start-0">Delete</button>
                         </form>
                     </div>
                 </div>

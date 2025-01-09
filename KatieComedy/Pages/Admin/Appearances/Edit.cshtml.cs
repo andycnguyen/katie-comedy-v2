@@ -7,20 +7,22 @@ public class EditModel(AppearanceService service) : PageModel
     [FromRoute]
     public int Id { get; set; }
 
-    [BindProperty]
+    [BindProperty, Display(Name = "Date"), DataType(DataType.DateTime)]
     public DateTimeOffset DateTime { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Event Name"), MaxLength(500)]
     public string EventName { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Event Url"), MaxLength(500), RegularExpression(UrlRegex, ErrorMessage = "Invalid Url.")]
     public string? EventUrl { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Location Name"), MaxLength(500)]
     public string LocationName { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Location Url"), MaxLength(500), RegularExpression(UrlRegex, ErrorMessage = "Invalid Url.")]
     public string? LocationUrl { get; set; }
+
+    private const string UrlRegex = "^((https?|ftp|smtp):\\/\\/)?(www.)?[a-z0-9]+\\.[a-z]+(\\/[a-zA-Z0-9#]+\\/?)*$";
 
     public async Task OnGetAsync()
     {

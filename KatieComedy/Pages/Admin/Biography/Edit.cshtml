@@ -2,3 +2,37 @@
 @model KatieComedy.Web.Pages.Admin.Biography.EditModel
 @{
 }
+
+<form method="post">
+    <div id="preview">
+    </div>
+
+    <label asp-for="Text" class="mb-2"></label>
+    <textarea asp-for="Text" class="form-control" rows="3"></textarea>
+    <span asp-validation-for="Text" class="text-danger"></span>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document
+            .getElementById("Text")
+            .addEventListener("input", async () => {
+                const text = document.getElementById("Text").value;
+                const response = await fetch("/admin/api/biography", {
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    method: "POST",
+                    body: JSON.stringify({ text: text })
+                });
+
+                const html = response.ok
+                    ? await response.text()
+                    : "Error fetching biography preview.";
+
+                document.getElementById("preview").innerHTML = html;
+            });
+    </script>
+}
