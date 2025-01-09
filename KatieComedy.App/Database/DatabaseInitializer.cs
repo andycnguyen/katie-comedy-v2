@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 namespace KatieComedy.App.Database;
 
-public class DatabaseInitializer(ApplicationDbContext dbContext)
+public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext dbContext)
 {
     public async Task InitializeAsync()
     {
@@ -14,5 +15,35 @@ public class DatabaseInitializer(ApplicationDbContext dbContext)
         await dbContext.Database.MigrateAsync();
 
         // initialize identity
+
+        await InitializeTestEntities();
+    }
+
+    public async Task InitializeTestEntities()
+    {
+        if (!env.IsDevelopment())
+        {
+            return;
+        }
+
+        var random = new Random();
+
+        dbContext.Appearances.AddRange(Enumerable.Range(1, 7).Select(x => new Appearance
+        {
+            DateTime = DateTime.Now.AddDays(random.Next(0, 30)).AddMinutes(random.Next(0, 360)),
+            EventName = "Test event",
+            EventUrl = "http://nytimes.com",
+            LocationName = "Test location",
+            LocationUrl = null
+        }));
+
+        dbContext.Biographies.Add(new Biography
+        {
+            HtmlText = """
+                This is my biography.
+            """
+        });
+
+        await dbContext.SaveChangesAsync();
     }
 }
