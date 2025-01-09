@@ -2,7 +2,7 @@
 
 namespace KatieComedy.App.Biography;
 
-public class BiographyService(ApplicationDbContext dbContext)
+public partial class BiographyService(ApplicationDbContext dbContext)
 {
     public async Task<string> Get()
     {
@@ -21,7 +21,22 @@ public class BiographyService(ApplicationDbContext dbContext)
 
     public static string FormatAsHtml(string text)
     {
-        text = Regex.Replace(text, "\n|\r|\r\n", "<br/>");
+        text = LinebreakRegex().Replace(text, "<br/>");
+
+        foreach (var match in LinkRegex().Matches(text).Cast<Match>())
+        {
+            var link = $"<a href='{match.Groups[1].Value}' target='_blank'>{match.Groups[2].Value}</a>";
+            text = text.Replace(match.Value, link);
+        }
+
         return text;
     }
+
+    [GeneratedRegex("\\[([^]]+)\\]\\(([^)]+)\\)")]
+    private static partial Regex LinkRegex();
+
+    [GeneratedRegex("\n|\r|\r\n")]
+    private static partial Regex LinebreakRegex();
 }
+
+

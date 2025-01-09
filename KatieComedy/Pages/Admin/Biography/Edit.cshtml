@@ -1,7 +1,5 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Biography.EditModel
-@{
-}
 
 <div id="preview">
 </div>
@@ -20,17 +18,10 @@
             .getElementById("Text")
             .addEventListener("input", async () => {
                 const text = document.getElementById("Text").value;
-                const response = await fetch("/admin/api/biography", {
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    method: "POST",
-                    body: JSON.stringify({ text: text })
-                });
-
+                const response = await fetch("/admin/api/biography?" + new URLSearchParams({ text: text }));
                 const html = response.ok
                     ? await response.text()
-                    : "Error fetching biography preview.";
+                    : "<span class='text-danger'>Error fetching biography preview.</span>";
 
                 document.getElementById("preview").innerHTML = html;
             });

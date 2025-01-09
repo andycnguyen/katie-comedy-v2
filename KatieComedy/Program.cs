@@ -49,9 +49,9 @@ app.MapRazorPages()
    .WithStaticAssets();
 
 
-app.MapPost("admin/api/biography", (BiographyInput input) =>
+app.MapGet("admin/api/biography", ([FromQuery] string text) =>
 {
-    return BiographyService.FormatAsHtml(input.Text);
+    return BiographyService.FormatAsHtml(text);
 });
 
 await InitializeApp();
@@ -68,8 +68,3 @@ async Task InitializeApp()
     photoService.DeleteAll();
     await photoService.InitializeTestPhoto();
 }
-
-class BiographyInput
-{
-    public string Text { get; set; } = string.Empty;
-};
