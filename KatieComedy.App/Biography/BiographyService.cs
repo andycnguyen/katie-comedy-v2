@@ -25,7 +25,9 @@ public partial class BiographyService(ApplicationDbContext dbContext)
 
         foreach (var match in LinkRegex().Matches(text).Cast<Match>())
         {
-            var link = $"<a href='{match.Groups[1].Value}' target='_blank'>{match.Groups[2].Value}</a>";
+            var href = match.Groups[1].Value;
+            var innerHtml = match.Groups[2].Value;
+            var link = $"<a href='{href}' target='_blank'>{innerHtml}</a>";
             text = text.Replace(match.Value, link);
         }
 
