@@ -7,7 +7,7 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
     private readonly PhotoOptions _options = options.Value;
 
     [BindProperty]
-    public IFormFile File { get; set; }
+    public IFormFile FormFile { get; set; }
 
     [BindProperty]
     public DateOnly? Date { get; set; }
@@ -24,27 +24,27 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
 
     public async Task<IActionResult> OnPostAsync(CancellationToken cancel)
     {
-        if (File is null || File.Length == 0)
+        if (FormFile is null || FormFile.Length == 0)
         {
-            ModelState.AddModelError(nameof(File), $"Invalid file.");
+            ModelState.AddModelError(nameof(FormFile), $"Invalid file.");
             return Page();
         }
 
         using var memoryStream = new MemoryStream();
-        await File.CopyToAsync(memoryStream, cancel);
+        await FormFile.CopyToAsync(memoryStream, cancel);
 
         if (memoryStream.Length > Math.Pow(2, 20) * _options.MaxFilesizeMegabytes)
         {
 
-            ModelState.AddModelError(nameof(File), $"File exceeds maximum size of {_options.MaxFilesizeMegabytes} MB.");
+            ModelState.AddModelError(nameof(FormFile), $"File exceeds maximum size of {_options.MaxFilesizeMegabytes} MB.");
         }
 
-        var info = new FileInfo(File.FileName);
+        var info = new FileInfo(FormFile.FileName);
         var fileExtension = info.Extension.ToLower();
 
         if (!options.Value.AllowedFileExtensions.Contains(fileExtension))
         {
-            ModelState.AddModelError(nameof(File), "Invalid file extension.");
+            ModelState.AddModelError(nameof(FormFile), "Invalid file extension.");
         }
 
         if (!ModelState.IsValid)
