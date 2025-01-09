@@ -32,7 +32,7 @@ public partial class BiographyService(ApplicationDbContext dbContext)
         return text;
     }
 
-    [GeneratedRegex("\\[([^]]+)\\]\\(([^)]+)\\)")]
+    [GeneratedRegex("\\[([^[]]+)\\]\\(([^()]+)\\)")]
     private static partial Regex LinkRegex();
 
     [GeneratedRegex("\n|\r|\r\n")]
