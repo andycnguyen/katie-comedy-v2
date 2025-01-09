@@ -3,8 +3,8 @@
 public enum PhotoType
 {
     Unknown = 0,
-    Photo,
-    Thumbnail
+    Photo = 1,
+    Thumbnail = 2
 }
 
 public record Photo

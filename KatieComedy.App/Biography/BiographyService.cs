@@ -38,5 +38,3 @@ public partial class BiographyService(ApplicationDbContext dbContext)
     [GeneratedRegex("\n|\r|\r\n")]
     private static partial Regex LinebreakRegex();
 }
-
-

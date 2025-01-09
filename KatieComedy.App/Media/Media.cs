@@ -2,10 +2,10 @@
 
 public enum MediaType
 {
-    Text,
-    Audio,
-    VideoInternal,
-    VideoExternal
+    Text = 1,
+    Audio = 2,
+    VideoInternal = 3,
+    VideoExternal = 4
 }
 
 public record Media
