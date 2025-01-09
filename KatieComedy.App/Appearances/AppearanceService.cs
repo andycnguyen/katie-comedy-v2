@@ -2,28 +2,80 @@
 
 public class AppearanceService(ApplicationDbContext dbContext)
 {
+    public async Task<IReadOnlyList<Appearance>> GetUpcoming(CancellationToken cancel)
+    {
+        return await dbContext.Appearances
+            .Where(x => x.DateTime > DateTimeOffset.Now)
+            .OrderByDescending(x => x.DateTime)
+            .ThenByDescending(x => x.Id)
+            .Select(x => new Appearance
+            {
+                Id = x.Id,
+                DateTime = x.DateTime,
+                EventName = x.EventName,
+                EventUrl = x.EventUrl,
+                LocationName = x.LocationName,
+                LocationUrl = x.LocationUrl
+            })
+            .ToListAsync(cancel);
+    }
+
     public async Task<IReadOnlyList<Appearance>> Get(CancellationToken cancel)
     {
-        return null;
+        return await dbContext.Appearances
+            .OrderByDescending(x => x.DateTime)
+            .ThenByDescending(x => x.Id)
+            .Select(x => new Appearance
+            {
+                Id = x.Id,
+                DateTime = x.DateTime,
+                EventName = x.EventName,
+                EventUrl = x.EventUrl,
+                LocationName = x.LocationName,
+                LocationUrl = x.LocationUrl
+            })
+            .ToListAsync(cancel);
     }
 
     public async Task<Appearance> Get(int id)
     {
-        return null;
+        var appearance = await dbContext.Appearances.FindAsync(id);
+
+        if (appearance is null)
+        {
+            throw new Exception("Appearance not found.");
+        }
+
+        return new Appearance
+        {
+            Id = id,
+            DateTime = appearance.DateTime,
+            EventName = appearance.EventName,
+            EventUrl = appearance.EventUrl,
+            LocationName = appearance.LocationName,
+            LocationUrl = appearance.LocationUrl
+        };
     }
 
-    public async Task New()
+    public async Task AddOrUpdate(Appearance appearance)
     {
-        await dbContext.SaveChangesAsync();
-    }
+        dbContext.Appearances.Update(new Database.Appearance
+        {
+            Id = appearance.Id,
+            DateTime = appearance.DateTime,
+            EventName = appearance.EventName,
+            EventUrl = appearance.EventUrl,
+            LocationName = appearance.LocationName,
+            LocationUrl = appearance.LocationUrl
+        });
 
-    public async Task Update()
-    {
         await dbContext.SaveChangesAsync();
     }
 
     public async Task Delete(int id)
     {
-        await dbContext.SaveChangesAsync();
+        await dbContext.Appearances
+            .Where(x => x.Id == id)
+            .ExecuteDeleteAsync();
     }
 }

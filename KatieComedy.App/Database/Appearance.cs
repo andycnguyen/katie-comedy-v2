@@ -11,9 +11,9 @@ public class Appearance
 
     public string EventName { get; set; }
 
-    public string EventUrl { get; set; }
+    public string? EventUrl { get; set; }
 
     public string LocationName { get; set; }
 
-    public string LocationUrl { get; set; }
+    public string? LocationUrl { get; set; }
 }
