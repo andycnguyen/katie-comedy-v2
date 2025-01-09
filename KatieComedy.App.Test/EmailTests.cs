@@ -12,6 +12,7 @@ public class EmailTests
         {
             FromAddress = "katie@katienguyen.com",
             FromName = "Unit Test",
+            ContactFormAddress = "badandytowin@gmail.com",
             SmtpHost = "smtp.titan.email",
             SmtpPort = 465,
             SmtpUsername = "katie@katienguyen.com",
