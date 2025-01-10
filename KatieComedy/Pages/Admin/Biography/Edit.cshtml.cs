@@ -4,8 +4,10 @@ namespace KatieComedy.Web.Pages.Admin.Biography;
 
 public class EditModel(BiographyService service) : PageModel
 {
-    [MaxLength(5000)]
+    [BindProperty, MaxLength(5000)]
     public string Text { get; set; } = string.Empty;
+
+    public string Html => BiographyService.FormatAsHtml(Text);
 
     public async Task OnGetAsync()
     {

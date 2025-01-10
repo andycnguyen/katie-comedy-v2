@@ -39,12 +39,13 @@ public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext d
 
         dbContext.Biographies.Add(new Biography
         {
-            Text = """
-                This is my biography.
-
-                This is a newline.
-
-                This is a [link](http://nytimes.com)
+            Text =
+            """
+            This is my biography.
+            
+            This is a newline.
+            
+            This is a [link](http://nytimes.com)
             """
         });
 
