@@ -45,7 +45,7 @@ public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext d
             
             This is a newline.
             
-            This is a [link](http://nytimes.com)
+            This is a [link](http://nytimes.com).
             """
         });
 
