@@ -1,9 +1,12 @@
-namespace KatieComedy.Web.Pages.Admin.Media
+using KatieComedy.App.Media;
+
+namespace KatieComedy.Web.Pages.Admin.Media;
+
+public class DeleteModel(MediaService service) : PageModel
 {
-    public class DeleteModel : PageModel
+    public async Task<IActionResult> OnPost(int id)
     {
-        public void OnGet()
-        {
-        }
+        await service.Delete(id);
+        return RedirectToPage("Index");
     }
 }

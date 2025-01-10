@@ -1,7 +1,44 @@
 ﻿@page
+@using KatieComedy.App.Media
 @model KatieComedy.Web.Pages.Admin.Media.NewModel
 @{
 }
+
+@{
+    ViewData["Title"] = "New Media";
+}
+
+<div class="flex-column">
+    <div class="mb-3">
+        <h4 class="mb-0">@ViewData["Title"]</h4>
+    </div>
+    <form method="post" class="border rounded p-3" style="min-width:30rem;">
+        <div class="col-md-12 mb-3">
+            <label asp-for="Type" class="mb-2"></label>
+            <select asp-for="Type" asp-items="@Html.GetEnumSelectList<MediaType>()" class="form-select">
+                <option value="">Select a type</option>
+            </select>
+            <span asp-validation-for="Type" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="Title" class="mb-2"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="MediaUrl" class="mb-2"></label>
+            <input asp-for="MediaUrl" class="form-control" />
+            <span asp-validation-for="MediaUrl" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-1 d-flex">
+            <button class="btn btn-primary me-1">Save</button>
+            <a class="btn btn-secondary" asp-page="Index">Cancel</a>
+        </div>
+    </form>
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

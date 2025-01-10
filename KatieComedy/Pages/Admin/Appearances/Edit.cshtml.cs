@@ -1,3 +1,4 @@
+using KatieComedy.App;
 using KatieComedy.App.Appearances;
 
 namespace KatieComedy.Web.Pages.Admin.Appearances;
@@ -13,13 +14,13 @@ public class EditModel(AppearanceService service) : PageModel
     [BindProperty, Display(Name = "Event Name"), MaxLength(500)]
     public string EventName { get; set; }
 
-    [BindProperty, Display(Name = "Event Url"), MaxLength(500), RegularExpression(AppearanceService.EmailPattern, ErrorMessage = "Invalid Url.")]
+    [BindProperty, Display(Name = "Event Url"), MaxLength(500), RegularExpression(Constants.UrlPattern, ErrorMessage = "Invalid Url.")]
     public string? EventUrl { get; set; }
 
     [BindProperty, Display(Name = "Location Name"), MaxLength(500)]
     public string LocationName { get; set; }
 
-    [BindProperty, Display(Name = "Location Url"), MaxLength(500), RegularExpression(AppearanceService.EmailPattern, ErrorMessage = "Invalid Url.")]
+    [BindProperty, Display(Name = "Location Url"), MaxLength(500), RegularExpression(Constants.UrlPattern, ErrorMessage = "Invalid Url.")]
     public string? LocationUrl { get; set; }
 
     public async Task OnGetAsync()
@@ -49,6 +50,12 @@ public class EditModel(AppearanceService service) : PageModel
             LocationUrl = LocationUrl
         });
 
+        return RedirectToPage("Index");
+    }
+
+    public async Task<IActionResult> OnPostDelete()
+    {
+        await service.Delete(Id);
         return RedirectToPage("Index");
     }
 }

@@ -2,8 +2,6 @@
 
 public class AppearanceService(ApplicationDbContext dbContext)
 {
-    public const string EmailPattern = "^((https?|ftp|smtp):\\/\\/)?(www.)?[a-z0-9]+\\.[a-z]+(\\/[a-zA-Z0-9#]+\\/?)*$";
-
     public async Task<IReadOnlyList<Appearance>> GetUpcoming(CancellationToken cancel)
     {
         return await dbContext.Appearances

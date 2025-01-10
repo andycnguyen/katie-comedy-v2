@@ -17,6 +17,7 @@ public class EmailTests
             SmtpPort = 465,
             SmtpUsername = "katie@katienguyen.com",
             SmtpPassword = "",
+            EmailUrl = "https://hostinger.titan.email/login/"
         });
 
         var sender = new EmailSender(options);

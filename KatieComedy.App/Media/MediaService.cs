@@ -2,7 +2,7 @@
 
 public class MediaService(ApplicationDbContext dbContext)
 {
-    public async Task<IReadOnlyList<Media>> Get()
+    public async Task<IReadOnlyList<Media>> Get(CancellationToken cancel)
     {
         return await dbContext.Media
             .Select(x => new Media
@@ -12,7 +12,7 @@ public class MediaService(ApplicationDbContext dbContext)
                 Title = x.Title,
                 Url = x.Url
             })
-            .ToListAsync();
+            .ToListAsync(cancel);
     }
 
     public async Task<Media> Get(int id)

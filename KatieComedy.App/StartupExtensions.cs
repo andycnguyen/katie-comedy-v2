@@ -5,6 +5,7 @@ using KatieComedy.App.Email;
 using KatieComedy.App.Photos;
 using KatieComedy.App.Appearances;
 using KatieComedy.App.Biography;
+using KatieComedy.App.Media;
 
 namespace KatieComedy.App;
 
@@ -18,7 +19,8 @@ public static class StartupExtensions
             .AddScoped<IEmailSender, EmailSender>()
             .AddScoped<BiographyService>()
             .AddScoped<PhotoService>()
-            .AddScoped<AppearanceService>();
+            .AddScoped<AppearanceService>()
+            .AddScoped<MediaService>();
 
         builder.Services
             .Configure<EmailOptions>(builder.Configuration.GetSection(EmailOptions.Section))

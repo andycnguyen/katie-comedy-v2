@@ -49,6 +49,28 @@ public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext d
             """
         });
 
+        dbContext.Media.AddRange(
+        [
+            new Media
+            {
+                Type = App.Media.MediaType.Text,
+                Title = "Text Media",
+                Url = "http://youtube.com"
+            },
+            new Media
+            {
+                Type = App.Media.MediaType.Audio,
+                Title = "Audio Media",
+                Url = "http://youtube.com"
+            },
+            new Media
+            {
+                Type = App.Media.MediaType.Video,
+                Title = "Video Media",
+                Url = "http://youtube.com"
+            }
+        ]);
+
         await dbContext.SaveChangesAsync();
     }
 }
