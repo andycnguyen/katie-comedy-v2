@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace KatieComedy.Data.Migrations
+namespace KatieComedy.Database.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

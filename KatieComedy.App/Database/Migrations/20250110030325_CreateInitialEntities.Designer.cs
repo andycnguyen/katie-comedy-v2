@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace KatieComedy.Data.Migrations
+namespace KatieComedy.Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250109012523_InitialCreateEntities")]
-    partial class InitialCreateEntities
+    [Migration("20250110030325_CreateInitialEntities")]
+    partial class CreateInitialEntities
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace KatieComedy.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("HtmlText")
+                    b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

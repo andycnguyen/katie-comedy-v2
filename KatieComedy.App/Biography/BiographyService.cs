@@ -7,14 +7,14 @@ public partial class BiographyService(ApplicationDbContext dbContext)
     public async Task<string> Get()
     {
         var biography = await dbContext.Biographies.SingleOrDefaultAsync();
-        return biography?.HtmlText ?? string.Empty;
+        return biography?.Text ?? string.Empty;
     }
 
     public async Task Update(string text)
     {
         var biography = await dbContext.Biographies.SingleOrDefaultAsync();
         biography ??= dbContext.Biographies.Add(new Database.Biography()).Entity;
-        biography.HtmlText = FormatAsHtml(text);
+        biography.Text = text;
 
         await dbContext.SaveChangesAsync();
     }
