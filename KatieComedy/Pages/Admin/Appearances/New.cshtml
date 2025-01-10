@@ -1,7 +1,51 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Appearances.NewModel
+
 @{
+    ViewData["Title"] = "New Appearance";
 }
+
+<div class="flex-column">
+    <div class="mb-3">
+        <h4 class="mb-0">@ViewData["Title"]</h4>
+    </div>
+    <form method="post" class="border rounded p-3" style="min-width:30rem;">
+        <div class="col-md-12 mb-3">
+            <label asp-for="DateTime" class="mb-2"></label>
+            <input asp-for="DateTime" class="form-control" />
+            <span asp-validation-for="DateTime" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="EventName" class="mb-2"></label>
+            <input asp-for="EventName" class="form-control" />
+            <span asp-validation-for="EventName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="EventUrl" class="mb-2"></label>
+            <input asp-for="EventUrl" class="form-control" />
+            <span asp-validation-for="EventUrl" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="LocationName" class="mb-2"></label>
+            <input asp-for="LocationName" class="form-control" />
+            <span asp-validation-for="LocationName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="LocationUrl" class="mb-2"></label>
+            <input asp-for="LocationUrl" class="form-control" />
+            <span asp-validation-for="LocationUrl" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-1 d-flex">
+            <button class="btn btn-primary me-1">Save</button>
+            <a class="btn btn-secondary" asp-page="Index">Cancel</a>
+        </div>
+    </form>
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

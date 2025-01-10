@@ -4,19 +4,19 @@ namespace KatieComedy.Web.Pages.Admin.Appearances;
 
 public class NewModel(AppearanceService service) : PageModel
 {
-    [BindProperty]
-    public DateTimeOffset DateTime { get; set; }
+    [BindProperty, Required, Display(Name = "Date"), DataType(DataType.DateTime)]
+    public DateTimeOffset? DateTime { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Event Name"), MaxLength(500)]
     public string EventName { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Event Url"), MaxLength(500), RegularExpression(AppearanceService.EmailPattern, ErrorMessage = "Invalid Url.")]
     public string? EventUrl { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Location Name"), MaxLength(500)]
     public string LocationName { get; set; }
 
-    [BindProperty, MaxLength(500)]
+    [BindProperty, Display(Name = "Location Url"), MaxLength(500), RegularExpression(AppearanceService.EmailPattern, ErrorMessage = "Invalid Url.")]
     public string? LocationUrl { get; set; }
 
     public void OnGet()
@@ -32,7 +32,7 @@ public class NewModel(AppearanceService service) : PageModel
 
         await service.AddOrUpdate(new Appearance
         {
-            DateTime = DateTime,
+            DateTime = DateTime!.Value,
             EventName = EventName,
             EventUrl = EventUrl,
             LocationName = LocationName,
