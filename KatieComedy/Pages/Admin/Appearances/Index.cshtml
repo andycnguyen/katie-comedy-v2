@@ -1,7 +1,16 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Appearances.IndexModel
 
-<div class="container-md">
+@{
+    ViewData["Title"] = "Appearances";
+}
+
+<div class="flex-column">
+    <div class="mb-3 d-flex justify-content-between">
+        <h4 class="mb-0">@ViewData["Title"]</h4>
+        <a asp-page="new" class="btn btn-primary">New</a>
+    </div>
+
     <table class="table table-bordered table-hover">
         <thead class="table-dark">
             <tr>
@@ -46,7 +55,7 @@
                     <div class="btn-group" role="group">
                         <a asp-page="edit" asp-route-id="@appearance.Id" class="btn btn-primary">Edit</a>
                         <form method="post" action="~/admin/appearances/delete/@appearance.Id">
-                            <button class="btn btn-secondary rounded-start-0">Delete</button>
+                            <button class="btn btn-danger rounded-start-0">Delete</button>
                         </form>
                     </div>
                 </td>

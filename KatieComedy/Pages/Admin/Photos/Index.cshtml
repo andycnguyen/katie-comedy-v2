@@ -1,7 +1,16 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Photos.IndexModel
 
-<div class="container-fluid">
+@{
+    ViewData["Title"] = "Photos";
+}
+
+<div class="flex-column">
+    <div class="mb-3 d-flex justify-content-between">
+        <h4 class="mb-0">@ViewData["Title"]</h4>
+        <a asp-page="upload" class="btn btn-primary">Upload</a>
+    </div>
+
     <div class="row">
         @foreach (var photo in Model.Photos)
         {
@@ -9,13 +18,17 @@
                 <img src="@photo.ThumbnailUrl" />
                 <div class="card-body pb-0 ps-0 pe-0">
                     <p class="card-text">
-                        @photo.DisplayText
+                        @(string.IsNullOrEmpty(photo.DisplayText)
+                            ? Html.Raw("<em>No info</em>")
+                            : photo.DisplayText)
                     </p>
-                    <div class="btn-group" role="group">
-                        <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary">Edit</a>
-                        <form method="post" action="~/admin/appearances/delete/@photo.Id">
-                            <button class="btn btn-secondary rounded-start-0">Delete</button>
-                        </form>
+                    <div>
+                        <div class="btn-group" role="group">
+                            <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary">Edit</a>
+                            <form method="post" class="d-inline" action="~/admin/photos/delete/@photo.Id">
+                                <button class="btn btn-danger  rounded-start-0">Delete</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

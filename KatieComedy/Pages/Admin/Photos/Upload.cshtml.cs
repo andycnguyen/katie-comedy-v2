@@ -6,10 +6,10 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
 {
     private readonly PhotoOptions _options = options.Value;
 
-    [BindProperty]
+    [BindProperty, Display(Name = "File")]
     public IFormFile FormFile { get; set; }
 
-    [BindProperty]
+    [BindProperty, DataType(DataType.Date)]
     public DateOnly? Date { get; set; }
 
     [BindProperty, MaxLength(1024)]

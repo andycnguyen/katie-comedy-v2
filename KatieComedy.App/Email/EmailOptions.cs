@@ -26,4 +26,7 @@ public record EmailOptions
 
     [Required]
     public required string SmtpPassword { get; init; }
+
+    [Required]
+    public required string EmailUrl { get; init; }
 }

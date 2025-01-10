@@ -42,4 +42,10 @@ public class EditModel(PhotoService service) : PageModel
 
         return RedirectToPage("Index");
     }
+
+    public async Task<IActionResult> OnPostDeleteAsync()
+    {
+        await service.Delete(Id);
+        return RedirectToPage("Index");
+    }
 }
