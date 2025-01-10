@@ -48,11 +48,7 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
-
-app.MapGet("admin/api/biography", ([FromQuery] string text) =>
-{
-    return BiographyService.FormatAsHtml(text);
-});
+app.MapGet("admin/api/biography", ([FromQuery] string text) => BiographyService.FormatAsHtml(text));
 
 await InitializeApp();
 

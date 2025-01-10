@@ -37,6 +37,6 @@ public partial class BiographyService(ApplicationDbContext dbContext)
     [GeneratedRegex("\\[([^\\[\\]]+)\\]\\(([^()]+)\\)")]
     private static partial Regex LinkRegex();
 
-    [GeneratedRegex("\n|\r|\r\n")]
+    [GeneratedRegex("\r\n|\n|\r")]
     private static partial Regex LinebreakRegex();
 }

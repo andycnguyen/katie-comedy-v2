@@ -1,15 +1,34 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Biography.EditModel
 
-<div id="preview">
-    @Html.Raw(Model.Html)
-</div>
+@{
+    ViewData["Title"] = "Edit Biography";
+}
 
-<form method="post">
-    <label asp-for="Text" class="mb-2"></label>
-    <textarea asp-for="Text" class="form-control" rows="3"></textarea>
-    <span asp-validation-for="Text" class="text-danger"></span>
-</form>
+<div class="flex-column">
+    <div class="mb-3 d-flex justify-content-between">
+        <h4 class="mb-0">@ViewData["Title"]</h4>
+    </div>
+
+    <div id="preview" class="border rounded p-3 mb-3" style="width:34rem;">
+        @Html.Raw(Model.Html)
+    </div>
+
+    <form method="post">
+        <div class="col-md-12">
+            <textarea asp-for="Text" class="form-control" style="height:12rem; width:34rem;"></textarea>
+            <span asp-validation-for="Text" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <small class="text-muted">To include a link, use this format: [link text here](http://url-here.com)</small>
+        </div>
+
+        <div class="col-md-12">
+            <button class="btn btn-primary me-1">Save</button>
+        </div>
+    </form>
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
