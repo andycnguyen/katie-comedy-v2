@@ -9,4 +9,10 @@ public static class Constants
         public const string Admin = nameof(Admin);
         public const string Owner = nameof(Owner);
     }
+
+    public static class AuthPolicy
+    {
+        public const string Admin = nameof(Admin);
+        public const string Owner = nameof(Owner);
+    }
 }

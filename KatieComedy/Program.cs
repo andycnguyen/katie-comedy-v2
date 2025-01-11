@@ -5,6 +5,7 @@ using KatieComedy.App.Database;
 using KatieComedy.App.Photos;
 using KatieComedy.App.Biography;
 using KatieComedy.App.Identity;
+using static KatieComedy.App.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,21 @@ builder.Services
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services
-    .AddRazorPages();
+    .AddRazorPages(options =>
+    {
+        options.Conventions.AuthorizeFolder("/admin", AuthPolicy.Admin);
+    });
+
+builder.Services
+    .AddAuthorizationBuilder()
+    .AddPolicy(AuthPolicy.Admin, options =>
+    {
+        options.RequireRole([Roles.Admin, Roles.Owner]);
+    })
+    .AddPolicy(AuthPolicy.Owner, options =>
+    {
+        options.RequireRole([Roles.Owner]);
+    });
 
 builder.AddAppServices();
 
