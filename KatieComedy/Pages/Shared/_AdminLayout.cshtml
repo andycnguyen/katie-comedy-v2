@@ -8,6 +8,7 @@
     <title>@ViewData["Title"] - KatieComedy</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KatieComedy.styles.css" asp-append-version="true" />
 </head>
@@ -21,6 +22,9 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link link-light" asp-page="/Index">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link link-light" asp-page="/Admin/Appearances/Index">Appearances</a>
                         </li>

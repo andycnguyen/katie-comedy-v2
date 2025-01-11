@@ -4,6 +4,7 @@ using KatieComedy.App;
 using KatieComedy.App.Database;
 using KatieComedy.App.Photos;
 using KatieComedy.App.Biography;
+using KatieComedy.App.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services
     .AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services
@@ -38,11 +40,11 @@ else
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
-
-app.UseRouting();
-
-app.UseAuthorization();
+app
+    .UseHttpsRedirection()
+    .UseRouting()
+    .UseAuthorization()
+    .UseStaticFiles();
 
 app.MapStaticAssets();
 app.MapRazorPages()
@@ -63,4 +65,7 @@ async Task InitializeApp()
     var photoService = scope.ServiceProvider.GetRequiredService<PhotoService>();
     photoService.DeleteAll();
     await photoService.InitializeTestPhoto();
+
+    var identityInitializer = scope.ServiceProvider.GetRequiredService<IdentityInitializer>();
+    await identityInitializer.Initialize();
 }

@@ -6,6 +6,7 @@ using KatieComedy.App.Photos;
 using KatieComedy.App.Appearances;
 using KatieComedy.App.Biography;
 using KatieComedy.App.Media;
+using KatieComedy.App.Identity;
 
 namespace KatieComedy.App;
 
@@ -20,11 +21,13 @@ public static class StartupExtensions
             .AddScoped<BiographyService>()
             .AddScoped<PhotoService>()
             .AddScoped<AppearanceService>()
-            .AddScoped<MediaService>();
+            .AddScoped<MediaService>()
+            .AddScoped<IdentityInitializer>();
 
         builder.Services
             .Configure<EmailOptions>(builder.Configuration.GetSection(EmailOptions.Section))
-            .Configure<PhotoOptions>(builder.Configuration.GetSection(PhotoOptions.Section));
+            .Configure<PhotoOptions>(builder.Configuration.GetSection(PhotoOptions.Section))
+            .Configure<IdentityOptions>(builder.Configuration.GetSection(IdentityOptions.Section));
 
         return builder;
     }

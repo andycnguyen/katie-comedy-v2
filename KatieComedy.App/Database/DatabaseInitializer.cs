@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Hosting;
 
 namespace KatieComedy.App.Database;
 
-public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext dbContext)
+public class DatabaseInitializer(
+    IWebHostEnvironment env,
+    ApplicationDbContext dbContext,
+    UserManager<IdentityUser> userManager)
 {
     public async Task InitializeAsync()
     {
@@ -19,7 +23,7 @@ public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext d
         await InitializeTestEntities();
     }
 
-    public async Task InitializeTestEntities()
+    private async Task InitializeTestEntities()
     {
         if (!env.IsDevelopment())
         {
@@ -72,5 +76,10 @@ public class DatabaseInitializer(IWebHostEnvironment env, ApplicationDbContext d
         ]);
 
         await dbContext.SaveChangesAsync();
+    }
+
+    private async Task InitializeIdentity()
+    {
+
     }
 }
