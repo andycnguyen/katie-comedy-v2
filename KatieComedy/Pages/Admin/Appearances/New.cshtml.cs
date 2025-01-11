@@ -3,7 +3,7 @@ using KatieComedy.App.Appearances;
 
 namespace KatieComedy.Web.Pages.Admin.Appearances;
 
-public class NewModel(AppearanceService service) : PageModel
+public class NewModel(AppearanceService service) : BasePageModel
 {
     [BindProperty, Required, Display(Name = "Date"), DataType(DataType.DateTime)]
     public DateTimeOffset? DateTime { get; set; }
@@ -40,6 +40,7 @@ public class NewModel(AppearanceService service) : PageModel
             LocationUrl = LocationUrl
         });
 
+        Toast(ToastLevel.Success, "Appearance added");
         return RedirectToPage("Index");
     }
 }

@@ -2,7 +2,7 @@ using KatieComedy.App.Media;
 
 namespace KatieComedy.Web.Pages.Admin.Media;
 
-public class IndexModel(MediaService service) : PageModel
+public class IndexModel(MediaService service) : BasePageModel
 {
     public IReadOnlyList<App.Media.Media> Media { get; set; }
 

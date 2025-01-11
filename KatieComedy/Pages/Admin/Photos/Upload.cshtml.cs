@@ -2,7 +2,7 @@ using KatieComedy.App.Photos;
 
 namespace KatieComedy.Web.Pages.Admin.Photos;
 
-public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) : PageModel
+public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) : BasePageModel
 {
     private readonly PhotoOptions _options = options.Value;
 
@@ -61,6 +61,7 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
             Credit = Credit
         }, cancel);
 
+        Toast(ToastLevel.Success, "Photo uploaded");
         return RedirectToPage("Index");
     }
 }

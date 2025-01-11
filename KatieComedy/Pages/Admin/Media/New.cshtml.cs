@@ -3,7 +3,7 @@ using KatieComedy.App.Media;
 
 namespace KatieComedy.Web.Pages.Admin.Media;
 
-public class NewModel(MediaService service) : PageModel
+public class NewModel(MediaService service) : BasePageModel
 {
     [BindProperty, Required]
     public MediaType? Type { get; set; }
@@ -32,6 +32,7 @@ public class NewModel(MediaService service) : PageModel
             Url = MediaUrl
         });
 
+        Toast(ToastLevel.Success, "Media added");
         return RedirectToPage("Index");
     }
 }

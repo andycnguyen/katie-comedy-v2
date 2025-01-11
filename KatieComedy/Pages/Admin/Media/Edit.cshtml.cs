@@ -3,7 +3,7 @@ using KatieComedy.App.Media;
 
 namespace KatieComedy.Web.Pages.Admin.Media;
 
-public class EditModel(MediaService service) : PageModel
+public class EditModel(MediaService service) : BasePageModel
 {
     [FromRoute]
     public int Id { get; set; }
@@ -40,12 +40,14 @@ public class EditModel(MediaService service) : PageModel
             Url = MediaUrl
         });
 
-        return RedirectToPage("Index");
+        Toast(ToastLevel.Success, "Media updated");
+        return RedirectToPage();
     }
 
     public async Task<IActionResult> OnPostDelete()
     {
         await service.Delete(Id);
+        Toast(ToastLevel.Success, "Media deleted");
         return RedirectToPage("Index");
     }
 }

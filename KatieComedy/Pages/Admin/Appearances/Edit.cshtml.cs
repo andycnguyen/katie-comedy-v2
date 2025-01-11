@@ -3,7 +3,7 @@ using KatieComedy.App.Appearances;
 
 namespace KatieComedy.Web.Pages.Admin.Appearances;
 
-public class EditModel(AppearanceService service) : PageModel
+public class EditModel(AppearanceService service) : BasePageModel
 {
     [FromRoute]
     public int Id { get; set; }
@@ -50,12 +50,15 @@ public class EditModel(AppearanceService service) : PageModel
             LocationUrl = LocationUrl
         });
 
-        return RedirectToPage("Index");
+
+        Toast(ToastLevel.Success, "Appearance updated");
+        return RedirectToPage();
     }
 
     public async Task<IActionResult> OnPostDelete()
     {
         await service.Delete(Id);
+        Toast(ToastLevel.Success, "Appearance deleted");
         return RedirectToPage("Index");
     }
 }

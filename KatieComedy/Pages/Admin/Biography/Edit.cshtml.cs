@@ -2,7 +2,7 @@ using KatieComedy.App.Biography;
 
 namespace KatieComedy.Web.Pages.Admin.Biography;
 
-public class EditModel(BiographyService service) : PageModel
+public class EditModel(BiographyService service) : BasePageModel
 {
     [BindProperty, MaxLength(5000)]
     public string Text { get; set; } = string.Empty;
@@ -22,7 +22,8 @@ public class EditModel(BiographyService service) : PageModel
         }
 
         await service.Update(Text);
-        // need success feedback here
+
+        Toast(ToastLevel.Success, "Biography updated");
         return RedirectToPage("Edit");
     }
 }

@@ -2,7 +2,7 @@ using KatieComedy.App.Photos;
 
 namespace KatieComedy.Web.Pages.Admin.Photos;
 
-public class EditModel(PhotoService service) : PageModel
+public class EditModel(PhotoService service) : BasePageModel
 {
     [FromRoute]
     public int Id { get; set; }
@@ -40,12 +40,15 @@ public class EditModel(PhotoService service) : PageModel
             Credit = Credit
         });
 
-        return RedirectToPage("Index");
+
+        Toast(ToastLevel.Success, "Photo updated");
+        return RedirectToPage();
     }
 
     public async Task<IActionResult> OnPostDeleteAsync()
     {
         await service.Delete(Id);
+        Toast(ToastLevel.Success, "Photo deleted");
         return RedirectToPage("Index");
     }
 }

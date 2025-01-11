@@ -2,7 +2,7 @@ using KatieComedy.App.Appearances;
 
 namespace KatieComedy.Web.Pages.Admin.Appearances;
 
-public class IndexModel(AppearanceService service) : PageModel
+public class IndexModel(AppearanceService service) : BasePageModel
 {
     public IReadOnlyList<Appearance> Appearances { get; set; } = [];
 
