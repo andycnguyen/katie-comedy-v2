@@ -11,16 +11,10 @@ using Microsoft.AspNetCore.WebUtilities;
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
-    public class RegisterConfirmationModel : PageModel
+    public class RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender sender) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly IEmailSender _sender;
-
-        public RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender sender)
-        {
-            _userManager = userManager;
-            _sender = sender;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly IEmailSender _sender = sender;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

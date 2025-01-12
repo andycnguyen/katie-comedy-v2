@@ -5,21 +5,14 @@
 using Microsoft.AspNetCore.Identity;
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
-    public class LoginWithRecoveryCodeModel : PageModel
+    public class LoginWithRecoveryCodeModel(
+        SignInManager<IdentityUser> signInManager,
+        UserManager<IdentityUser> userManager,
+        ILogger<LoginWithRecoveryCodeModel> logger) : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly ILogger<LoginWithRecoveryCodeModel> _logger;
-
-        public LoginWithRecoveryCodeModel(
-            SignInManager<IdentityUser> signInManager,
-            UserManager<IdentityUser> userManager,
-            ILogger<LoginWithRecoveryCodeModel> logger)
-        {
-            _signInManager = signInManager;
-            _userManager = userManager;
-            _logger = logger;
-        }
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly ILogger<LoginWithRecoveryCodeModel> _logger = logger;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

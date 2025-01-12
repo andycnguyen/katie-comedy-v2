@@ -6,21 +6,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account.Manage
 {
-    public class ResetAuthenticatorModel : PageModel
+    public class ResetAuthenticatorModel(
+        UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser> signInManager,
+        ILogger<ResetAuthenticatorModel> logger) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly ILogger<ResetAuthenticatorModel> _logger;
-
-        public ResetAuthenticatorModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
-            ILogger<ResetAuthenticatorModel> logger)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _logger = logger;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly ILogger<ResetAuthenticatorModel> _logger = logger;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

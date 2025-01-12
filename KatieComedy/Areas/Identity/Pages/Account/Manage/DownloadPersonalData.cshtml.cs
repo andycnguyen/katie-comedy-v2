@@ -7,18 +7,12 @@ using Microsoft.AspNetCore.Identity;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account.Manage
 {
-    public class DownloadPersonalDataModel : PageModel
+    public class DownloadPersonalDataModel(
+        UserManager<IdentityUser> userManager,
+        ILogger<DownloadPersonalDataModel> logger) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly ILogger<DownloadPersonalDataModel> _logger;
-
-        public DownloadPersonalDataModel(
-            UserManager<IdentityUser> userManager,
-            ILogger<DownloadPersonalDataModel> logger)
-        {
-            _userManager = userManager;
-            _logger = logger;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly ILogger<DownloadPersonalDataModel> _logger = logger;
 
         public IActionResult OnGet()
         {

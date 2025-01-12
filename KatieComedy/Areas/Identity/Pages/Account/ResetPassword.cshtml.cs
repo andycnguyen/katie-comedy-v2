@@ -8,14 +8,9 @@ using Microsoft.AspNetCore.WebUtilities;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
-    public class ResetPasswordModel : PageModel
+    public class ResetPasswordModel(UserManager<IdentityUser> userManager) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-
-        public ResetPasswordModel(UserManager<IdentityUser> userManager)
-        {
-            _userManager = userManager;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

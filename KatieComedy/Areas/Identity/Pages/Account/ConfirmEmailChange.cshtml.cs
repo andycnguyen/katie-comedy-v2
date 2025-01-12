@@ -8,16 +8,10 @@ using Microsoft.AspNetCore.WebUtilities;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
-    public class ConfirmEmailChangeModel : PageModel
+    public class ConfirmEmailChangeModel(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-
-        public ConfirmEmailChangeModel(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

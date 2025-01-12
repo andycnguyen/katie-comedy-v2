@@ -6,19 +6,12 @@ using Microsoft.AspNetCore.Identity;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account.Manage
 {
-    public class TwoFactorAuthenticationModel : PageModel
+    public class TwoFactorAuthenticationModel(
+        UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, ILogger<TwoFactorAuthenticationModel> logger) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly ILogger<TwoFactorAuthenticationModel> _logger;
-
-        public TwoFactorAuthenticationModel(
-            UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, ILogger<TwoFactorAuthenticationModel> logger)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _logger = logger;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly ILogger<TwoFactorAuthenticationModel> _logger = logger;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

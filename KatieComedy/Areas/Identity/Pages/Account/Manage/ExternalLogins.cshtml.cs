@@ -7,21 +7,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account.Manage
 {
-    public class ExternalLoginsModel : PageModel
+    public class ExternalLoginsModel(
+        UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser> signInManager,
+        IUserStore<IdentityUser> userStore) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly IUserStore<IdentityUser> _userStore;
-
-        public ExternalLoginsModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
-            IUserStore<IdentityUser> userStore)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _userStore = userStore;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly IUserStore<IdentityUser> _userStore = userStore;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

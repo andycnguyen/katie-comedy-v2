@@ -10,21 +10,14 @@ using Microsoft.AspNetCore.WebUtilities;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account.Manage
 {
-    public class EmailModel : PageModel
+    public class EmailModel(
+        UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser> signInManager,
+        IEmailSender emailSender) : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly IEmailSender _emailSender;
-
-        public EmailModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
-            IEmailSender emailSender)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _emailSender = emailSender;
-        }
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly IEmailSender _emailSender = emailSender;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

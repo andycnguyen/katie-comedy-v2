@@ -6,21 +6,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
-    public class LoginWith2faModel : PageModel
+    public class LoginWith2faModel(
+        SignInManager<IdentityUser> signInManager,
+        UserManager<IdentityUser> userManager,
+        ILogger<LoginWith2faModel> logger) : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly ILogger<LoginWith2faModel> _logger;
-
-        public LoginWith2faModel(
-            SignInManager<IdentityUser> signInManager,
-            UserManager<IdentityUser> userManager,
-            ILogger<LoginWith2faModel> logger)
-        {
-            _signInManager = signInManager;
-            _userManager = userManager;
-            _logger = logger;
-        }
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly UserManager<IdentityUser> _userManager = userManager;
+        private readonly ILogger<LoginWith2faModel> _logger = logger;
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

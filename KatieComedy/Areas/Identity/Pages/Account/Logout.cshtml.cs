@@ -6,16 +6,10 @@ using Microsoft.AspNetCore.Identity;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
-    public class LogoutModel : PageModel
+    public class LogoutModel(SignInManager<IdentityUser> signInManager, ILogger<LogoutModel> logger) : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly ILogger<LogoutModel> _logger;
-
-        public LogoutModel(SignInManager<IdentityUser> signInManager, ILogger<LogoutModel> logger)
-        {
-            _signInManager = signInManager;
-            _logger = logger;
-        }
+        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+        private readonly ILogger<LogoutModel> _logger = logger;
 
         public async Task<IActionResult> OnPost(string returnUrl = null)
         {
