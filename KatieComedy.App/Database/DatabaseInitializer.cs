@@ -17,9 +17,6 @@ public class DatabaseInitializer(
         }
 
         await dbContext.Database.MigrateAsync();
-
-        // initialize identity
-
         await InitializeTestEntities();
     }
 
@@ -76,10 +73,5 @@ public class DatabaseInitializer(
         ]);
 
         await dbContext.SaveChangesAsync();
-    }
-
-    private async Task InitializeIdentity()
-    {
-
     }
 }

@@ -13,6 +13,9 @@ public record EmailOptions
     public required string FromAddress { get; init; }
 
     [Required]
+    public required string TestEmailAddress { get; init; }
+
+    [Required]
     public required string ContactFormAddress { get; init; }
 
     [Required]

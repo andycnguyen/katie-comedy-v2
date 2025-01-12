@@ -6,6 +6,8 @@ using KatieComedy.App.Photos;
 using KatieComedy.App.Biography;
 using KatieComedy.App.Identity;
 using static KatieComedy.App.Constants;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services
+    .AddHttpContextAccessor()
+    .AddScoped<IUrlHelper>(services =>
+    {
+        var actionContext = services
+            .GetRequiredService<IActionContextAccessor>()
+            .ActionContext;
+        return new UrlHelper(actionContext!);
+    })
     .AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();

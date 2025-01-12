@@ -5,6 +5,7 @@ public class MediaService(ApplicationDbContext dbContext)
     public async Task<IReadOnlyList<Media>> Get(CancellationToken cancel)
     {
         return await dbContext.Media
+            .OrderBy(x => x.Type)
             .Select(x => new Media
             {
                 Id = x.Id,
