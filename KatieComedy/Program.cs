@@ -33,6 +33,29 @@ builder.Services
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+builder.Services.Configure<Microsoft.AspNetCore.Identity.IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 6;
+    options.Password.RequiredUniqueChars = 1;
+    options.SignIn.RequireConfirmedAccount = true;
+    options.SignIn.RequireConfirmedEmail = true;
+    options.User.RequireUniqueEmail = true;
+});
+
+var identityOptions = builder.Configuration
+    .GetSection(KatieComedy.App.Identity.IdentityOptions.Section)
+    .Get<KatieComedy.App.Identity.IdentityOptions>();
+
+builder.Services.AddAuthentication().AddGoogle(options =>
+{
+    options.ClientId = identityOptions!.GoogleClientId;
+    options.ClientSecret = identityOptions!.GoogleSecret;
+});
+
 builder.Services
     .AddRazorPages(options =>
     {

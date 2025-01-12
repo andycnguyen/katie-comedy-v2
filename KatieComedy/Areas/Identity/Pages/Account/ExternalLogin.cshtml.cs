@@ -5,15 +5,17 @@
 using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
+using KatieComedy.Web.Pages;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.WebUtilities;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
-    public class ExternalLoginModel : PageModel
+    public class ExternalLoginModel : BasePageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
@@ -77,7 +79,7 @@ namespace KatieComedy.Web.Areas.Identity.Pages.Account
             [EmailAddress]
             public string Email { get; set; }
         }
-        
+
         public IActionResult OnGet() => RedirectToPage("./Login");
 
         public IActionResult OnPost(string provider, string returnUrl = null)
@@ -90,44 +92,67 @@ namespace KatieComedy.Web.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnGetCallbackAsync(string returnUrl = null, string remoteError = null)
         {
-            returnUrl = returnUrl ?? Url.Content("~/");
-            if (remoteError != null)
+            if (remoteError is not null)
             {
-                ErrorMessage = $"Error from external provider: {remoteError}";
-                return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
-            }
-            var info = await _signInManager.GetExternalLoginInfoAsync();
-            if (info == null)
-            {
-                ErrorMessage = "Error loading external login information.";
-                return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
+                Toast(ToastLevel.Error, "Error from external login provider.");
+                return RedirectToPage("Login");
             }
 
-            // Sign in the user with this external login provider if the user already has a login.
-            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
-            if (result.Succeeded)
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+
+            if (info is null)
             {
-                _logger.LogInformation("{Name} logged in with {LoginProvider} provider.", info.Principal.Identity.Name, info.LoginProvider);
-                return LocalRedirect(returnUrl);
+                Toast(ToastLevel.Error, "Error loading external login information.");
+                return RedirectToPage("Login");
             }
+
+            var email = info.Principal.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
+            var user = await _userManager.FindByEmailAsync(email ?? string.Empty);
+
+            if (user is null)
+            {
+                Toast(ToastLevel.Error, "User not found. Contact your administrator to register.");
+                return RedirectToPage("Login");
+            }
+
+            if (!user.EmailConfirmed)
+            {
+                Toast(ToastLevel.Error, "Your email has not been confirmed. Please follow the link included in your confirmation email, or contact your administrator.");
+                return RedirectToPage("Login");
+            }
+
+            var providerLogin = await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
+
+            if (providerLogin is null)
+            {
+                // the user does not yet have an external login configured, attempt to create one
+                var addLoginResult = await _userManager.AddLoginAsync(user, info);
+
+                if (!addLoginResult.Succeeded)
+                {
+                    Toast(ToastLevel.Error, "Error configuring external login.");
+                    return RedirectToPage("Login");
+                }
+            }
+
+            var result = await _signInManager.ExternalLoginSignInAsync(
+                info.LoginProvider,
+                info.ProviderKey,
+                isPersistent: false,
+                bypassTwoFactor: true);
+
             if (result.IsLockedOut)
             {
-                return RedirectToPage("./Lockout");
+                return RedirectToPage("Lockout");
             }
-            else
+
+            if (!result.Succeeded)
             {
-                // If the user does not have an account, then ask the user to create an account.
-                ReturnUrl = returnUrl;
-                ProviderDisplayName = info.ProviderDisplayName;
-                if (info.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
-                {
-                    Input = new InputModel
-                    {
-                        Email = info.Principal.FindFirstValue(ClaimTypes.Email)
-                    };
-                }
-                return Page();
+                Toast(ToastLevel.Error, "External login failed.");
+                return RedirectToPage("Login");
             }
+
+            return LocalRedirect(returnUrl ?? "./");
         }
 
         public async Task<IActionResult> OnPostConfirmationAsync(string returnUrl = null)

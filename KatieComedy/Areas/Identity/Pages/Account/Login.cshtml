@@ -3,13 +3,14 @@
 
 @{
     ViewData["Title"] = "Log in";
+    var googleHandler = Model.ExternalLogins?.FirstOrDefault(x => x.HandlerType.Name == "GoogleHandler");
 }
 
 <div class="flex-column">
     <div class="mb-3">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
-    <form method="post" class="border rounded p-3" style="min-width:30rem;">
+    <form method="post" class="border rounded p-3 mb-3" style="min-width:30rem;">
         <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
         <div class="col-md-12 mb-3">
             <label asp-for="Input.Email" class="mb-2" autocomplete="username" aria-required="true"></label>
@@ -27,6 +28,13 @@
             <button class="btn btn-primary me-1">Submit</button>
             <a class="btn btn-secondary" asp-page="Index">Cancel</a>
         </div>
+    </form>
+
+    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal float-end">
+        <button id="login-submit" type="submit" name="provider" value="@googleHandler.Name" class="btn btn-primary float-end">
+            <i class="bi bi-google me-1"></i>
+            Log in with Google
+        </button>
     </form>
 </div>
 
@@ -104,5 +112,5 @@
 </div> *@
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+                <partial name="_ValidationScriptsPartial" />
 }
