@@ -1,5 +1,8 @@
-﻿using KatieComedy.App.Email;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using Moq;
+using KatieComedy.App.Email;
 
 namespace KatieComedy.App.Test;
 
@@ -8,6 +11,9 @@ public class EmailTests
     [Fact]
     public async Task EmailSender()
     {
+        var env = new Mock<IWebHostEnvironment>();
+        env.Setup(x => x.IsDevelopment()).Returns(true);
+
         var options = Options.Create(new EmailOptions
         {
             FromAddress = "katie@katienguyen.com",
@@ -17,10 +23,11 @@ public class EmailTests
             SmtpPort = 465,
             SmtpUsername = "katie@katienguyen.com",
             SmtpPassword = "",
-            EmailUrl = "https://hostinger.titan.email/login/"
+            EmailUrl = "https://hostinger.titan.email/login/",
+            TestAddress = "badandytowin@gmail.com"
         });
 
-        var sender = new EmailSender(options);
+        var sender = new EmailSender(env.Object, options);
 
         await sender.SendEmailAsync(new EmailRequest
         {
