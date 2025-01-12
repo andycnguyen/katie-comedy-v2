@@ -1,6 +1,6 @@
 namespace KatieComedy.Web.Pages.Admin.Users;
 
-public class IndexModel() : BasePageModel
+public class DeleteModel : PageModel
 {
     public void OnGet()
     {

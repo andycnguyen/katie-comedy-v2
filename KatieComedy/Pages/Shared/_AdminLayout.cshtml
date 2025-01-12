@@ -1,4 +1,13 @@
-﻿@inject IOptions<KatieComedy.App.Email.EmailOptions> emailOptions
+﻿@using static KatieComedy.App.Constants
+@using KatieComedy.App.Email
+
+@inject IOptions<EmailOptions> emailOptions
+@inject UserManager<IdentityUser> userManager
+
+@{
+    var idUser = await userManager.GetUserAsync(User);
+    var isOwner = idUser is not null && await userManager.IsInRoleAsync(idUser, Roles.Owner);
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +49,12 @@
                         <li class="nav-item">
                             <a class="nav-link link-light" href="@emailOptions.Value.EmailUrl" target="_blank">Email</a>
                         </li>
+                        @if (isOwner)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link link-light" asp-page="/Admin/Users/Index">Users</a>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

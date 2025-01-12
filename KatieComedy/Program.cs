@@ -21,6 +21,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services
     .AddHttpContextAccessor()
+    .AddTransient<IActionContextAccessor, ActionContextAccessor>()
     .AddScoped<IUrlHelper>(services =>
     {
         var actionContext = services
@@ -36,6 +37,8 @@ builder.Services
     .AddRazorPages(options =>
     {
         options.Conventions.AuthorizeFolder("/admin", AuthPolicy.Admin);
+        options.Conventions.AuthorizeFolder("/admin/users", AuthPolicy.Owner);
+        options.Conventions.AllowAnonymousToPage("/admin/users/register");
     });
 
 builder.Services
@@ -52,7 +55,7 @@ builder.Services
 builder.AddAppServices();
 
 var app = builder.Build();
- 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

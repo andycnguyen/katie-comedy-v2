@@ -1,4 +1,35 @@
 ﻿@page
 @model KatieComedy.Web.Pages.Admin.Users.IndexModel
+@inject UserManager<IdentityUser> manager
+
 @{
+    ViewData["Title"] = "Users";
 }
+
+<div class="flex-column">
+    <div class="mb-3 d-flex justify-content-between">
+        <h4 class="mb-0">@ViewData["Title"]</h4>
+        <a asp-page="invite" class="btn btn-primary">Invite</a>
+    </div>
+
+    <table class="table table-bordered table-hover" style="min-width:30rem;">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+
+        @foreach (var user in manager.Users)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@user.EmailConfirmed</td>
+                <td></td>
+            </tr>
+        }
+    </table>
+</div>

@@ -1,6 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Web;
+using System.Text;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.WebUtilities;
 using KatieComedy.App.Email;
 
 namespace KatieComedy.App.Identity;
@@ -8,18 +13,12 @@ namespace KatieComedy.App.Identity;
 public class IdentityService(
     EmailSender emailSender,
     UserManager<IdentityUser> userManager,
-    IUrlHelper urlHelper,
+    IUrlHelperFactory urlHelperFactory,
+    IActionContextAccessor actionContextAccessor,
     IHttpContextAccessor httpContextAccessor)
 {
-    public async Task SendInvite(string email, string role)
+    public async Task SendInvite(string email, string role, CancellationToken cancel)
     {
-        var callbackUrl = urlHelper.Page("/admin/users/register", null, null, httpContextAccessor.HttpContext?.Request.Scheme);
-
-        if (string.IsNullOrEmpty(callbackUrl))
-        {
-            throw new Exception("Invalid callback Url.");
-        }
-
         var user = new IdentityUser
         {
             UserName = email,
@@ -40,11 +39,27 @@ public class IdentityService(
             throw new Exception("Error assigning roles.");
         }
 
+        var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
+        code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+        var urlHelper = urlHelperFactory.GetUrlHelper(actionContextAccessor.ActionContext!);
+        var callbackUrl = urlHelper.Page("/admin/users/register", null, null, httpContextAccessor.HttpContext?.Request.Scheme);
+
+        if (string.IsNullOrEmpty(callbackUrl))
+        {
+            throw new Exception("Invalid callback Url.");
+        }
+
+        callbackUrl = QueryHelpers.AddQueryString(callbackUrl, new Dictionary<string, string?>
+        {
+            ["email"] = HttpUtility.UrlEncode(email),
+            ["code"] = code
+        });
+
         var htmlText =
         $"""
-          You've been invited to create an account at katienguyen.com.
-          <br/><br/> 
-          Click <a href="{callbackUrl}">here</a> to register.
+        You've been invited to create an account at katienguyen.com.
+        <br/><br/> 
+        Click <a href="{callbackUrl}">here</a> to register.
         """;
 
         await emailSender.SendEmailAsync(new EmailRequest
@@ -53,6 +68,34 @@ public class IdentityService(
             ToName = email.Split('@').First(),
             Subject = "Register at katienguyen.com",
             HtmlText = htmlText
-        }, default);
+        }, cancel);
+    }
+
+    public async Task Register(string email, string password, string code, CancellationToken cancel)
+    {
+        var user = await userManager.FindByEmailAsync(email)
+            ?? throw new Exception("User not found.");
+
+        if (await userManager.HasPasswordAsync(user))
+        {
+            await userManager.RemovePasswordAsync(user);
+        }
+
+        var result = await userManager.AddPasswordAsync(user, password);
+
+        if (!result.Succeeded)
+        {
+            throw new Exception("Failed to set password.");
+        }
+
+        if (user.EmailConfirmed)
+        {
+            result = await userManager.ConfirmEmailAsync(user, code);
+
+            if (!result.Succeeded)
+            {
+                throw new Exception("Failed to confirm user email.");
+            }
+        }
     }
 }
