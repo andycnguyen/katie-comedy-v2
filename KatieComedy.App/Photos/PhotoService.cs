@@ -159,7 +159,7 @@ public class PhotoService(
             return;
         }
 
-        var photoData = File.ReadAllBytes(Path.Join(PhotoDirectoryPath, _options.TestPhotoFilename));
+        var photoData = File.ReadAllBytes(Path.Join(env.WebRootPath, "test", _options.TestPhotoFilename));
 
         foreach (var i in Enumerable.Range(0, 7))
         {

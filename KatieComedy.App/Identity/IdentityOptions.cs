@@ -11,4 +11,10 @@ public record IdentityOptions
 
     [Required]
     public required string DefaultAdminPassword { get; init; }
+
+    [Required]
+    public required string GoogleClientId { get; init; }
+
+    [Required]
+    public required string GoogleSecret { get; init; }
 }
