@@ -2,11 +2,13 @@ namespace KatieComedy.Web.Pages;
 
 public class IndexModel(IOptions<SiteOptions> siteOptions) : PageModel
 {
+    private readonly SiteOptions _siteOptions = siteOptions.Value;
+
     public IActionResult OnGet()
     {
-        if (siteOptions.Value.RedirectToLegacySite)
+        if (_siteOptions.RedirectToLegacySite)
         {
-            return Redirect("https://katie-nguyen.com");
+            return Redirect(_siteOptions.LegacySiteUrl);
         }
 
         return Page();
