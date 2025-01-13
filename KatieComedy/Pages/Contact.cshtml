@@ -1,8 +1,9 @@
 ﻿@page
 @model KatieComedy.Web.Pages.ContactModel
+@inject IOptions<KatieComedy.Web.Cloudflare.CloudflareOptions> cloudflareOptions;
 
-<form method="post" class="border rounded p-3">
-    <fieldset class="row">
+<form method="post">
+    <fieldset class="row border rounded p-2 mb-3">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="col-md-12 mb-3">
@@ -23,10 +24,11 @@
             <span asp-validation-for="Message" class="text-danger"></span>
         </div>
 
-        <div class="col-md-12 mb-1">
+        <div class="col-md-12 mb-3">
             <button class="btn btn-primary me-1">Send</button>
         </div>
     </fieldset>
+    <div class="cf-turnstile float-end" data-sitekey="@cloudflareOptions.Value.TurnstileSiteKey"></div>
 </form>
 
 @section Scripts {

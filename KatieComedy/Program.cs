@@ -1,13 +1,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
+using static KatieComedy.App.Constants;
 using KatieComedy.App;
 using KatieComedy.App.Database;
 using KatieComedy.App.Photos;
 using KatieComedy.App.Biography;
 using KatieComedy.App.Identity;
-using static KatieComedy.App.Constants;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.Mvc.Routing;
+using KatieComedy.Web.Cloudflare;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services
+    .Configure<CloudflareOptions>(builder.Configuration.GetSection(CloudflareOptions.Section))
+    .AddTransient<CloudflareClient>();
+
+builder.Services
+    .AddHttpClient()
     .AddHttpContextAccessor()
     .AddTransient<IActionContextAccessor, ActionContextAccessor>()
     .AddScoped<IUrlHelper>(services =>

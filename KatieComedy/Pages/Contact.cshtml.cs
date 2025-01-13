@@ -1,8 +1,12 @@
 using KatieComedy.App.Email;
+using KatieComedy.Web.Cloudflare;
 
 namespace KatieComedy.Web.Pages;
 
-public class ContactModel(EmailSender emailSender, IOptions<EmailOptions> options) : PageModel
+public class ContactModel(
+    EmailSender emailSender,
+    CloudflareClient cloudflareClient,
+    IOptions<EmailOptions> options) : BasePageModel
 {
     [BindProperty, EmailAddress]
     public string Email { get; set; }
@@ -18,10 +22,18 @@ public class ContactModel(EmailSender emailSender, IOptions<EmailOptions> option
     {
     }
 
-    public async Task<IActionResult> OnPostAsync(CancellationToken cancel)
+    public async Task<IActionResult> OnPostAsync([FromForm(Name = "cf-turnstile-response")] string turnstileToken, CancellationToken cancel)
     {
         if (!ModelState.IsValid)
         {
+            return Page();
+        }
+
+        var turnstileResponse = await cloudflareClient.ValidateToken(turnstileToken, cancel);
+
+        if (!turnstileResponse.Success)
+        {
+            Toast(ToastLevel.Error, "Cloudflare validation failed.");
             return Page();
         }
 
@@ -37,6 +49,7 @@ public class ContactModel(EmailSender emailSender, IOptions<EmailOptions> option
 
         await emailSender.SendEmailAsync(request, cancel);
 
+        Toast(ToastLevel.Error, "Message sent.");
         return RedirectToPage();
     }
 }
