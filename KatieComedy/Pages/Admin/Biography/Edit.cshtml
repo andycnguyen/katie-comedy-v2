@@ -5,7 +5,7 @@
     ViewData["Title"] = "Edit Biography";
 }
 
-<div class="flex-column">
+<div class="flex-column" style="width:34rem;">
     <div class="mb-3 d-flex justify-content-between">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
@@ -27,7 +27,7 @@
 
     <form method="post">
         <div class="col-md-12">
-            <textarea asp-for="Text" class="form-control" style="height:12rem; width:34rem;"></textarea>
+            <textarea asp-for="Text" class="form-control" style="height:12rem;"></textarea>
             <span asp-validation-for="Text" class="text-danger"></span>
         </div>
 
@@ -42,19 +42,19 @@
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+        <partial name="_ValidationScriptsPartial" />
 
-    <script>
-        document
-            .getElementById("Text")
-            .addEventListener("input", async () => {
-                const text = document.getElementById("Text").value;
-                const response = await fetch("/admin/api/biography?" + new URLSearchParams({ text: text }));
-                const html = response.ok
-                    ? await response.text()
-                    : "<span class='text-danger'>Error fetching biography preview.</span>";
+        <script>
+            document
+                .getElementById("Text")
+                .addEventListener("input", async () => {
+                    const text = document.getElementById("Text").value;
+                    const response = await fetch("/admin/api/biography?" + new URLSearchParams({ text: text }));
+                    const html = response.ok
+                        ? await response.text()
+                        : "<span class='text-danger'>Error fetching biography preview.</span>";
 
-                document.getElementById("preview").innerHTML = html;
-            });
-    </script>
+                    document.getElementById("preview").innerHTML = html;
+                });
+        </script>
 }
