@@ -41,7 +41,7 @@ public class EmailSender(IWebHostEnvironment env, IOptions<EmailOptions> options
         };
 
         message.From.Add(new MailboxAddress(_options.FromName, _options.FromAddress));
-        var toAddress = env.IsDevelopment() ? _options.TestAddress : request.ToAddress;
+        var toAddress = string.IsNullOrEmpty(_options.TestAddress) ? request.ToAddress : _options.TestAddress;
         message.To.Add(new MailboxAddress(request.ToName, toAddress));
 
         if (!string.IsNullOrEmpty(request.ReplyAddress))

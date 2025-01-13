@@ -12,8 +12,7 @@ public record EmailOptions
     [Required]
     public required string FromAddress { get; init; }
 
-    [Required]
-    public required string TestAddress { get; init; }
+    public string? TestAddress { get; init; }
 
     [Required]
     public required string ContactFormAddress { get; init; }
