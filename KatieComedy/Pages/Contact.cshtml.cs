@@ -22,18 +22,20 @@ public class ContactModel(
     {
     }
 
-    public async Task<IActionResult> OnPostAsync([FromForm(Name = "cf-turnstile-response")] string turnstileToken, CancellationToken cancel)
+    public async Task<IActionResult> OnPostAsync(
+        [FromForm(Name = "cf-turnstile-response")] string turnstileToken,
+        CancellationToken cancel)
     {
         if (!ModelState.IsValid)
         {
             return Page();
         }
 
-        var turnstileResponse = await cloudflareClient.ValidateToken(turnstileToken, cancel);
+        var turnstileResult = await cloudflareClient.ValidateToken(turnstileToken, cancel);
 
-        if (!turnstileResponse.Success)
+        if (!turnstileResult.Success)
         {
-            Toast(ToastLevel.Error, "Cloudflare validation failed.");
+            Toast(ToastLevel.Error, "Error sending message.");
             return Page();
         }
 
@@ -47,9 +49,17 @@ public class ContactModel(
             HtmlText = Message
         };
 
-        await emailSender.SendEmailAsync(request, cancel);
+        try
+        {
+            await emailSender.SendEmailAsync(request, cancel);
+        }
+        catch
+        {
+            Toast(ToastLevel.Error, "Error sending message.");
+            return Page();
+        }
 
-        Toast(ToastLevel.Error, "Message sent.");
+        Toast(ToastLevel.Success, "Message sent.");
         return RedirectToPage();
     }
 }

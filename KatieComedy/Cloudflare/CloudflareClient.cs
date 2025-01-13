@@ -17,16 +17,16 @@ public record SiteVerifyRequest
 public record SiteVerifyResult
 {
     [JsonPropertyName("success")]
-    public required bool Success { get; init; }
+    public bool Success { get; init; }
 
     [JsonPropertyName("error-codes")]
-    public required IReadOnlyList<string> ErrorCodes { get; init; }
+    public IReadOnlyList<string> ErrorCodes { get; init; } = [];
 
     [JsonPropertyName("challenge_ts")]
-    public required DateTimeOffset ChallengeTimestamp { get; init; }
+    public DateTimeOffset? ChallengeTimestamp { get; init; }
 
     [JsonPropertyName("hostname")]
-    public required string Hostname { get; init; }
+    public string? Hostname { get; init; }
 }
 
 public class CloudflareClient(
@@ -47,19 +47,8 @@ public class CloudflareClient(
         };
 
         var response = await _httpClient.PostAsJsonAsync(_options.SiteVerifyUrl, request, cancel);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            return new()
-            {
-                Success = false,
-                ErrorCodes = [response.StatusCode.ToString()],
-                ChallengeTimestamp = DateTimeOffset.UtcNow,
-                Hostname = httpContextAccessor.HttpContext?.Request.Host.ToString() ?? string.Empty
-            };
-        }
-
         var result = await response.Content.ReadFromJsonAsync<SiteVerifyResult>(cancel);
-        return result ?? throw new Exception("Invalid SiteVerify response.");
+
+        return result ?? new();
     }
 }
