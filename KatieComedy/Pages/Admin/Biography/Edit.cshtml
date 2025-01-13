@@ -10,8 +10,19 @@
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
 
-    <div id="preview" class="border rounded p-3 mb-3" style="width:34rem;">
-        @Html.Raw(Model.Html)
+    <div id="accordion" class="accordion mb-3">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="true" aria-controls="collapseOne">
+                    Preview
+                </button>
+            </h2>
+            <div id="collapse" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                <div id="preview" class="accordion-body">
+                    @Html.Raw(Model.Html)
+                </div>
+            </div>
+        </div>
     </div>
 
     <form method="post">
