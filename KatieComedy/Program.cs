@@ -9,6 +9,7 @@ using KatieComedy.App.Photos;
 using KatieComedy.App.Biography;
 using KatieComedy.App.Identity;
 using KatieComedy.Web.Cloudflare;
+using KatieComedy.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services
+    .Configure<SiteOptions>(builder.Configuration.GetSection(SiteOptions.Section))
     .Configure<CloudflareOptions>(builder.Configuration.GetSection(CloudflareOptions.Section))
     .AddTransient<CloudflareClient>();
 

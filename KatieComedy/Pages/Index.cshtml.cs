@@ -1,11 +1,14 @@
 namespace KatieComedy.Web.Pages;
 
-public class IndexModel(ILogger<IndexModel> logger) : PageModel
+public class IndexModel(IOptions<SiteOptions> siteOptions) : PageModel
 {
-    private readonly ILogger<IndexModel> _logger = logger;
-
-    public void OnGet()
+    public IActionResult OnGet()
     {
+        if (siteOptions.Value.RedirectToLegacySite)
+        {
+            return Redirect("https://katie-nguyen.com");
+        }
 
+        return Page();
     }
 }
