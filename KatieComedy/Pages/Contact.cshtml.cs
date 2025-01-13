@@ -35,7 +35,7 @@ public class ContactModel(
 
         if (!turnstileResult.Success)
         {
-            Toast(ToastLevel.Error, "Error sending message.");
+            Toast(ToastLevel.Error, "Cloudflare validation failed.");
             return Page();
         }
 
