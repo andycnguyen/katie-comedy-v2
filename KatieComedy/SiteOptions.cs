@@ -8,4 +8,13 @@ public record SiteOptions
 
     [Required]
     public required string LegacySiteUrl { get; init; }
+
+    [Required]
+    public required string BlueskyUrl { get; init; }
+
+    [Required]
+    public required string FacebookUrl { get; init; }
+
+    [Required]
+    public required string InstagramUrl { get; init; }
 }

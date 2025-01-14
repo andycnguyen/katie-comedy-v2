@@ -17,10 +17,6 @@ html {
     min-height: 100%;
 }
 
-body {
-    margin-bottom: 60px;
-}
-
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
     color: var(--bs-secondary-color);
     text-align: end;
@@ -30,6 +26,51 @@ body {
     text-align: start;
 }
 
+/* custom styles */
+
 img {
     border-radius: 1%
+}
+
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    background-color: #269292;
+    background-color: #269292;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23bedede' fill-opacity='0.74' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.header-name {
+    font-family: "Lato";
+    color: white;
+}
+
+nav.navbar {
+    position: fixed;
+    max-width: 750px;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%);
+    box-shadow: 4px 4px #2B4063;
+}
+
+    nav.navbar i {
+        font-size: large;
+    }
+
+svg.bluesky {
+    fill: white;
+}
+
+    svg.bluesky :hover {
+        fill: rgba(255, 255, 255, 0.55);
+    }
+
+nav {
+    font-family: Lato;
+}
+
+main {
+    max-width: 30rem;
+    font-family: Lato;
 }
