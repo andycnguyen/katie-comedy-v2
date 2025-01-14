@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.UI.Services;
 using MimeKit;
 using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 
 namespace KatieComedy.App.Email;
 
@@ -16,7 +14,7 @@ public record EmailRequest
     public required string HtmlText { get; init; }
 }
 
-public class EmailSender(IWebHostEnvironment env, IOptions<EmailOptions> options) : IEmailSender
+public class EmailSender(IOptions<EmailOptions> options) : IEmailSender
 {
     private readonly EmailOptions _options = options.Value;
 
