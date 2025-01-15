@@ -74,6 +74,7 @@ public class PhotoService(
         image.Mutate(x => x
             .Crop(new Rectangle(0, 0, length, length))
             .Resize(_options.ThumbnailLength, _options.ThumbnailLength));
+
         var thumbnailFilename = Guid.NewGuid().ToString() + ".jpg";
         var thumbnailFilepath = Path.Combine(PhotoDirectoryPath, thumbnailFilename);
         await image.SaveAsJpegAsync(thumbnailFilepath, cancel);
@@ -140,11 +141,6 @@ public class PhotoService(
 
         foreach (var file in dirInfo.GetFiles())
         {
-            if (file.Name == _options.TestPhotoFilename)
-            {
-                return;
-            }
-
             file.Delete();
         }
 
