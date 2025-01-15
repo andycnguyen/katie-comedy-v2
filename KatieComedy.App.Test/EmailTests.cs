@@ -27,7 +27,7 @@ public class EmailTests
             TestAddress = "badandytowin@gmail.com"
         });
 
-        var sender = new EmailSender(env.Object, options);
+        var sender = new EmailSender(options);
 
         await sender.SendEmailAsync(new EmailRequest
         {

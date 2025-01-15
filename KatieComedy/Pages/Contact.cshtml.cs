@@ -31,11 +31,17 @@ public class ContactModel(
             return Page();
         }
 
+        if (string.IsNullOrEmpty(turnstileToken))
+        {
+            Toast(ToastLevel.Error, "Cloudflare validation failed. Please try again.");
+            return Page();
+        }
+
         var turnstileResult = await cloudflareClient.ValidateToken(turnstileToken, cancel);
 
         if (!turnstileResult.Success)
         {
-            Toast(ToastLevel.Error, "Cloudflare validation failed.");
+            Toast(ToastLevel.Error, "Cloudflare validation failed. Please try again.");
             return Page();
         }
 

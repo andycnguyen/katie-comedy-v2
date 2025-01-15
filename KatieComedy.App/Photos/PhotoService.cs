@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿
+
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using SixLabors.ImageSharp;
@@ -159,7 +161,7 @@ public class PhotoService(
             return;
         }
 
-        var photoData = File.ReadAllBytes(Path.Join(env.WebRootPath, "test", _options.TestPhotoFilename));
+        var photoData = await File.ReadAllBytesAsync(Path.Join(env.WebRootPath, "test", _options.TestPhotoFilename));
 
         foreach (var i in Enumerable.Range(0, 7))
         {
