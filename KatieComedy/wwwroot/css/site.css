@@ -74,11 +74,15 @@ nav {
 }
 
 .background-cream {
-    background-color: ivory;
+    background-color: #FFFFF3;
+}
+
+.background-blue-grey {
+    background-color: #5D7791;
 }
 
 .container.master-container {
-    max-width: 48rem;
+    max-width: 40rem;
 }
 
 .toast-container {
