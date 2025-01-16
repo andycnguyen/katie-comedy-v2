@@ -43,6 +43,7 @@ public class EditModel(AppearanceService service) : BasePageModel
 
         await service.AddOrUpdate(new Appearance
         {
+            Id = Id,
             DateTime = DateTime!.Value,
             EventName = EventName,
             EventUrl = EventUrl,

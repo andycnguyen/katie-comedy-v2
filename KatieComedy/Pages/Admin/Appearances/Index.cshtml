@@ -16,8 +16,8 @@
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Date</th>
-                <th scope="col">Event</th>
                 <th scope="col">Location</th>
+                <th scope="col">Event</th>
                 <th scope="col">Action</th>
             </tr>
         </thead>
@@ -28,18 +28,6 @@
                 <td>@appearance.Id</td>
                 <td>@appearance.DateTime.ToString("M/d/yy h:mm tt")</td>
                 <td>
-                    @if (string.IsNullOrEmpty(appearance.EventUrl))
-                    {
-                        <text>@appearance.EventName</text>
-                    }
-                    else
-                    {
-                        <text>
-                            <a href="@appearance.EventUrl" target="_blank">@appearance.EventName</a>
-                        </text>
-                    }
-                </td>
-                <td>
                     @if (string.IsNullOrEmpty(appearance.LocationUrl))
                     {
                         <text>@appearance.LocationName</text>
@@ -48,6 +36,18 @@
                     {
                         <text>
                             <a href="@appearance.LocationUrl" target="_blank">@appearance.LocationName</a>
+                        </text>
+                    }
+                </td>
+                <td>
+                    @if (string.IsNullOrEmpty(appearance.EventUrl))
+                    {
+                        <text>@appearance.EventName</text>
+                    }
+                    else
+                    {
+                        <text>
+                            <a href="@appearance.EventUrl" target="_blank">@appearance.EventName</a>
                         </text>
                     }
                 </td>
