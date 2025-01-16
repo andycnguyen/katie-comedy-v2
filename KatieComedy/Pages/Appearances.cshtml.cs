@@ -8,6 +8,6 @@ public class AppearancesModel(AppearanceService service) : PageModel
 
     public async Task OnGetAsync(CancellationToken cancel)
     {
-        Appearances = await service.Get(cancel);
+        Appearances = await service.GetUpcoming(cancel);
     }
 }

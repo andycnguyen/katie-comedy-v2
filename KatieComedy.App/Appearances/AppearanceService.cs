@@ -5,9 +5,8 @@ public class AppearanceService(ApplicationDbContext dbContext)
     public async Task<IReadOnlyList<Appearance>> GetUpcoming(CancellationToken cancel)
     {
         return await dbContext.Appearances
-            .Where(x => x.DateTime > DateTimeOffset.Now)
+            .Where(x => x.DateTime > DateTimeOffset.Now.Date)
             .OrderBy(x => x.DateTime)
-            .ThenBy(x => x.Id)
             .Select(x => new Appearance
             {
                 Id = x.Id,
@@ -24,7 +23,6 @@ public class AppearanceService(ApplicationDbContext dbContext)
     {
         return await dbContext.Appearances
             .OrderByDescending(x => x.DateTime)
-            .ThenByDescending(x => x.Id)
             .Select(x => new Appearance
             {
                 Id = x.Id,
