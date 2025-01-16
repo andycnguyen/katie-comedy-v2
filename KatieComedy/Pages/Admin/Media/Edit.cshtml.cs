@@ -41,7 +41,7 @@ public class EditModel(MediaService service) : BasePageModel
         });
 
         Toast(ToastLevel.Success, "Media updated");
-        return RedirectToPage();
+        return RedirectToPage("Index");
     }
 
     public async Task<IActionResult> OnPostDelete()

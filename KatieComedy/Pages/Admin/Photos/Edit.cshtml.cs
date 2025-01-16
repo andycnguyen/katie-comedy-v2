@@ -42,7 +42,7 @@ public class EditModel(PhotoService service) : BasePageModel
 
 
         Toast(ToastLevel.Success, "Photo updated");
-        return RedirectToPage();
+        return RedirectToPage("Index");
     }
 
     public async Task<IActionResult> OnPostDeleteAsync()

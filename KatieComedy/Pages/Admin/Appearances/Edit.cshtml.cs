@@ -53,7 +53,7 @@ public class EditModel(AppearanceService service) : BasePageModel
 
 
         Toast(ToastLevel.Success, "Appearance updated");
-        return RedirectToPage();
+        return RedirectToPage("Index");
     }
 
     public async Task<IActionResult> OnPostDelete()
