@@ -7,7 +7,7 @@ public class Appearance
 {
     public int Id { get; set; }
 
-    public DateTimeOffset DateTime { get; set; }
+    public DateTime DateTime { get; set; }
 
     public string EventName { get; set; }
 

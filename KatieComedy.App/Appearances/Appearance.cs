@@ -4,7 +4,7 @@ public record Appearance
 {
     public int Id { get; init; }
 
-    public required DateTimeOffset DateTime { get; init; }
+    public required DateTime DateTime { get; init; }
 
     public required string LocationName { get; init; }
 

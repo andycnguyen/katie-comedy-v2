@@ -9,7 +9,7 @@ public class EditModel(AppearanceService service) : BasePageModel
     public int Id { get; set; }
 
     [BindProperty, Required, Display(Name = "Date"), DataType(DataType.DateTime)]
-    public DateTimeOffset? DateTime { get; set; }
+    public DateTime? DateTime { get; set; }
 
     [BindProperty, Display(Name = "Event Name"), MaxLength(500)]
     public string EventName { get; set; }

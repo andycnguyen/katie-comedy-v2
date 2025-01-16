@@ -6,7 +6,7 @@ namespace KatieComedy.Web.Pages.Admin.Appearances;
 public class NewModel(AppearanceService service) : BasePageModel
 {
     [BindProperty, Required, Display(Name = "Date"), DataType(DataType.DateTime)]
-    public DateTimeOffset? DateTime { get; set; }
+    public DateTime? DateTime { get; set; }
 
     [BindProperty, Display(Name = "Event Name"), MaxLength(500)]
     public string EventName { get; set; }
