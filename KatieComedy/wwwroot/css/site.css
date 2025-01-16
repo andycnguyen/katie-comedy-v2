@@ -81,12 +81,16 @@ nav {
     background-color: #5D7791;
 }
 
+.background-blue-green {
+    background-color: #3B978C;
+}
+
 .container.master-container {
     max-width: 40rem;
 }
 
 .toast-container {
     position: fixed;
-    top: 33rem;
+    top: 4rem;
     width: 100%;
 }
