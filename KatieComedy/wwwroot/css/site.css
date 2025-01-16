@@ -8,7 +8,11 @@ html {
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -17,40 +21,38 @@ html {
     min-height: 100%;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
     color: var(--bs-secondary-color);
     text-align: end;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
 
 /* custom styles */
 
-img {
-    border-radius: 1%
-}
-
 body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
-    background-color: #269292;
+    padding-top: 1rem;
     background-color: #269292;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23bedede' fill-opacity='0.74' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.header-name {
-    font-family: "Lato";
-    color: white;
+img {
+    border-radius: 1%
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10%;
+    text-decoration-color: #535353;
 }
 
 nav.navbar {
-    position: fixed;
-    max-width: 750px;
-    left: 50%;
-    top: 1%;
-    transform: translateX(-50%);
     box-shadow: 4px 4px #2B4063;
 }
 
@@ -59,24 +61,28 @@ nav.navbar {
     }
 
 svg.bluesky {
-    fill: white;
+    fill: rgba(255, 255, 255, 0.55);
 }
 
     svg.bluesky :hover {
-        fill: rgba(255, 255, 255, 0.55);
+        fill: rgba(255, 255, 255, .75);
+        transition: fill .15s ease-in-out;
     }
 
 nav {
     font-family: Lato;
 }
 
-main {
-    max-width: 30rem;
-    font-family: Lato;
+.background-cream {
+    background-color: ivory;
+}
+
+.container.master-container {
+    max-width: 48rem;
 }
 
 .toast-container {
     position: fixed;
-    top: 2rem;
+    top: 33rem;
     width: 100%;
 }

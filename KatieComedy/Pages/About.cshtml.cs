@@ -1,8 +1,15 @@
+using KatieComedy.App.Biography;
+
 namespace KatieComedy.Web.Pages;
 
-public class AboutModel : PageModel
+public class AboutModel(BiographyService service) : PageModel
 {
-    public void OnGet()
+    public string Text { get; set; } = string.Empty;
+
+    public string HtmlText => BiographyService.FormatAsHtml(Text);
+
+    public async Task OnGet()
     {
+        Text = await service.Get();
     }
 }
