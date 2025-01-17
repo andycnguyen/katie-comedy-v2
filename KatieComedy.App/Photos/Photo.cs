@@ -39,7 +39,7 @@ public record Photo
 
             if (!string.IsNullOrEmpty(Credit))
             {
-                text = $"{text} (Credit: {Credit})".Trim();
+                text = $"{text} ({Credit})".Trim();
             }
 
             return text;

@@ -7,7 +7,7 @@ public class EditModel(PhotoService service) : BasePageModel
     [FromRoute]
     public int Id { get; set; }
 
-    [BindProperty]
+    [BindProperty, DataType(DataType.Date)]
     public DateOnly? Date { get; set; }
 
     [BindProperty, MaxLength(500)]

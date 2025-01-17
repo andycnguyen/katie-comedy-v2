@@ -4,16 +4,10 @@
 <div class="row justify-content-center">
     @foreach (var photo in Model.Photos)
     {
-        <div class="card mb-3 ms-3 me-3 p-2 photo-card background-cream">
+        <div class="card mb-3 ms-3 me-3 p-2 border-0 photo-card background-cream">
             <a data-fslightbox href="@photo.Url">
                 <img class="card-img" src="@photo.ThumbnailUrl" title="@photo.DisplayText" />
             </a>
         </div>
     }
 </div>
-
-@section Scripts {
-    <script>
-
-    </script>
-}
