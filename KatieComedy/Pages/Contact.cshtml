@@ -3,11 +3,11 @@
 @inject IOptions<KatieComedy.Web.Cloudflare.CloudflareOptions> cloudflareOptions;
 
 <form method="post">
-    <fieldset class="row border rounded p-3 mb-3 w-100 m-auto bg-light">
+    <fieldset class="row border rounded p-3 mb-3 w-100 m-auto" style="background-color:#fffff7">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="col-md-12 mb-3 p-0">
-            <input asp-for="Name" class="form-control" placeholder="Name">
+            <input asp-for="Name" class="form-control" placeholder="Name" style="background-color:#fffff9;">
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
 
