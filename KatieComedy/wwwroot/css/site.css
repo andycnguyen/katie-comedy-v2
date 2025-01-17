@@ -81,6 +81,12 @@ nav {
     background-color: #5D7791;
 }
 
+button.background-blue-grey:hover,
+button.background-blue-grey:focus,
+button.background-blue-grey:active {
+    background-color: #7d92a7 !important;
+}
+
 .background-blue-green {
     background-color: #3B978C;
 }
