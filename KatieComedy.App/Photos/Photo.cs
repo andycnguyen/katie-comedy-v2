@@ -29,7 +29,7 @@ public record Photo
 
             if (Date.HasValue)
             {
-                text += Date.Value.ToString("d/M/yy");
+                text += Date.Value.ToString("M/d/yy");
             }
 
             if (!string.IsNullOrEmpty(Caption))

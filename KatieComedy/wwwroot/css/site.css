@@ -100,3 +100,8 @@ button.background-blue-grey:active {
     top: 4rem;
     width: 100%;
 }
+
+.photo-card {
+    width: 10rem;
+    min-width: 10rem;
+}

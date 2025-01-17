@@ -1,4 +1,11 @@
 ﻿@page
 @model KatieComedy.Web.Pages.PhotosModel
-@{
-}
+
+<div class="row justify-content-center">
+    @foreach (var photo in Model.Photos)
+    {
+        <div class="card mb-3 ms-3 me-3 p-2 photo-card background-cream">
+            <img class="card-img" src="@photo.Url" title="@photo.DisplayText" />
+        </div>
+    }
+</div>
