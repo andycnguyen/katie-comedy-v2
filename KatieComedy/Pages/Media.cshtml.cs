@@ -1,9 +1,13 @@
-namespace KatieComedy.Web.Pages
+using KatieComedy.App.Media;
+
+namespace KatieComedy.Web.Pages;
+
+public class MediaModel(MediaService service) : PageModel
 {
-    public class MediaModel : PageModel
+    public IReadOnlyList<Media> Media { get; set; } = [];
+
+    public async Task OnGet(CancellationToken cancel)
     {
-        public void OnGet()
-        {
-        }
+        Media = await service.Get(cancel);
     }
 }

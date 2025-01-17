@@ -1,4 +1,31 @@
 ﻿@page
+@using App.Media
 @model KatieComedy.Web.Pages.MediaModel
-@{
-}
+
+<ul class="list-group w-100">
+    @foreach (var media in Model.Media)
+    {
+        var iconClass = media.Type switch
+        {
+            MediaType.Text => "bi bi-book-half",
+            MediaType.Audio => "bi bi-mic",
+            MediaType.Video => "bi bi-camera-video",
+            _ => string.Empty
+        };
+
+        var title = media.Type switch
+        {
+            MediaType.Text => "Text",
+            MediaType.Audio => "Audio",
+            MediaType.Video => "Video",
+            _ => string.Empty
+        };
+
+        <li class="list-group-item d-flex justify-content-between background-cream">
+            <span><a href="@media.Url" target="_blank">@media.Title</a></span>
+            <span class="badge text-display-large fw-normal background-blue-grey" title="@title">
+                <i class="@iconClass" title="text"></i>
+            </span>
+        </li>
+    }
+</ul>
