@@ -2,8 +2,10 @@
 @model KatieComedy.Web.Pages.ContactModel
 @inject IOptions<KatieComedy.Web.Cloudflare.CloudflareOptions> cloudflareOptions;
 
+@* style="background-color:#fffff7" *@
+
 <form method="post">
-    <fieldset class="row border rounded p-3 mb-3 w-100 m-auto" style="background-color:#fffff7">
+    <fieldset class="row border rounded p-3 mb-3 w-100 m-auto bg-light">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="col-md-12 mb-3 p-0">
@@ -29,5 +31,5 @@
 </form>
 
 @section Scripts {
-        <partial name="_ValidationScriptsPartial" />
+            <partial name="_ValidationScriptsPartial" />
 }
