@@ -18,9 +18,7 @@
                 <img src="@photo.ThumbnailUrl" />
                 <div class="card-body pb-0 ps-0 pe-0">
                     <p class="card-text">
-                        @(string.IsNullOrEmpty(photo.DisplayText)
-                            ? Html.Raw("<em>No info</em>")
-                            : photo.DisplayText)
+                        @photo.DisplayText
                     </p>
                     <div>
                         <div class="btn-group" role="group">
