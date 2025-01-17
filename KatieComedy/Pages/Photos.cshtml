@@ -5,7 +5,15 @@
     @foreach (var photo in Model.Photos)
     {
         <div class="card mb-3 ms-3 me-3 p-2 photo-card background-cream">
-            <img class="card-img" src="@photo.Url" title="@photo.DisplayText" />
+            <a data-fslightbox href="@photo.Url">
+                <img class="card-img" src="@photo.ThumbnailUrl" title="@photo.DisplayText" />
+            </a>
         </div>
     }
 </div>
+
+@section Scripts {
+    <script>
+
+    </script>
+}
