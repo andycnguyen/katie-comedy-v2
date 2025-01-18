@@ -15,7 +15,7 @@
         @foreach (var photo in Model.Photos)
         {
             <div class="card p-3 m-2" style="width: 15rem;">
-                <a href="@photo.Url" class="mb-1" target="_blank">
+                <a data-fslightbox class="mb-1" href="@photo.Url">
                     <img src="@photo.ThumbnailUrl" class="card-img-top">
                 </a>
                 <div class="card-body ps-1 pe-1 pt-1 pb-0">

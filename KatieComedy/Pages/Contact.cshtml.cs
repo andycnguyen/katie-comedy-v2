@@ -45,6 +45,16 @@ public class ContactModel(
             return Page();
         }
 
+        var htmlText =
+        $"""
+        Name:<br/> 
+        {Name}<br/><br/>
+        Email:<br/> 
+        {Email}<br/><br/>
+        Message:<br/>
+        {Message}
+        """;
+
         var request = new EmailRequest
         {
             ToAddress = options.Value.ContactFormAddress,
@@ -52,7 +62,7 @@ public class ContactModel(
             Subject = $"Message from {Name}",
             ReplyAddress = Email,
             ReplyName = Name,
-            HtmlText = Message
+            HtmlText = htmlText
         };
 
         try

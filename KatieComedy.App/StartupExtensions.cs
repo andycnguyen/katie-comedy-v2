@@ -7,9 +7,6 @@ using KatieComedy.App.Appearances;
 using KatieComedy.App.Biography;
 using KatieComedy.App.Media;
 using KatieComedy.App.Identity;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.AspNetCore.Mvc;
 
 namespace KatieComedy.App;
 
