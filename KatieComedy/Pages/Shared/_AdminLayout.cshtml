@@ -7,6 +7,7 @@
 @{
     var idUser = await userManager.GetUserAsync(User);
     var isOwner = idUser is not null && await userManager.IsInRoleAsync(idUser, Roles.Owner);
+    var loggedIn = User?.Identity?.IsAuthenticated ?? false;
 }
 
 <!DOCTYPE html>
@@ -35,21 +36,24 @@
                         <li class="nav-item">
                             <a class="nav-link link-light" asp-page="/Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" asp-page="/Admin/Appearances/Index">Appearances</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" asp-page="/Admin/Photos/Index">Photos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" asp-page="/Admin/Media/Index">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" asp-page="/Admin/Biography/Edit">Biography</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-light" href="@emailOptions.Value.EmailUrl" target="_blank">Email</a>
-                        </li>
+                        @if (loggedIn)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link link-light" asp-page="/Admin/Appearances/Index">Appearances</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" asp-page="/Admin/Photos/Index">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" asp-page="/Admin/Media/Index">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" asp-page="/Admin/Biography/Edit">Biography</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light" href="@emailOptions.Value.EmailUrl" target="_blank">Email</a>
+                            </li>
+                        }
                         @if (isOwner)
                         {
                             <li class="nav-item">

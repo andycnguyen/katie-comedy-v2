@@ -98,6 +98,15 @@
             const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast);
             toastBootstrap.show();
         }
+
+        document
+            .querySelector("a[href='/About']")
+            .addEventListener("click", function (e) {
+                if (e.shiftKey && e.ctrlKey) {
+                    e.preventDefault();
+                    window.location.assign('@Url.Page("/Admin/Index")');
+                }
+            });
     </script>
 
     @await RenderSectionAsync("Scripts", required: false)
