@@ -5,11 +5,12 @@
 <ul class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
     {
+        // asp-area="Identity" asp-page="/Account/Manage/Index"
         <li class="nav-item">
-            <a class="nav-link link-light pe-0" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+            <span class="nav-link link-light pe-0" asp-area="" asp-page="#" title="Manage">
                 @User.Identity?.Name
                 <i class="bi bi-person ms-1"></i>
-            </a>
+            </span>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Account/Login", new { area = "Identity" })">
@@ -20,7 +21,9 @@
     else
     {
         <li class="nav-item">
-            <a class="nav-link link-light" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            <a class="nav-link link-light" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@Url.Page("/Admin/Index", new { area = "" })">
+                Login
+            </a>
         </li>
     }
 </ul>
