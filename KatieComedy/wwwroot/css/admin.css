@@ -33,3 +33,18 @@ body {
 img {
     border-radius: 1%
 }
+
+/* custom styles */
+
+#biography-preview a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10%;
+    text-decoration-color: #535353;
+}
+
+#biography-preview {
+    /* background-cream */
+    font-family: Lato;
+}

@@ -18,7 +18,7 @@
                 </button>
             </h2>
             <div id="collapse" class="accordion-collapse collapse show" data-bs-parent="#accordion">
-                <div id="preview" class="accordion-body">
+                <div id="biography-preview" class="accordion-body">
                     @Html.Raw(Model.Html)
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <span asp-validation-for="Text" class="text-danger"></span>
         </div>
 
-        <div class="col-md-12 mb-3">
+        <div class="col-md-12 mb-3 p-1">
             <small class="text-muted">To include a link, format like so: [link title here](https://url-here.com)</small>
         </div>
 
@@ -42,19 +42,19 @@
 </div>
 
 @section Scripts {
-        <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 
-        <script>
-            document
-                .getElementById("Text")
-                .addEventListener("input", async () => {
-                    const text = document.getElementById("Text").value;
-                    const response = await fetch("/admin/api/biography?" + new URLSearchParams({ text: text }));
-                    const html = response.ok
-                        ? await response.text()
-                        : "<span class='text-danger'>Error fetching biography preview.</span>";
+    <script>
+        document
+            .getElementById("Text")
+            .addEventListener("input", async () => {
+                const text = document.getElementById("Text").value;
+                const response = await fetch("/admin/api/biography?" + new URLSearchParams({ text: text }));
+                const html = response.ok
+                    ? await response.text()
+                    : "<span class='text-danger'>Error fetching biography preview.</span>";
 
-                    document.getElementById("preview").innerHTML = html;
-                });
-        </script>
+                document.getElementById("biography-preview").innerHTML = html;
+            });
+    </script>
 }
