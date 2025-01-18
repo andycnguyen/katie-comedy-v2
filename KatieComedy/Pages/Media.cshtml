@@ -13,18 +13,10 @@
             _ => string.Empty
         };
 
-        var title = media.Type switch
-        {
-            MediaType.Text => "Text",
-            MediaType.Audio => "Audio",
-            MediaType.Video => "Video",
-            _ => string.Empty
-        };
-
         <li class="list-group-item d-flex justify-content-between background-cream">
             <span><a href="@media.Url" target="_blank">@media.Title</a></span>
-            <span class="badge text-display-large fw-normal background-blue-grey" title="@title">
-                <i class="@iconClass" title="text"></i>
+            <span class="badge text-display-large fs-6 fw-normal background-blue-grey" title="@media.Type">
+                <i class="@iconClass"></i>
             </span>
         </li>
     }
