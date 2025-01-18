@@ -1,0 +1,797 @@
+﻿id,datetime,venue_name,venue_url,event_name,event_url
+57,2017-05-20 20:00:00.000,Crossroads Theater,https://xroads.info/,Crom Comedy Festival,https://cromcomedyfest.com/show.php?id=103&festival=8
+58,2017-05-19 21:00:00.000,Ratio Beerworks,http://ratiobeerworks.com/,Crom Comedy Festival,https://cromcomedyfest.com/show.php?id=98&festival=8
+59,2017-05-25 21:00:00.000,The Lombard Pub,https://www.facebook.com/LPpdx/,Eclipse - Comedy Showcase,https://www.facebook.com/events/311909862601405/
+60,2017-05-04 21:00:00.000,Analog,http://www.analogpdx.com/,Bridgetown Comedy Festival,https://www.bridgetowncomedy.com/event/17157-the-ben-harkins-with-ben-harkins
+61,2017-05-05 19:30:00.000,Analog,http://www.analogpdx.com/,Bridgetown Comedy Festival,https://www.bridgetowncomedy.com/event/17175-festival-darlings
+62,2017-05-06 21:30:00.000,Siren Theater,http://www.sirentheater.com/,Bridgetown Comedy Festival,https://www.bridgetowncomedy.com/event/17249-immigration-nation
+63,2017-05-07 17:00:00.000,Analog,http://www.analogpdx.com/,Bridgetown Comedy Festival,https://www.bridgetowncomedy.com/event/17216
+78,2017-05-12 19:30:00.000,Brody Theater,http://brodytheater.com,Girls! Girls! Girls!,NULL
+81,2017-06-21 21:00:00.000,The Secret Society,http://www.secretsociety.net/,Who's Metal AF?,https://www.facebook.com/events/330452497370448
+83,2017-05-15 20:30:00.000,EastBurn,http://eastburn.pagecloud.com/,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn
+85,2017-06-01 20:00:00.000,Bossanova Ballroom,http://bossanovaballroom.com/,Barbara Holm Believes in You,https://www.facebook.com/events/626459254206728/
+86,2017-05-11 19:30:00.000,Local Lounge,https://locallounge.wordpress.com/,Featuring at Queer - An Open Mic,NULL
+88,2017-05-13 19:00:00.000,Sanctuary Club,NULL,Laughrodisiac,https://www.facebook.com/events/632097303582306
+89,2017-05-22 20:00:00.000,Toffee Club,http://www.toffeeclubpdx.com/,Daft Rubbish,NULL
+90,2017-05-30 20:00:00.000,Fremont Theater,http://www.fremonttheater.com/,The Fremont Theater Experience,https://www.facebook.com/events/764614887050588/
+91,2017-06-01 18:30:00.000,Doug Fir,http://www.dougfirlounge.com/,Cool Kids Patio Show,NULL
+92,2017-05-10 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+93,2017-05-17 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+94,2017-05-24 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+95,2017-05-31 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+97,2017-05-27 20:30:00.000,Deep End Theater,http://www.deependtheater.com/,Stand-up Class Showcase,https://www.facebook.com/events/1882002365384223/
+98,2017-05-28 21:00:00.000,Alberta St. Pub,http://www.albertastreetpub.com/,Control Yourself,https://www.facebook.com/controlyourselfpdx/
+99,2017-06-06 20:00:00.000,Portland Mercado,http://www.portlandmercado.org/,Comedy Night at the Portland Mercado,https://www.facebook.com/events/1351807041561943/
+100,2017-06-09 20:00:00.000,Deep End Theater,http://www.deependtheater.com/,Mom Jeans Goes to DCM,https://www.facebook.com/events/253574938451392/
+102,2017-06-29 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com/home,Portland's Funniest Person Prelims,https://portland-heliumcomedy-com.seatengine.com//shows/56362
+103,2017-06-14 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,https://www.facebook.com/EarthquakeHurricane/
+104,2017-06-21 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,https://www.facebook.com/EarthquakeHurricane/
+105,2017-07-12 20:00:00.000,Pop Tavern,https://www.facebook.com/pages/Pop-Tavern/1523338914637759,U Can Do Anything!,https://www.facebook.com/events/815800705248935/
+106,2017-08-27 19:30:00.000,Slide Inn,http://www.slideinnpdx.com/,Sincerity is Gross,https://www.facebook.com/sincerityisgross/
+107,2017-06-19 20:30:00.000,EastBurn,http://eastburn.pagecloud.com/,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+108,2017-05-26 21:00:00.000,Old Gilbert Road Tavern,https://www.facebook.com/oldgilbertroad/,Gilbert Road Grotesque,https://www.facebook.com/events/1467970126597104
+109,2017-06-28 19:00:00.000,The Liquor Store,http://www.theliquorstorepdx.com/,Earthquake Hurricane,https://www.facebook.com/EarthquakeHurricane/
+110,2017-06-02 19:30:00.000,Brody Theater,http://brodytheater.com,Convenience,https://www.facebook.com/events/667109676807036/
+111,2017-06-08 20:00:00.000,Cheerful Bullpen,http://cheerfulbullpen.com,Cheerful Comedy,https://www.facebook.com/events/420985891621323/
+112,2017-06-15 19:30:00.000,Deep End Theater,http://deependtheater.com,NULL,NULL
+113,2017-07-18 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,"Wait, What?",https://www.facebook.com/events/446812582359243
+114,2017-06-25 21:00:00.000,Hollywood Theatre,http://hollywoodtheatre.org,Con Air in Hecklevision,https://www.facebook.com/events/328450414250899
+115,2017-08-10 20:00:00.000,Diana Wortham Theatre,https://www.dwtheatre.com,Asheville Comedy Festival,https://ashevillecomedyfestival.com/
+116,2017-07-17 20:30:00.000,EastBurn,http://www.theeastburn.com/,It's Gonna Be Okay — 4-Year Anniversary!,https://www.facebook.com/events/270931856703507/
+117,2017-07-07 20:00:00.000,Laughs Comedy Club,http://laughscomedyclub.com/,Mona's Legit LOL Show,https://www.facebook.com/events/1986143124950297
+118,2017-07-08 19:30:00.000,Revolution Hall,http://revolutionhall.com,Ron Funches — Funch-A-Mania,http://www.revolutionhall.com/event/1453304-ron-funches-funch-mania-portland/
+119,2017-07-13 20:00:00.000,Holocene,http://holocene.org,Scorpiono & TiNGTV Premiere,https://www.facebook.com/events/148294629067363
+120,2017-10-06 20:00:00.000,Oregon Public House,http://oregonpublichouse.com/,Peachy Chicken,http://peachychicken.com/
+121,2017-07-08 21:30:00.000,Brody Theater,http://brodytheater.com,Nightlight - An Evening with Jess Lee,https://www.facebook.com/events/791811407661178
+122,2017-07-12 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com/home,Portland's Funniest Person Semifinals,https://portland-heliumcomedy-com.seatengine.com//shows/58962
+123,2017-09-02 18:30:00.000,Red Castle Games,http://redcastlegames.com/,Nerd Camp Night Out — Amazons Unite!,https://www.facebook.com/events/1585665124799637
+124,2017-07-20 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/470426546645503
+125,2017-07-27 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1331953930256586
+127,2017-08-10 22:00:00.000,Disclaimer Lounge,http://www.disclaimercomedy.com/,Asheville Comedy Festival,https://ashevillecomedyfestival.com
+128,2017-08-16 21:00:00.000,La Cuevita,https://www.facebook.com/LittleCaveLA,Rod Stewart Live,https://www.facebook.com/pg/RodStewartLive
+129,2017-08-17 19:30:00.000,The Virgil,http://www.thevirgil.com/,Big Money Comedy,NULL
+130,2017-08-24 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+131,2017-08-31 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+132,2017-09-21 21:00:00.000,Ground Kontrol,http://groundkontrol.com/,No Pun Intendo,https://www.facebook.com/NoPunIntendo/
+134,2017-08-03 19:30:00.000,Artists Repertory Theater,https://www.artistsrep.org/,Stumptown Improv Festival,http://www.stumptownimprov.com/schedule/
+135,2017-08-05 19:30:00.000,To Be Announced,NULL,CornCon 2k17,https://www.facebook.com/events/113322909287752/
+136,2017-08-19 20:00:00.000,Tao Comedy Studio,http://bobbieoliver.net/SUA_tao.htm,You Had to Be There,NULL
+137,2017-08-20 12:00:00.000,Pack Theater,http://packtheater.com/event/the-scramble/,The Scramble,https://www.facebook.com/scramblecomedy/
+139,2017-08-24 20:00:00.000,Barrel Room,https://www.barrelroompdx.com/,Get Busy,https://www.facebook.com/getbusycomedy
+140,2017-08-17 21:00:00.000,The Garage on Motor Ave,https://www.facebook.com/garagemotorave/,Free Parking Comedy,https://www.facebook.com/freeparkingatthegarage/
+141,2017-09-21 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+142,2017-09-14 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+143,2017-08-25 21:00:00.000,Big Legrowlski,http://www.biglegrowlski.com/,TGIF - Thank God It's Funny,NULL
+144,2017-08-28 19:00:00.000,Curious Comedy Theater,http://curiouscomedy.org,Revolution Comedy,https://www.curiouscomedy.org/events/2017/08/28/847-revolution-comedy
+145,2017-08-31 21:30:00.000,Brody Theater,http://brodytheater.com,Odd Couples,NULL
+146,2017-08-01 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Test Pilot,https://www.curiouscomedy.org/events/2017/08/01/848-test-pilot
+147,2017-08-02 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com/home,Comedy Academy Graduation Showcase,https://portland-heliumcomedy-com.seatengine.com/shows/56597?_ga=2.138149232.1739879986.1499349509-2123143785.1499349509
+148,2017-09-07 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com/home,Best of Portland - Ladies' Night,https://portland-heliumcomedy-com.seatengine.com//shows/61983
+149,2017-09-11 20:00:00.000,EastBurn,http://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+150,2017-09-28 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+151,2017-10-16 19:00:00.000,Curious Comedy Theater,http://curiouscomedy.org,Your Fault for Listening — Live,https://www.facebook.com/pg/yourfaultforlistening
+152,2017-10-05 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+153,2017-08-30 21:30:00.000,Mississippi Pizza,http://mississippipizza.com,You're Welcome,http://www.mississippipizza.com/event/youre-welcome-comedy-show-3/2017-08-30/
+154,2017-09-01 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/175235-comedy-night-at-als-den-hosted-by-jon-washington-and-whitney-streed
+155,2017-09-02 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/175235-comedy-night-at-als-den-hosted-by-jon-washington-and-whitney-streed
+156,2017-09-20 20:30:00.000,Kickstand Comedy Space,http://www.kickstandcomedy.org/,Sample Size,https://www.facebook.com/events/743429522510994/
+157,2017-09-15 19:00:00.000,Ross Island Grocery & Cafe,http://www.rossislandgrocery.com/,Brown Bag Comedy,https://www.facebook.com/Brown-Bag-Comedy-190457722314999
+158,2017-09-28 20:00:00.000,Zoiglhaus,http://www.zoiglhaus.com/,Comedy Night at Zoiglhaus,NULL
+161,2017-09-16 19:30:00.000,Brody Theater,http://brodytheater.com,Lisafest,https://www.facebook.com/events/1704775389831236/
+162,2017-09-29 20:00:00.000,McCormick Mansion,NULL,LOFI,https://www.facebook.com/events/118231345563161
+164,2017-10-13 21:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,All Jane Comedy Festival,http://www.alljanecomedy.org/
+165,2017-10-12 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,All Jane Comedy Festival,http://www.alljanecomedy.org/
+168,2017-10-13 20:00:00.000,Rogue Ales & Spirits,http://www.rogue.com/,Dead Comics Society,https://www.facebook.com/events/473191099747517
+169,2017-10-20 22:15:00.000,Comedy Corner Underground,http://comedycornerunderground.com/,"10,000 Laughs Festival",https://10000laughs.com/
+170,2017-10-21 20:00:00.000,STRIKE! Theater,http://www.strike.theater/,"10,000 Laughs Festival",https://10000laughs.com/
+171,2017-10-19 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,https://www.facebook.com/EarthquakeHurricane/
+172,2017-10-26 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,https://www.facebook.com/EarthquakeHurricane/
+173,2017-10-23 20:30:00.000,EastBurn,http://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+174,2017-11-11 20:00:00.000,Alberta St. Pub,http://www.albertastreetpub.com/,Hell Hath No Funny!,https://www.facebook.com/events/131697847554590/
+175,2017-11-09 20:00:00.000,Big Legrowlski,http://www.biglegrowlski.com/,Carter Cares,NULL
+176,2017-11-05 19:30:00.000,Slide Inn,http://www.slideinnpdx.com/,Sincerity is Gross,https://www.facebook.com/sincerityisgross
+177,2017-11-02 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+178,2017-11-09 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+179,2018-01-05 20:00:00.000,Oregon Public House,http://oregonpublichouse.com/,Peachy Chicken,http://peachychicken.com/
+180,2017-11-29 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com/home,"Wait, What?",https://portland-heliumcomedy-com.seatengine.com//shows/65155
+181,2018-01-07 21:00:00.000,Alberta St. Pub,http://www.albertastreetpub.com/,Control Yourself,https://www.facebook.com/controlyourselfpdx/
+182,2017-11-06 20:00:00.000,Mister Theater,https://www.mistertheater.com/,Sweet n' Juicy Variety Show,NULL
+183,2018-01-20 20:00:00.000,My Father's Place,http://myfathersplacepdx.com,Tally Ho,https://www.facebook.com/events/1970510219866964/
+184,2017-11-10 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,NULL
+185,2017-11-11 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,NULL
+186,2017-11-16 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/EarthquakeHurricane
+187,2017-11-30 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane — 3-Year Anniversary!,http://facebook.com/EarthquakeHurricane
+189,2017-11-12 21:00:00.000,Alberta St. Pub,http://albertastreetpub.com,Control Yourself,https://www.facebook.com/controlyourselfpdx/
+190,2017-11-16 20:00:00.000,Alberta Rose Theatre,http://albertarosetheatre.com,Back Fence PDX Mainstage,https://www.facebook.com/events/445616129169184/
+191,2017-11-27 19:00:00.000,Curious Comedy Theater,http://curiouscomedy.org,Revolution Comedy,https://www.facebook.com/events/126425324699363/
+192,2017-12-04 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+193,2018-01-03 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,New Faces,https://portland-heliumcomedy-com.seatengine.com//shows/70877
+195,2018-01-27 19:00:00.000,Yoga Union,http://yogaunioncwc.com,Enlightened Improv,NULL
+196,2017-12-07 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+197,2017-12-14 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+198,2018-01-04 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+199,2018-01-11 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+200,2018-01-18 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+201,2017-12-09 21:00:00.000,Cush,https://www.facebook.com/therealoregoncush/,Natural Disaster Comedy,NULL
+202,2017-12-27 19:30:00.000,Loring Bar & Restaurant,http://loringbarrestaurant.com/,MRDR ROOM,https://www.facebook.com/mrdrroom
+203,2018-01-03 21:30:00.000,Mississippi Pizza,http://mississippipizza.com,You're Welcome,https://www.facebook.com/ywcomedyshow/
+204,2018-01-10 21:30:00.000,Funhouse Lounge,http://funhouselounge.com,Only the Baddest,https://www.facebook.com/onlythebaddestpdx/
+205,2017-12-21 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+206,2018-01-18 21:00:00.000,Ground Kontrol,http://groundkontrol.com/,No Pun Intendo,https://www.facebook.com/NoPunIntendo
+207,2017-12-13 19:30:00.000,The Ape Theater,http://theapetheater.com,Standing Upright,https://www.facebook.com/standinguprightattheape/
+208,2018-01-27 22:00:00.000,Funhouse Lounge,http://funhouselounge.com,Becky with the Good Jokes,http://funhouselounge.com/becky-with-the-good-jokes/
+209,2017-12-19 20:00:00.000,Portland Mercado,http://www.portlandmercado.org/,"Comedy Night ",https://www.facebook.com/events/926019884216434/
+210,2018-01-19 20:00:00.000,Siren Theater,http://sirentheater.com,Pillow Fight,https://www.facebook.com/events/182565808994535/
+212,2018-02-03 19:30:00.000,Profile Theatre,http://profiletheatre.org,In Dialogue,http://profiletheatre.org/in-dialogue/
+213,2018-01-31 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Backfence PDX — Russian Roulette,https://www.facebook.com/events/266516693881890
+214,2018-04-20 21:30:00.000,Funhouse Lounge,http://funhouselounge.com,The Gateway Show,NULL
+215,2018-02-01 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+216,2018-02-07 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Funny Humans vs. The Wheel,https://www.facebook.com/events/188589688552860/
+217,2018-02-08 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+218,2018-02-09 21:00:00.000,Jai Thai,http://www.jaithaicapitolhill.com,Punchline Comedy Show,https://www.facebook.com/events/133017890833365
+219,2018-02-15 21:00:00.000,Deep End Theater,http://deependtheater.com,Stand-up Class Performance Show,NULL
+220,2018-02-19 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+221,2018-02-22 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+222,2018-02-10 21:00:00.000,Jai Thai,http://www.jaithaicapitolhill.com/,Punchline Comedy Shows,https://www.facebook.com/events/860068860832993
+223,2018-02-01 19:30:00.000,Union/Pine,http://www.unionpine.com/,Groundhog Day Eve,https://www.facebook.com/events/174980789656537
+224,2018-01-20 19:00:00.000,Hipbone Studio,http://hipbonestudio.com/,Comedy House Party,https://www.facebook.com/events/187955128458051/
+225,2018-03-01 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+226,2018-03-08 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+228,2018-03-22 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+229,2018-03-28 18:30:00.000,Wildfang West,http://www.wildfang.com/west-pdx,Free Speech,https://www.facebook.com/events/757381211126839/
+230,2018-04-05 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+231,2018-02-17 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Speechless,https://www.facebook.com/events/160250614617023/
+232,2018-03-02 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night,NULL
+233,2018-03-03 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night,NULL
+234,2018-03-07 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com/,For the Reccord,NULL
+235,2018-03-08 21:30:00.000,No Fun,https://www.facebook.com/No-Fun-1019030518141153/,Pool House,https://www.facebook.com/events/251219958750404/
+236,2018-03-21 19:00:00.000,Smith Memorial Student Union,https://www.pdx.edu/student-union/,PDX Screening — Gabby Smashes!,https://www.facebook.com/events/906851582809309/
+237,2018-03-16 20:00:00.000,Crush House,https://www.facebook.com/Crush-House-1433121703600470/,U Can Do Anything!,https://www.facebook.com/ucandoanythingpdx/
+238,2018-03-15 19:30:00.000,Kickstand Comedy Space,http://www.kickstandcomedy.org/,Pitch Please,https://www.facebook.com/PitchPleaseMainGame/
+239,2018-04-04 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,"I, Anonymous",NULL
+242,2018-03-09 19:30:00.000,Brody Theater,http://brodytheater.com,3 by 3,https://www.facebook.com/events/435152283584540/
+243,2018-04-30 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+244,2018-05-12 19:00:00.000,Scratch Deli,http://scratchdeli.com,QTPOC Is Not a Rapper,https://m.facebook.com/qtpocinar/
+245,2018-04-12 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+246,2018-04-19 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+247,2018-04-26 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+248,2018-05-03 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+249,2018-05-10 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/events/1543877235648431/
+251,2018-05-11 21:30:00.000,Funhouse Lounge,https://funhouselounge.com/,SMUT,https://www.facebook.com/pg/SMUTPresents
+252,2018-05-05 12:00:00.000,Alberta St. Pub,http://www.albertastreetpub.com/,Live Wire,http://www.livewireradio.org/live
+253,2018-05-09 21:30:00.000,Mississippi Pizza,http://mississippipizza.com,You're Welcome,https://www.facebook.com/ywcomedyshow/
+254,2018-04-08 20:00:00.000,Alberta Street Pub,http://albertastreetpub.com,Supper Time,NULL
+255,2018-04-29 20:00:00.000,Alberta Street Pub,http://albertastreetpub.com,Supper Time,NULL
+256,2018-05-02 21:00:00.000,Liberty Glass,http://libertyglassbar.com,The Worst Amendment,NULL
+257,2018-05-05 20:00:00.000,80 NE Tillamook,NULL,Free Spaghetti,https://www.facebook.com/events/166529784059828/
+258,2018-05-24 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,"Wait, What?",https://www.facebook.com/events/1836662259967867/
+259,2018-05-06 19:30:00.000,Slide Inn,http://slideinnpdx.com,Sincerity Is Gross,https://www.facebook.com/sincerityisgross/
+260,2018-04-26 20:00:00.000,Zoiglhaus Brewing,http://zoiglhaus.com,Comedy Night,https://www.facebook.com/events/1778651612439834/
+261,2018-05-18 20:00:00.000,Labor Temple,https://www.facebook.com/Labor-Temple-Diner-Bar-38159692746/,Cheap Whiskey and Dirty Jokes,https://www.facebook.com/events/164891831014164/
+263,2018-05-12 13:00:00.000,The Lamp,http://lamppdx.com,Yolks & Jokes,https://www.facebook.com/events/624315594572911/
+264,2018-05-11 20:00:00.000,Siren Theater,http://sirentheater.com,Speechless,NULL
+265,2018-06-04 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+266,2018-06-29 21:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,J Names,https://www.facebook.com/events/281086459100546/
+267,2018-05-13 19:00:00.000,Whirled Pies,http://whirledpies.com,Gateway Show,NULL
+268,2018-05-17 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Shift Control,https://curiouscomedy.org/events/2018/05/17/1314-shift-control%253A-live-storytelling
+269,2018-05-31 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,https://www.facebook.com/EarthquakeHurricane/
+270,2018-06-29 18:30:00.000,Art Market PDX,http://artmarketpdx.com,IRL Reading,NULL
+271,2018-05-26 18:30:00.000,Open Signal Media,https://www.opensignalpdx.org/,Show Ridiculous,https://www.facebook.com/events/3105907223000082/
+272,2018-05-28 19:00:00.000,Curious Comedy Theater,http://curiouscomedy.org,Revolution Comedy,https://www.facebook.com/events/1873678662664237/
+273,2018-06-07 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+274,2018-06-14 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+275,2018-06-21 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+276,2018-06-28 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+277,2018-06-10 14:00:00.000,Curious Comedy Theater,http://curiouscomedy.org,Laugh Your Pants Off,https://www.facebook.com/events/167379473928979/
+278,2018-08-22 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Zak Toscani,https://portland.heliumcomedy.com/shows/80406
+279,2018-06-15 19:30:00.000,Tolovana Hall,http://tolovanaartscolony.org/,Cannon Beach Comedy Festival,https://cannonbeachcomedyfestival.com/
+280,2018-06-20 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Portland's Funniest Person Prelims,https://portland-heliumcomedy-com.seatengine.com/shows/79648
+281,2018-06-22 20:00:00.000,The Ape Theater,http://theapetheater.org,Standing Upright,https://www.facebook.com/standinguprightattheape
+282,2018-07-02 20:00:00.000,The Waypost,http://thewaypost.com,Loadsa Laughs,https://www.facebook.com/events/229982447548899/
+283,2018-08-25 20:00:00.000,Siren Theater,http://sirentheater.com,Minority Retort,https://www.facebook.com/MinorityRetortPDX/
+284,2018-06-20 19:00:00.000,Kickstand Comedy Space,http://www.kickstandcomedy.org/,PLOW,https://www.facebook.com/PDXLOW/
+285,2018-06-30 18:00:00.000,Red Castle Games,http://redcastlegames.com,Nerd Camp Night Out,https://www.facebook.com/events/396705224146529
+286,2018-07-21 19:00:00.000,Cap City Theater,http://www.capitolcitytheater.com/,Minority Retort,https://www.facebook.com/MinorityRetortPDX/
+287,2018-12-21 20:00:00.000,Aladdin Theater,https://eventbritesites.com/tf/aladdintheater,Matt Braunger,NULL
+288,2018-07-19 19:30:00.000,Chapel Theater,https://chapeltheatremilwaukie.com/,Telltale,https://www.facebook.com/telltalepdx/
+289,2018-06-25 20:00:00.000,The Secret Society,http://secretsociety.net,Last Monday,https://www.secretsociety.net/event/1692313-turnout-last-monday-broke-portland/
+290,2018-07-09 20:00:00.000,The Secret Society,http://secretsociety.net,Live'N Portland,https://www.facebook.com/lostNportland/
+291,2018-07-16 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+292,2018-08-16 21:30:00.000,Ground Kontrol,http://groundkontrol.com,No Pun Intendo,https://www.facebook.com/NoPunIntendo/
+293,2018-07-07 20:00:00.000,Siren Theater,http://sirentheater.com,Lez Stand Up,https://www.facebook.com/events/164934777702470/
+294,2018-07-11 19:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Portland's Funniest Person Semis,https://portland-heliumcomedy-com.seatengine.com//shows/81655
+295,2018-08-18 20:00:00.000,Turn! Turn! Turn!,http://turnturnturnpdx.com,X — The Comedy Show,https://www.facebook.com/events/915645915309950/
+296,2018-09-01 19:00:00.000,Institution Theater,https://www.theinstitutiontheater.com/,Out of Bounds Festival,http://oobfest.com/
+297,2018-09-02 22:00:00.000,Velveeta Room,http://www.thevelveetaroom.com/,Out of Bounds Festival,http://oobfest.com/
+298,2018-07-06 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=191228&venueid=156
+299,2018-07-07 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=191227&venueid=156
+300,2018-08-03 21:30:00.000,Brody Theater,http://brodytheater.com,Flyass Jokes,NULL
+301,2018-08-14 19:00:00.000,Jade Lounge,http://www.jadeloungepdx.com/,"My Real Portland ",https://www.myrealportland.com/
+302,2018-08-23 20:00:00.000,Clinton Street Theater,https://cstpdx.com/,Half Quaked Advance Screening,https://www.facebook.com/events/2095483340772142/
+303,2018-08-28 20:00:00.000,Alberta St. Pub,http://www.albertastreetpub.com/,Alberta Street Comedy,NULL
+304,2018-09-08 20:00:00.000,Revolution Hall,https://www.revolutionhall.com/,Portland Mercury's Geniuses of Comedy,https://www.portlandmercury.com/blogtown/2018/08/23/22342736/get-your-tickets-now-for-the-undisputable-geniuses-of-comedy-2018
+305,2018-08-16 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+306,2018-08-30 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+307,2018-09-06 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+308,2018-09-17 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn
+309,2018-09-26 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Back Fence PDX — Russian Roulette,https://www.merctickets.com/events/50853075/back-fence-pdx-russian-roulette?view_id=public-event-overview&basename=back-fence-pdx-russian-roulette
+310,2018-09-13 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+311,2018-09-20 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+312,2018-09-27 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+313,2018-09-01 21:00:00.000,Spider House,https://spiderhouse.com/,Out of Bounds Festival,https://oobfest.com/schedule/
+315,2018-09-04 20:00:00.000,Kelly's Olympian,https://kellysolympian.com,Love Boys,NULL
+316,2018-09-08 17:00:00.000,Zoiglhaus Brewing,http://zoiglhaus.com,Portland Lager Festival,https://www.merctickets.com/events/56951784/portland-lager-festival
+317,2018-09-12 20:00:00.000,Kickstand,http://www.kickstandcomedy.org/,The Hard Times Presents — A.C.A.B.,https://www.facebook.com/events/482267008958417/
+318,2018-10-03 21:00:00.000,Liberty Glass,http://www.libertyglassbar.com/,The Worst Amendment,NULL
+319,2018-10-04 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+320,2018-09-08 20:00:00.000,Portland Center Stage,http://pcs.org,Back Fence PDX — 10th Anniversary Show,http://backfencepdx.com/
+322,2018-10-11 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+323,2018-11-02 20:00:00.000,Alberta Street Pub,http://albertastreetpub.com,Hell Hath No Funny,https://www.facebook.com/events/331741444241485/
+324,2018-11-10 21:30:00.000,Deep End Theater,http://deependtheater.com,Deep End Stand-Up Class Student Showcase,NULL
+325,2018-09-26 21:30:00.000,Mississippi Pizza,http://mississippipizza.com,You're Welcome,https://www.facebook.com/ywcomedyshow/
+326,2018-10-03 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,"I, Anonymous",https://www.facebook.com/events/529239100832699/
+327,2018-10-08 20:00:00.000,Portland Center Stage,http://pcs.org,Back Fence PDX — 10th Anniversary,http://backfencepdx.com/
+328,2018-10-18 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+329,2018-10-25 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+330,2018-10-26 19:00:00.000,NW Documentary,https://nwdocumentary.org/,Doctober Live Stories,NULL
+331,2018-09-23 17:00:00.000,Jade/APANO Multicultural Space,https://www.facebook.com/APANOJadeSpace/,East Portland Arts + Literary Festival,https://www.facebook.com/events/301879466951877/
+332,2018-10-20 20:00:00.000,PCC Southeast,https://www.pcc.edu/about/locations/southeast/,East Portland Arts & Literary Festival,https://www.facebook.com/events/404804580009822/
+333,2018-10-20 19:30:00.000,Fraternal Order of Eagles,https://www.facebook.com/Eagles-North-Portland-Foe-3426-111699485534565/,"Comedy, Candidates, and Cocktails",https://secure.c-esystems.com/multnomahcountydemocrats/event.aspx
+334,2018-11-04 20:00:00.000,Siren Theater,http://www.sirentheater.com,The Old Town Comedy Show,https://www.facebook.com/events/483147772186735/
+335,2018-11-05 19:30:00.000,Portland Center Stage,https://www.pcs.org/,Improv at The Armory,https://www.facebook.com/events/349445445811135/
+336,2018-12-13 20:00:00.000,Kiggins Theatre,http://www.kigginstheatre.com/,NULL,NULL
+337,2018-10-17 19:30:00.000,Kickstand Comedy Space,http://www.kickstandcomedy.org/,Love Boys Live,https://www.facebook.com/events/310058249790993/
+338,2018-11-01 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakhurricane
+339,2018-11-08 21:30:00.000,No Fun Bar,https://www.facebook.com/No-Fun-1019030518141153/,Pool House,NULL
+340,2018-11-12 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+341,2018-11-14 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Helium Stand-Up Class Student Showcase,NULL
+342,2018-11-15 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+343,2018-11-08 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+344,2018-11-29 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+345,2018-11-16 19:30:00.000,Brody Theater,http://brodytheater.com,Fly-Ass Farewell,http://www.brodytheater.com/nowplaying.html
+346,2018-12-19 20:00:00.000,Bar 33 Brooklyn,NULL,Brooklyn Bust-Up,NULL
+347,2018-12-06 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+348,2018-12-13 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+349,2018-11-26 21:00:00.000,Bithouse Saloon,http://www.bithousesaloon.com/,"Howdy, Partner",NULL
+350,2018-12-14 19:00:00.000,Open Signal,https://www.opensignalpdx.org/,Public Access with Ben Harkins,NULL
+352,2018-12-17 21:30:00.000,Hollywood Theatre,https://hollywoodtheatre.org/,The Movie Quiz,https://www.facebook.com/themoviequizpdx
+353,2019-01-05 21:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Late Night Special,https://curiouscomedy.org/events/2019/01/05/1718-late-night-special
+354,2019-01-03 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+355,2019-01-10 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+356,2018-12-22 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/198993-comedy-night-at-als-den-hosted-by-brandon-lyons
+357,2018-12-27 19:30:00.000,Mission Theater,https://www.mcmenamins.com/mission-theater,7 Deadly Sins — Saturnalia,https://www.mcmenamins.com/events/196819-7-deadly-sins-saturnalia
+358,2019-01-30 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Bit 'n Switch,https://portland.heliumcomedy.com/shows/93690
+359,2019-01-02 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,New Faces,https://portland.heliumcomedy.com/shows/91787
+360,2019-01-17 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+361,2019-01-18 20:30:00.000,Fawcett Hall,https://www.almamatertacoma.com/fawcett-hall/,Laughing Mater,https://www.facebook.com/laughingmater
+362,2019-01-28 20:00:00.000,White Owl Social Club,http://www.whiteowlsocialclub.com/,Optimism — One-Year Anniversary Show,https://www.facebook.com/events/225927574974265/
+363,2019-01-24 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+364,2019-01-31 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+365,2019-01-22 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Audition Showcase — Just For Laughs,NULL
+366,2019-01-13 19:00:00.000,Kelly's Olympian,http://kellysolympian.com,Spec Script,https://www.facebook.com/SpecScriptShow/
+367,2019-01-23 20:00:00.000,Curious Comedy Theater,http://curiouscomedy.org,The Bechdel Cast — Live Recording,https://www.facebook.com/events/515548718922171/
+368,2019-01-07 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn
+369,2019-02-07 19:30:00.000,Eagles Lodge,https://www.facebook.com/EastPortlandEagles/,The Squirts’ Post Groundhogs Day Dairy Drive Extrava-Bonanza,https://www.facebook.com/events/290710118467760/
+370,2019-01-27 11:00:00.000,Siren Theater,https://www.sirentheater.com,Girls Gone Mild,https://www.merctickets.com/events/83334395/girls-gone-mild-a-stand-up-comedy-waffle-brunch
+371,2019-02-15 19:00:00.000,Revolution Hall,https://www.revolutionhall.com/,Listen Up Festival — Bullseye with Jesse Thorn,https://www.listenupportland.com/
+372,2019-02-16 20:00:00.000,Growler Guys,https://www.thegrowlerguys.com,Lemons Presents Comedy,NULL
+373,2019-02-02 20:00:00.000,The Upper Lip,http://theupperlip.net/,Over It,https://www.facebook.com/OverItUpperLip/
+374,2019-02-13 21:30:00.000,Mississippi Pizza,http://www.mississippipizza.com/,You're Welcome,https://www.facebook.com/ywcomedyshow/
+375,2019-02-19 20:00:00.000,Mississippi Studios,https://www.mississippistudios.com/,Las Culturistas — I Don't Think So Honey LIVE,https://www.ticketfly.com/event/1797778-las-culturistas-portland/
+376,2019-02-20 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Gabe Dinger,https://portland.heliumcomedy.com/shows/95250
+377,2019-02-24 20:00:00.000,Slide Inn,http://www.slideinnpdx.com/,Sincerity is Gross,https://www.facebook.com/sincerityisgross/
+378,2019-02-28 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+379,2019-03-18 20:00:00.000,Secret Society,https://www.secretsociety.net/,Front Porch Sessions,https://www.facebook.com/porchsession/
+380,2019-03-07 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+381,2019-03-13 20:00:00.000,"Eugene, OR",NULL,NULL,NULL
+382,2019-02-21 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+383,2019-03-21 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+384,2019-02-16 16:30:00.000,Revolution Hall,https://www.revolutionhall.com/,"Listen Up Festival — Yo, Is This Racist?",https://www.eventbrite.com/e/listen-up-portland-tickets-53366864729
+385,2019-03-01 20:00:00.000,Rogue Eastside,https://www.rogue.com/locations/rogue-eastside-pub-pilot-brewery,Dead Comics Society,https://www.facebook.com/deadcomicssociety/
+386,2019-03-08 19:30:00.000,Siren Theater,https://www.sirentheater.com/,That's What She Said,https://www.facebook.com/twsscomedy/
+387,2019-03-14 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+388,2019-04-06 19:30:00.000,Chapel Theatre,https://chapeltheatremilwaukie.com/,Broad Selection,https://www.facebook.com/broadselection/
+389,2019-02-25 20:30:00.000,EastBurn,http://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+390,2019-02-14 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+391,2019-03-28 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Jen Kirkman,https://portland.heliumcomedy.com/events/27770
+392,2019-03-29 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jen Kirkman,https://portland.heliumcomedy.com/events/27770
+393,2019-03-29 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jen Kirkman,https://portland.heliumcomedy.com/events/27770
+394,2019-03-30 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jen Kirkman,https://portland.heliumcomedy.com/events/27770
+395,2019-03-30 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jen Kirkman,https://portland.heliumcomedy.com/events/27770
+396,2019-03-25 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+397,2019-04-03 19:00:00.000,Capitol,http://capitolpdx.com,Incubator City,NULL
+398,2019-04-07 20:00:00.000,Slide Inn,http://slideinnpdx.com,Sincerity is Gross,https://www.facebook.com/sincerityisgross/
+399,2019-04-10 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Phil Schallberger — Live in Theory,https://portland.heliumcomedy.com/shows/98737
+400,2019-04-11 19:30:00.000,Kickstand,https://www.kickstandcomedy.org/,Dear Diary,https://www.facebook.com/events/304176026868673/
+402,2019-08-13 20:00:00.000,The Rendezvous,https://www.therendezvous.rocks/event/the-comedy-womb-two-shows/2019-03-19/,The Comedy Nest,https://www.facebook.com/ComedyNestSeattle/
+403,2019-04-04 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+404,2019-04-11 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+405,2019-04-18 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+406,2019-04-25 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+407,2019-05-02 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+408,2019-04-08 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+409,2019-04-17 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Reading the Bible with Dan,https://portland.heliumcomedy.com/shows/100013
+410,2019-04-18 21:30:00.000,Ground Kontrol,https://groundkontrol.com/,No Pun Intendo,https://www.facebook.com/NoPunIntendo/
+411,2019-04-25 21:00:00.000,The Nest,https://www.facebook.com/pages/category/Lounge/The-Nest-Lounge-126660097345432/,For the Birds,https://www.facebook.com/forthebirdscomedy/
+412,2019-05-03 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Show Brousseau,https://www.facebook.com/events/253436435457015/
+413,2019-05-31 19:30:00.000,The Bishop,http://www.thebishopbar.com/,Limestone Comedy Festival,https://www.limestonefest.com/
+414,2019-06-01 22:00:00.000,Buskirk-Chumley Theater,http://buskirkchumley.org/,Limestone Comedy Festival,https://www.limestonefest.com/
+415,2019-05-13 20:00:00.000,Kelly's Olympian,http://kellysolympian.com,Bad Girls Comedy,https://www.facebook.com/events/276002336652769/
+416,2019-05-09 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+417,2019-05-16 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+418,2019-05-23 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+419,2019-05-16 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Russian Roulette,https://www.facebook.com/events/2383858268314731/
+420,2019-05-17 18:00:00.000,The Side Yard Farm,https://www.thesideyardpdx.com/,Comedy on the Farm,https://www.facebook.com/events/556863084802594/
+421,2019-05-30 22:00:00.000,Funhouse Lounge,http://funhouselounge.com,Simon Gibson's Birthday Show,NULL
+422,2019-05-30 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+423,2019-06-22 21:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Late Night Special,https://curiouscomedy.org/shows/late-night-special/
+424,2019-06-06 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+426,2019-06-20 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+427,2019-06-27 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+428,2019-06-25 20:15:00.000,Comedy Underground,http://comedyunderground.com/,Unladylike,https://www.facebook.com/unladylikecomedy/
+429,2019-06-05 19:30:00.000,Outrage,http://outragepdx.bar,Comedy Bebop,https://www.facebook.com/events/2622385777774765/
+430,2019-06-09 21:00:00.000,Silver Star Saloon,http://silverstarvancouver.com/,"The Good, the Bad, and the Funny",https://www.facebook.com/events/2337208716564815/
+431,2019-06-16 20:00:00.000,The Goodfoot,http://thegoodfoot.com,You Don't Know Me!,NULL
+432,2019-07-09 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Portland's Funniest Person Prelims,https://portland.heliumcomedy.com/events/31304
+433,2019-07-18 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Rex Navarrete,https://portland.heliumcomedy.com/shows/104279
+434,2019-07-25 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+435,2020-01-17 21:00:00.000,Aladdin Theater,http://aladdin-theater.com,Todd Barry,https://www.aladdin-theater.com/event/1864850-todd-barry-portland/
+436,2020-01-18 19:30:00.000,Majestic Theatre,https://www.majestic.org/,Todd Barry,https://www.toddbarry.com/shows/
+437,2019-08-01 20:00:00.000,Ford Food + Drink,http://fordfoodandrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+438,2019-07-19 19:30:00.000,The Drake,https://www.thedrakebareugene.com/,Laughing Penguin,https://www.facebook.com/events/2352304628371929/
+439,2019-07-26 20:00:00.000,Crush Bar,http://crushbar.com,Storylesque,https://www.facebook.com/lacyproductions
+440,2019-06-12 21:30:00.000,Mississippi Pizza,http://mississippipizza.com,Dough,https://www.facebook.com/doughcomedy/
+443,2019-10-24 20:00:00.000,The Old Church,https://www.theoldchurch.org/,Back Fence PDX — Russian Roulette,https://backfencepdx.com/
+444,2019-07-15 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+445,2019-08-11 20:00:00.000,Slide Inn,http://slideinnpdx.com,Sincerity is Gross,https://www.facebook.com/sincerityisgross/
+447,2019-08-07 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Rough Draft,https://curiouscomedy.org/calendar/
+448,2019-08-08 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+449,2019-08-15 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+450,2019-09-06 19:30:00.000,The Drake,https://www.thedrakebareugene.com/,RoboCom,NULL
+451,2019-08-22 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+452,2019-08-29 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+453,2019-07-17 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Portland's Funniest Person,https://portland.heliumcomedy.com/shows/104893
+454,2019-07-26 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/207894-comedy-night-at-als-den-hosted-by-brandon-lyons
+455,2019-07-27 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/207893-comedy-night-at-als-den-hosted-by-brandon-lyons
+457,2019-08-03 23:00:00.000,Pickathon,http://pickathon.com,Laughs with Amy,https://pickathon.com/lineup/laugh/
+458,2019-07-30 19:30:00.000,Kelly's Olympian,http://kellysolympian.com,Summer of Love Boys,https://www.facebook.com/events/685363168629797
+459,2019-09-04 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,"I, Anonymous",https://curiouscomedy.org/calendar/
+460,2019-08-01 18:00:00.000,Doug Fir Lounge,http://dougfirlounge.com,Cool Kids Patio Show,https://www.facebook.com/events/2611218025772242/
+461,2019-08-08 21:00:00.000,The Nest,https://www.facebook.com/pages/category/Lounge/The-Nest-Lounge-126660097345432/,For the Birds,https://www.facebook.com/forthebirdscomedy/
+462,2019-08-24 20:00:00.000,Killingsworth Dynasty,http://www.killingsworthdynasty.com/,Chaotic Good Club,https://www.facebook.com/events/1785907201554996/
+469,2019-10-27 20:00:00.000,The Goodfoot,http://thegoodfoot.com,You Don't Know Me,https://www.facebook.com/youdontknowmecomedy/
+470,2019-08-15 21:30:00.000,Ground Kontrol,https://groundkontrol.com/,No Pun Intendo,https://www.facebook.com/NoPunIntendo/
+471,2019-08-09 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Fortune Feimster,https://portland.heliumcomedy.com/events/30945
+472,2019-08-09 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Fortune Feimster,https://portland.heliumcomedy.com/events/30945
+473,2019-08-10 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Fortune Feimster,https://portland.heliumcomedy.com/events/30945
+474,2019-08-10 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Fortune Feimster,https://portland.heliumcomedy.com/events/30945
+475,2020-01-19 19:00:00.000,Whirled Pies,https://whirledpies.com,Todd Barry,https://toddbarryjustcomedy.brownpapertickets.com/
+476,2019-09-26 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Bobby Lee,https://portland.heliumcomedy.com/events/32300
+477,2019-09-27 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Bobby Lee,https://portland.heliumcomedy.com/events/32300
+478,2019-09-27 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Bobby Lee,https://portland.heliumcomedy.com/events/32300
+479,2019-09-28 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Bobby Lee,https://portland.heliumcomedy.com/events/32300
+480,2019-09-28 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Bobby Lee,https://portland.heliumcomedy.com/events/32300
+481,2019-11-17 20:00:00.000,Slide Inn,http://slideinnpdx.com,Sincerity is Gross,https://www.facebook.com/sincerityisgross/
+482,2019-09-25 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,The Mohanad Elshieky Going Away Show,https://www.facebook.com/events/479716362606565/
+483,2019-08-10 23:00:00.000,Space Room,http://spaceroomlounge.com/,Midnight Gravy,https://www.facebook.com/midnightgravy/
+484,2019-08-24 21:00:00.000,Comedy Sportz,https://www.portlandcomedy.com/,The Invite,https://www.facebook.com/events/369339487329377/
+486,2019-09-09 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+487,2019-09-12 18:00:00.000,Doug Fir Lounge,http://dougfirlounge.com,Cool Kids Patio Show,NULL
+488,2019-09-13 20:00:00.000,Seven,http://www.sevenbend.com/,NULL,http://Ladies' Night Showcase
+489,2019-09-05 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+490,2019-09-12 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+491,2019-09-19 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+492,2019-10-03 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+493,2019-10-10 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+494,2019-10-17 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+496,2019-09-14 19:30:00.000,Twenty-First Ave,https://www.twentyfirstave.com/,High Priestess,https://www.facebook.com/events/234614004140590/
+497,2019-10-04 21:00:00.000,Kelly's Olympian,http://kellysolympian.com,The Casual Scene and Charley No Face,NULL
+498,2019-10-09 21:00:00.000,Cardinal Club,http://www.cardinalclubportland.com/home.html,Blue Velvet,https://www.facebook.com/bluevelvetcomedy
+499,2019-10-04 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/213713-comedy-night-at-als-den-hosted-by-brandon-lyons
+500,2019-10-05 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/213717-comedy-night-at-als-den-hosted-by-brandon-lyons
+501,2019-09-25 21:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,The Mohanad Elshieky Going Away Show,https://www.showclix.com/event/the-mohanad-elshieky-going-away-showR7DWlRu
+502,2019-11-09 21:00:00.000,Alberta Street Pub,http://albertastreetpub.com,Hell Hath No Funny,http://sirennation.org
+503,2019-11-10 19:00:00.000,Deep End Theater,https://www.deependtheater.com/,Hey Babe,https://www.facebook.com/events/2217105891729244/
+505,2019-11-07 19:00:00.000,Siren Theater,http://www.albertastreetpub.com/,Pacific Crest Comedy Festival — Earthquake Hurricane,https://www.facebook.com/pacificcrestcomedy/
+506,2019-11-14 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+507,2019-11-21 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+508,2019-12-05 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+509,2019-10-21 20:30:00.000,EastBurn,http://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn
+510,2019-10-30 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,HCA Stand-Up 200 Graduation Showcase,https://portland.heliumcomedy.com/shows/112132
+511,2019-10-27 21:30:00.000,Alberta Street Pub,http://www.albertastreetpub.com/,Hunter Turns 30,NULL
+512,2019-11-08 18:00:00.000,Siren Theater,https://www.sirentheater.com/,Pacific Crest Comedy Festival — Speechless,https://www.facebook.com/pacificcrestcomedy/
+513,2019-11-10 11:00:00.000,Siren Theater,https://www.sirentheater.com/,Pacific Crest Comedy Festival — Girls Gone Mild,https://www.facebook.com/pacificcrestcomedy/
+514,2019-12-11 20:00:00.000,Orchard's Tap,http://orchardstap.com/,NULL,NULL
+515,2019-12-04 21:00:00.000,Cardinal Club,http://www.cardinalclubportland.com/,Blue Velvet,https://www.facebook.com/bluevelvetcomedy/
+516,2019-12-12 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+517,2019-12-19 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+518,2019-11-01 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den
+519,2019-11-02 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den
+520,2019-11-15 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/214634-comedy-night-at-als-den-hosted-by-brandon-lyons
+521,2019-11-16 22:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/events/214633-comedy-night-at-als-den-hosted-by-brandon-lyons
+522,2019-11-24 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Alex Falcone's Going-Away Show,https://portland.heliumcomedy.com/shows/114223
+524,2020-01-16 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+525,2019-11-25 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+526,2019-12-13 20:00:00.000,Siren Theater,http://sirentheater.com,Rants Off Dance Off,https://www.facebook.com/events/562364030999564/
+527,2019-12-17 21:00:00.000,Kickstand,http://kickstandcomedy.org,Totally Normal,https://www.facebook.com/events/981641632199668/
+528,2020-01-23 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+529,2020-01-30 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+530,2019-12-07 23:30:00.000,Spaceroom Lounge,http://spaceroomlounge.com/,Midnight Gravy,https://www.facebook.com/midnightgravy/
+531,2019-12-23 20:00:00.000,Blank Slate,http://www.blankslatepdx.com/,School Night Comedy,https://www.facebook.com/schoolnightcomedypdx/
+532,2020-01-09 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Brad Sherwood,https://portland.heliumcomedy.com/shows/115590
+533,2020-01-10 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Brad Sherwood,https://portland.heliumcomedy.com/shows/115592
+534,2020-01-10 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Brad Sherwood,https://portland.heliumcomedy.com/shows/115591
+535,2020-01-11 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Brad Sherwood,https://portland.heliumcomedy.com/shows/115594
+536,2020-01-11 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Brad Sherwood,https://portland.heliumcomedy.com/shows/115593
+537,2020-02-08 21:00:00.000,etc... eatery,https://www.etceaterypdx.com/,The Big One,NULL
+538,2020-01-29 20:00:00.000,Helium Comedy Club,http://portland.helium.com,Best of Helium,https://portland.heliumcomedy.com/shows/117808
+539,2020-01-02 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+540,2020-01-08 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Laugh Lounge Showcase,https://www.showclix.com/event/laugh-lounge-showcase
+541,2020-02-28 19:00:00.000,Multnomah Arts Center,https://www.multnomahartscenter.org/,Comedy Benefit Show for IRCO,NULL
+543,2020-02-06 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+544,2020-02-13 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+545,2020-02-20 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+546,2020-02-27 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+547,2020-01-08 21:30:00.000,Mississippi Pizza,http://www.mississippipizza.com/,Dough,https://www.facebook.com/doughcomedy/
+548,2020-02-20 21:30:00.000,Ground Kontrol,https://groundkontrol.com/,No Pun Intendo,NULL
+549,2020-01-13 20:30:00.000,Eastburn,http://theeastburn.com,It's Gonna Be Okay,https://www.facebook.com/gonnabeokayateastburn/
+550,2020-02-07 22:00:00.000,White Eagle Saloon,https://www.mcmenamins.com/white-eagle-saloon-hotel,Euphoria,https://www.etix.com/ticket/p/8730887/7-deadly-sins-presentdarias-confessional-cabaret21-portland-mcmenamins-white-eagle-saloon?fbclid=IwAR3Yj6O5UoSm_IWNn-7eC4JeTtF33D0ybA2fgU7ZowW_3X--jo_6FHYHJbw
+551,2020-02-16 19:30:00.000,Rose City Book Pub,https://www.rosecitybookpub.com,NULL,NULL
+552,2020-02-23 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Hometown Heroes,https://www.facebook.com/events/560642321332720/
+553,2020-02-29 19:30:00.000,Buffalo Gap,https://www.thebuffalogap.com/,Comedians with Character,NULL
+555,2020-03-05 20:00:00.000,Ford Food + Drink,https://www.fordfoodanddrink.com/,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+556,2020-02-19 20:00:00.000,Shanghai Tunnel Bar,http://shanghaitunnelbar.com,Comedy Canoe,https://www.facebook.com/TheCanoeMic/
+557,2020-03-02 20:30:00.000,EastBurn,http://theeastburn.com,It's Gonna Be Okay,http://facebook.com/gonnabeokayateastburn
+558,2020-03-11 20:00:00.000,Neptune Theatre,https://www.stgpresents.org/neptune/events,Todd Barry,https://www.stgpresents.org/calendar/5266/todd-barry
+559,2020-03-13 20:00:00.000,Shakedown,https://www.shakedownbellingham.com/,Todd Barry,https://www.toddbarry.com/shows/
+561,2020-03-15 19:30:00.000,Spokane Comedy Club,https://www.spokanecomedyclub.com/,Todd Barry,https://www.spokanecomedyclub.com/shows/114054
+564,2020-03-26 20:00:00.000,Ford Food + Drink,http://fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+565,2020-03-25 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,HCA 101 Graduation Show,NULL
+566,2020-03-19 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Preacher Lawson,https://portland.heliumcomedy.com/events/36726
+567,2020-03-20 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Preacher Lawson,https://portland.heliumcomedy.com/events/36726
+568,2020-03-20 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Preacher Lawson,https://portland.heliumcomedy.com/events/36726
+569,2020-03-21 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Preacher Lawson,https://portland.heliumcomedy.com/events/36726
+570,2020-03-21 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Preacher Lawson,https://portland.heliumcomedy.com/events/36726
+571,2020-04-02 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+572,2020-04-10 19:00:00.000,Baby Ketten Klub,http://babyketten.com/,Baby Ketten Komedy,NULL
+573,2020-04-17 21:00:00.000,Portland Center Stage,http://pcs.org,NULL,NULL
+574,2020-04-09 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+575,2020-04-16 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+576,2020-04-23 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+577,2020-04-30 20:00:00.000,Ford Food + Drink,http://www.fordfoodanddrink.com,Earthquake Hurricane,http://facebook.com/earthquakehurricane
+578,2020-03-14 21:00:00.000,Numerica Performing Arts Center,http://www.numericapac.org,Todd Barry,https://numericapac.showare.com/eventperformances.asp?evt=88
+579,2020-03-14 19:00:00.000,Numerica Performing Arts Center,http://www.numericapac.org,Todd Barry,https://numericapac.showare.com/eventperformances.asp?evt=88
+580,2021-02-27 19:00:00.000,Artists Repertory Theatre (Zoom event),https://artistsrep.org,Drop the Mic,https://artistsrep.org/performance/drop-the-mic/
+581,2021-05-26 19:00:00.000,Botanist House,https://www.botanisthouse.com/,Comedy Night,https://www.eventbrite.com/o/robby-sherman-33232878055
+582,2021-06-04 19:00:00.000,Gräs,NULL,Grastral Live Comedy,https://www.facebook.com/events/1053040335224630
+583,2021-06-13 17:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Lot Laughs,https://portland.heliumcomedy.com/events/40626
+585,2021-10-23 19:30:00.000,Parkway Theater,https://theparkwaytheater.com/,Todd Barry,https://theparkwaytheater.com/all-events/todd-barry
+586,2021-12-18 20:00:00.000,Neptune Theatre,https://www.stgpresents.org/neptune/events,Todd Barry,https://www.stgpresents.org/calendar/6773/todd-barry
+592,2021-06-05 20:00:00.000,[See event details for address],NULL,Back(yard) to the Comedy,https://www.facebook.com/events/525804958595113
+593,2021-07-24 20:00:00.000,First National Taphouse,https://www.firstnationaltaphouse.com/,Laugh Track Town,https://www.facebook.com/Laugh-Track-Town-USA-208227156396258
+594,2021-08-21 19:00:00.000,Stormbreaker Brewing,https://www.stormbreakerbrewing.com/st-johns,St. Johns Comedy Festival,https://www.showclix.com/event/a-lot-of-comedy-show-sjcf
+595,2021-07-02 19:30:00.000,Siren Theater,https://www.sirentheater.com/,Jackie Kashian & Laurie Kilmartin,https://www.merctickets.com/events/112119841/jackie-kashian-and-laurie-kilmartin
+596,2021-07-03 19:30:00.000,Siren Theater,https://www.sirentheater.com/,Jackie Kashian & Laurie Kilmartin,https://www.merctickets.com/events/112119889/jackie-kashian-and-laurie-kilmartin
+597,2021-07-10 18:30:00.000,Infinity Room,https://www.infinityroomsalem.com/,NULL,NULL
+599,2021-12-17 21:00:00.000,The Shakedown,https://shakedownbellingham.com/,Todd Barry,https://www.venuepilot.co/events/42069/orders/new
+600,2021-07-03 21:30:00.000,Siren Theater,https://www.sirentheater.com/,Jackie Kashian & Laurie Kilmartin,https://www.merctickets.com/events/112575529/jackie-kashian-and-laurie-kilmartin
+601,2021-06-30 19:30:00.000,Tamale Boy,https://www.tamaleboy.com/dekum-classic,House Marg Comedy,NULL
+602,2021-07-29 19:15:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Nicole Byer,https://portland.heliumcomedy.com/shows/144832
+603,2021-07-30 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Nicole Byer,https://portland.heliumcomedy.com/shows/144833
+604,2021-07-30 21:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Nicole Byer,https://portland.heliumcomedy.com/shows/144835
+605,2021-07-31 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Nicole Byer,https://portland.heliumcomedy.com/shows/144834
+606,2021-07-31 21:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Nicole Byer,https://portland.heliumcomedy.com/shows/144831
+607,2021-07-26 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/events/930561364457816
+608,2021-07-23 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Johnny Pemberton and Amy Miller,https://www.boldtypetickets.com/browse#search=amy%2520miller
+609,2021-08-20 18:30:00.000,Laurelhurst Park,https://www.portland.gov/parks/laurelhurst-park,Comedy in the Park,https://www.facebook.com/kickstandcomedy
+610,2021-08-28 18:30:00.000,Bush's Pasture Park,https://www.cityofsalem.net/bushs-pasture-park,Summer Laughin',https://www.facebook.com/events/777204686293145
+611,2021-08-06 19:00:00.000,Backyard Show (inner SE PDX),NULL,Bri Pruett & Zak Toscani,NULL
+612,2021-08-18 19:00:00.000,Botanist House,https://www.botanisthouse.com/,Comedy in The Pearl,https://www.eventbrite.com/o/robby-sherman-33232878055
+613,2021-08-27 18:00:00.000,Side Yard Farm,https://www.thesideyardpdx.com/,Queer Dinner & Show,https://side-yard-farm.myshopify.com/collections/queer-show-dinner-8-27/products/copy-of-bike-in-movie-night-comedy-show
+614,2021-10-16 19:00:00.000,Elks Lodge,https://www.elks.org/lodges/home.cfm?LodgeNumber=1950,Fundraiser — Betty Hise for Cancer Research,NULL
+615,2021-09-17 19:30:00.000,Old Moody Barge Building,https://www.oldmoodystages.com/,Campfire Stories,https://artistsrep.org/performance/campfire-stories/
+616,2021-09-18 22:00:00.000,Old Moody Barge Building,https://www.oldmoodystages.com/,Campfire Stories,https://artistsrep.org/performance/campfire-stories/
+617,2021-10-17 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-up 101 Graduation Show,https://portland.heliumcomedy.com/
+618,2021-09-10 21:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=226879&venueid=156
+619,2021-09-11 21:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=226878&venueid=156
+620,2021-09-23 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Minority Retort,https://www.facebook.com/MinorityRetortPDX
+621,2021-10-01 19:30:00.000,Santiam Brewing,https://www.santiambrewing.com/,Santiam Comedy Show,NULL
+622,2021-09-20 20:30:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/events/930561357791150
+623,2021-12-19 19:00:00.000,Numerica PAC,https://numericapac.org/,Todd Barry,https://numericapac.showare.com/eventperformances.asp?evt=88
+624,2021-12-19 21:00:00.000,Numerica PAC,https://numericapac.org/,Todd Barry,https://numericapac.showare.com/eventperformances.asp?evt=88
+625,2022-01-08 19:00:00.000,Alma Mater,https://www.almamatertacoma.com/,Laughing Mater,https://www.almamatertacoma.com/upcoming-shows
+626,2021-11-18 20:00:00.000,Schilling Cider House,https://www.schillingciderhousepdx.com/ciderhouse,NULL,NULL
+627,2021-11-15 20:30:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+628,2021-11-05 21:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=228404&venueid=156
+629,2021-11-06 21:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=228408&venueid=156
+630,2021-12-03 19:30:00.000,Rogue Eastside,https://www.rogue.com/locations/rogue-eastside-pub-pilot-brewery,Dead Comics Society,https://www.facebook.com/deadcomicssociety
+631,2021-12-03 21:00:00.000,Rogue Eastside,https://www.rogue.com/locations/rogue-eastside-pub-pilot-brewery,Dead Comics Society,https://www.facebook.com/deadcomicssociety
+632,2021-12-04 17:00:00.000,Brunish Theatre,https://www.portland5.com/brunish-theatre,Merry Happy Everything!,https://www.octc.org/merry-happy-everything
+633,2021-11-11 20:00:00.000,Blind Ox,https://www.blindoxpdx.com/,Hello Sucker,https://www.facebook.com/hellosuck
+634,2021-12-01 19:00:00.000,Botanist House,https://www.botanisthouse.com/,Comedy in The Pearl,https://www.instagram.com/comedyinthepearl_
+635,2021-11-28 19:00:00.000,Twenty First Ave Kitchen & Bar,https://www.twentyfirstave.com/,SWTRSZN,https://www.instagram.com/swtrszncomedyshow/
+636,2022-01-03 20:30:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+637,2022-01-07 20:00:00.000,White Eagle Saloon,https://www.mcmenamins.com/white-eagle-saloon-hotel,7DS — Pants On Fire!,http://www.7deadlysinsshow.org/
+638,2022-01-17 20:00:00.000,Zoiglhaus Brewing,http://www.zoiglhaus.com/,"Go, Comedy, Go!",https://www.facebook.com/gocomedygo
+639,2021-12-04 19:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Deanne Smith Album Recording,https://www.union.fit/events/curious-comedy-deanne-smith-album-recording
+640,2022-02-04 21:30:00.000,Curious Comedy Theater,http://curiouscomedy.org,Friday Night Fights,https://www.union.fit/events/curious-comedy-friday-night-fights
+641,2021-12-12 18:00:00.000,Twenty First Ave,https://www.twentyfirstave.com/,SWTRSZN,https://www.instagram.com/p/CWyqLakPy18/
+642,2021-12-12 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Faded,https://portland.heliumcomedy.com/shows/158358
+643,2022-02-20 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com,Stand-up 101 Graduation Show,https://portland.heliumcomedy.com/shows/163826
+644,2022-01-21 22:00:00.000,Funhouse Lounge,https://www.funhouselounge.com/,Dark Web Tonight,https://www.funhouselounge.com/dark-web-tonight/
+645,2022-01-13 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Eric Schwartz,https://portland.heliumcomedy.com/shows/158160
+646,2022-01-19 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Best of Portland,https://portland.heliumcomedy.com/shows/159053
+647,2022-01-27 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Janeane Garofalo,https://portland.heliumcomedy.com/shows/158167
+648,2022-01-28 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Janeane Garofalo,https://portland.heliumcomedy.com/shows/158169
+649,2022-01-28 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Janeane Garofalo,https://portland.heliumcomedy.com/shows/158168
+650,2022-01-29 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Janeane Garofalo,https://portland.heliumcomedy.com/shows/158171
+651,2022-01-29 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Janeane Garofalo,https://portland.heliumcomedy.com/shows/158170
+652,2022-03-16 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-up 101 Graduation Show,https://portland.heliumcomedy.com/shows/167668
+653,2022-02-10 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Jackie Kashian,https://portland.heliumcomedy.com/shows/158728
+654,2022-03-07 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+655,2022-04-01 19:30:00.000,Hollywood Theatre,https://hollywoodtheatre.org/,CINE / SEEN Film Festival,https://hollywoodtheatre.org/tickets/17520/
+656,2022-04-09 19:00:00.000,Show Bar,https://www.revolutionhall.com/show-bar/,The Teacher Show,https://www.etix.com/ticket/p/7863231/the-teacher-show-portland-show-bar
+657,2022-04-13 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Weeding Out the Stoned,https://portland.heliumcomedy.com/shows/163385
+658,2022-04-15 21:30:00.000,Curious Comedy Theater,https://curiouscomedy.org,Friday Night Fights,https://www.showclix.com/event/friday-night-fights
+659,2022-03-19 18:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,Sean Jordan,https://www.facebook.com/events/s/sean-jordan-at-infinity-room/271759325030042/
+660,2022-03-12 20:00:00.000,Leikam Brewing,https://www.leikambeer.com/,Sorry Not Sorry,https://www.facebook.com/events/1616986972002407
+661,2022-03-26 20:00:00.000,Alberta Rose Theatre,https://albertarosetheatre.com/,Willamette Week Funniest Five,https://albertarosetheatre.com/event/portlands-funniest-five-showcase/
+662,2022-04-04 19:30:00.000,The Goodfoot,https://thegoodfoot.com/,Laugh Basement,https://www.instagram.com/laughbasement/
+663,2022-03-18 20:00:00.000,4th Wall PDX,https://www.the4thwallpdx.com/,Everything in Between,https://www.the4thwallpdx.com/calendar/everything-in-between-comedy-showcase
+664,2022-04-16 21:30:00.000,Curious Comedy Theater,https://curiouscomedy.org,Vibe Comedy,https://www.showclix.com/event/vibe-comedy
+665,2022-03-05 19:00:00.000,The Reser,https://thereser.org/,NULL,NULL
+666,2022-04-30 19:30:00.000,Show Bar,https://www.revolutionhall.com/food-drink/,The Teacher Show,https://www.etix.com/ticket/p/7837475/the-teacher-show-portland-show-bar
+667,2022-06-02 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-up 101 Graduation Show,https://portland.heliumcomedy.com/shows/177338
+668,2022-06-18 20:00:00.000,Growler Guys,https://www.thegrowlerguys.com/,Comedy at The Growler Guys,NULL
+669,2022-04-08 21:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=232275&venueid=156
+670,2022-04-09 21:30:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=232274&venueid=156
+671,2022-04-08 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Kyle Kinane,https://portland.heliumcomedy.com/shows/164407
+672,2022-05-16 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+673,2022-06-12 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Myq Kaplan,https://portland.heliumcomedy.com/shows/170896
+674,2022-05-29 19:30:00.000,Show Bar,https://www.revolutionhall.com/show-bar/,Show/Show,https://www.etix.com/ticket/p/5479001/showshow-at-show-bar-portland-show-bar
+675,2022-04-29 19:30:00.000,Portland Center Stage,https://pcs.org,Freestyle Love Supreme,https://www.pcs.org/freestyle-love-supreme
+676,2022-05-27 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Speechless,https://www.merctickets.com/events/123713586/speechless-improvised-powerpoint-competition
+677,2022-05-15 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Dark Web Tonight,https://portland.heliumcomedy.com/shows/172543
+678,2022-05-08 20:30:00.000,Studio One Theaters,https://studioonetheater.com/,First Ever Weekly Comedy Festival,NULL
+679,2022-06-19 20:00:00.000,Club Comedy,https://clubcomedyseattle.com/,The Teacher Show,https://www.eventbrite.com/e/the-teacher-show-at-club-comedy-seattle-sunday-619-tickets-353893574207
+680,2022-05-27 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=233433&venueid=156
+681,2022-05-28 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=233455&venueid=156
+682,2022-05-19 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Maria Bamford,https://portland.heliumcomedy.com/shows/167098
+683,2022-05-20 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Maria Bamford,https://portland.heliumcomedy.com/shows/167100
+684,2022-05-20 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Maria Bamford,https://portland.heliumcomedy.com/shows/167099
+685,2022-05-21 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Maria Bamford,https://portland.heliumcomedy.com/shows/167102
+686,2022-05-21 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Maria Bamford,https://portland.heliumcomedy.com/shows/167101
+687,2022-07-13 19:00:00.000,Spanish Ballroom,https://www.mcmenamins.com/elks-temple/spanish-ballroom,The Teacher Show,https://l.facebook.com/l.php?u=https%3A%2F%2Fevent.etix.com%2Fticket%2Fonline%2FperformanceSale.do%3Fperformance_id%3D5761515%26method%3DrestoreToken%26fbclid%3DIwAR0hGKxFZHFYnyksESm_1JUld20sSX9MamlAYDHtUYYW5URNe4A1p62PGlM&h=AT2S1gESS0xeYebN5LiRu3xmFrJOgseHFbFwDIMKcv2CYWCcJ3VPafQtueVCo-Irx_FuUTfxFnw_swPeMosI92IaDcygLa5jF4pGvHTODKhNDTFPX3IG4hkvrW-pdYkS3LyjvOyuw54BSbba7jDQqzDm
+689,2022-06-16 20:00:00.000,Neighbors Taproom,https://www.neighborstaproom.com/,Bangerz Comedy,https://www.facebook.com/bangerzcomedy
+690,2022-07-22 18:00:00.000,Laurelhurst Park,https://www.portland.gov/parks/events/2022/7/22/comedy-park-kickstand-comedy-minority-retort,Minority Retort,https://www.facebook.com/MinorityRetortPDX/
+691,2022-06-10 20:00:00.000,It's a secret (literally),NULL,Don't Tell Comedy,https://www.donttellcomedy.com/shows/portland-or-06-10-22/
+692,2022-06-20 19:30:00.000,Siren Theater,https://www.sirentheater.com/,Spaghettiwall,https://bit.ly/3mdpVVp
+693,2022-08-11 20:00:00.000,Chill N Fill Comedy,https://www.chillnfill.com,Comedy Night at Chill N Fill,https://www.instagram.com/chillnfillcomedy/
+694,2022-08-18 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Hari Kondabalou,https://portland.heliumcomedy.com/shows/176958
+695,2022-08-19 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Hari Kondabalou,https://portland.heliumcomedy.com/shows/176960
+696,2022-08-19 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Hari Kondabalou,https://portland.heliumcomedy.com/shows/176959
+697,2022-08-20 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Hari Kondabalou,https://portland.heliumcomedy.com/shows/176962
+698,2022-08-20 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Hari Kondabalou,https://portland.heliumcomedy.com/shows/176961
+699,2022-06-30 19:30:00.000,Migration Brewing,https://migrationbrewing.com/pubs/migration-williams/,Faded PDX,https://www.eventbrite.com/e/faded-pdx-tickets-353980584457
+701,2022-09-24 19:30:00.000,Old Liberty Theater,https://www.oldlibertytheater.com/,Tyler Boeh & Guests,https://www.oldlibertytheater.com/calendar-1/2022/9/24/tyler-boeh-stand-up-comedy
+702,2022-07-21 19:30:00.000,Curious Comedy Theater,https://curiouscomedy.orgA,Abby Govindan,NULL
+703,2022-07-25 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+704,2022-09-01 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Alex Falcone,https://portland.heliumcomedy.com/shows/176943
+705,2022-08-24 20:00:00.000,Mississippi Pizza,http://www.mississippipizza.com/,Dough,https://www.instagram.com/doughcomedy/
+706,2022-09-07 19:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,BYO Story,https://www.mcmenamins.com/venueevent.aspx?id=236150&venueid=156
+707,2022-09-10 19:00:00.000,3307 SE 7th Ave (backyard),NULL,Back(yard) to the Comedy,https://www.facebook.com/events/604108854622563
+708,2022-10-05 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-up 101 Graduation Show,https://portland.heliumcomedy.com/shows/186082
+709,2022-10-17 20:00:00.000,The Zed,http://www.zoiglhaus.com/,Go Comedy Go,https://www.facebook.com/gocomedygo
+710,2022-11-18 19:30:00.000,Lydian Music Studios,https://www.lydianmusicstudios.com/,Tim Hammer and Friends,https://www.merctickets.com/events/130838581/tim-hammer-and-friends
+712,2022-10-10 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+713,2022-09-29 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Adam Conover,https://portland.heliumcomedy.com/shows/184442
+714,2022-09-30 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Adam Conover,https://portland.heliumcomedy.com/shows/184444
+715,2022-09-30 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Adam Conover,https://portland.heliumcomedy.com/shows/184443
+716,2022-10-01 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Adam Conover,https://portland.heliumcomedy.com/shows/184446
+717,2022-10-01 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Adam Conover,https://portland.heliumcomedy.com/shows/184445
+718,2022-09-24 22:00:00.000,Funhouse Lounge,https://www.funhouselounge.com/,Funny Jazz Talk,https://www.facebook.com/funnyjazztalk
+719,2022-11-30 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-Up 101 Graduation Show,https://portland.heliumcomedy.com/events/37872
+720,2022-11-17 21:00:00.000,Gol Soccer Bar,https://www.golsoccerbar.com/,Howler Comedy Hour,https://www.facebook.com/howlercomedyhour
+721,2022-12-10 19:30:00.000,Independence Elks Lodge,https://indyelks.org/,Saturday Night Standup,https://www.facebook.com/events/5618357161552431
+722,2022-11-03 20:00:00.000,The Pope House,http://www.popehouselounge.com/,Preach,NULL
+723,2022-10-28 20:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,Sorry Not Sorry,https://www.infinityroomsalem.com/calendar/
+724,2022-11-23 18:30:00.000,Migration Brewing,https://migrationbrewing.com/pubs/williams-pub/,Faded,https://www.instagram.com/fadedcomedypdx/
+725,2022-11-26 19:30:00.000,Show Bar,http://show,The Teacher Show,https://www.etix.com/ticket/p/2975143/the-teacher-show-portland-show-bar
+726,2022-11-10 21:00:00.000,Lay Low Tavern,https://www.instagram.com/laylowpdx,Comedy Corral,https://www.instagram.com/thecomedycorral/
+727,2022-11-20 19:00:00.000,Underbar,https://www.underbar.pub/,Just Friends,https://www.facebook.com/events/1791014717931997
+728,2022-10-29 19:30:00.000,Infinity Room,https://www.infinityroomsalem.com,Mohanad Elshieky,https://www.infinityroomsalem.com/calendar/
+729,2022-12-30 19:00:00.000,The 4th Wall,https://www.the4thwallpdx.com/,Class out the A$$,https://www.the4thwallpdx.com/calendar/live-comedy-open-mic-wr452-7pbnf-ndw74-6ka2b-ztnxy-nn2pd
+730,2023-01-06 19:00:00.000,Chapel Theatre,https://chapeltheatremilwaukie.com/,Bridge City Improv — NINE,http://www.merctickets.com/events/132456644/nine
+731,2023-01-05 20:00:00.000,Neighbors Taproom,https://www.neighborstaproom.com/,Bangerz,https://www.facebook.com/bangerzcomedy
+733,2022-11-07 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+734,2022-12-02 22:30:00.000,Funhouse Lounge,https://www.funhouselounge.com/,Leave Your Troubles at the Door,https://www.instagram.com/leaveyourtroubles/
+735,2022-11-19 23:55:00.000,Beulahland,https://beulahlandpdx.com/,Stoolhumpin',https://www.instagram.com/stoolhumpin/
+737,2022-11-25 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=238405&venueid=156
+738,2022-11-26 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=238413&venueid=156
+739,2023-01-14 19:30:00.000,Majestic Theatre,https://www.majestic.org/,Laurie Kilmartin,https://app.arts-people.com/index.php?show=145396
+740,2023-01-04 20:00:00.000,Georgie's Garage,https://georgiesgng.com/,Simon Gibson,https://www.eventbrite.com/e/494309642447
+741,2023-01-13 20:00:00.000,Revolution Hall,https://www.revolutionhall.com/,Portland Mercury's Geniuses of Comedy,https://www.merctickets.com/events/133010756/portland-mercury-presents-the-2023-undisputable-geniuses-of-comedy
+742,2022-12-15 20:00:00.000,Chill N Fill,https://www.chillnfill.com/,Chill N Fill Comedy,https://www.instagram.com/chillnfillcomedy/
+743,2023-01-09 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+745,2023-02-04 19:00:00.000,Back Alley Bar & Grill,http://www.thebackalleyonline.com/,Erik Escobar,http://www.eventbrite.com/e/comedy-special-event-starring-erik-escobar-tickets-516076939017
+746,2023-02-25 16:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-up 101 Graduation Show (come see my students!),https://portland.heliumcomedy.com/shows/204920
+749,2023-04-08 21:30:00.000,Show Bar,https://www.revolutionhall.com/show-bar/,The Teacher Show,https://www.revolutionhall.com/show-bar/
+750,2023-04-15 19:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,The Teacher Show,https://www.infinityroomsalem.com/calendar/
+751,2023-04-15 21:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,The Teacher Show,https://www.infinityroomsalem.com/calendar/
+752,2023-01-19 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Rachel Feinstein,https://portland.heliumcomedy.com/shows/201042
+753,2023-01-20 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Rachel Feinstein,https://portland.heliumcomedy.com/shows/201043
+754,2023-01-20 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Rachel Feinstein,https://portland.heliumcomedy.com/shows/201044
+755,2023-01-21 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Rachel Feinstein,https://portland.heliumcomedy.com/shows/201045
+756,2023-01-21 22:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Rachel Feinstein,https://portland.heliumcomedy.com/shows/201046
+757,2023-01-28 20:00:00.000,It's a secret (until you buy a ticket!),NULL,Don't Tell Comedy,https://www.donttellcomedy.com/shows/portland-or-01-28-23/
+758,2023-02-11 20:00:00.000,It's a secret (until you buy a ticket!),NULL,Don't Tell Comedy,https://www.donttellcomedy.com/shows/portland-or-02-11-23/
+759,2023-02-06 19:30:00.000,The Goodfoot,https://thegoodfoot.com/,Laugh Basement,https://thegoodfoot.com/event/laugh-basement-stand-up-comedy-showcase-7pm-doors-mon-2-6/
+760,2023-03-23 18:00:00.000,Briq Studio,https://briq.studio/,Gabby Smashes,https://gabbysmashes.com/
+761,2023-03-26 19:30:00.000,Chapel Theatre,https://chapeltheatremilwaukie.com/,Divine Comedy,https://www.eventbrite.com/e/divine-comedy-in-the-chapel-alex-falcone-tickets-549810547147?aff=ebdsoporgprofile
+762,2023-03-11 19:30:00.000,Alberta House,https://www.albertahouse.org/,Back Fence PDX — Russian Roulette,https://www.merctickets.com/events/132853441/backfence-pdx-roulette
+763,2023-04-07 19:30:00.000,Show Bar,https://www.revolutionhall.com/show-bar/,The Teacher Show,https://www.revolutionhall.com/show-bar/
+765,2023-06-03 14:00:00.000,Orlando Public Library,https://ocls.info/locations-hours/orlando-public-library,Kick-off Summer,https://attend.ocls.info/event/8206228
+766,2023-04-05 19:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,BYO Story,https://www.mcmenamins.com/venueevent.aspx?id=238776&venueid=156
+767,2023-02-08 18:00:00.000,Alberta Rose Theatre,https://albertarosetheatre.com/,"It's Not Me, It's You! (Planned Parenthood benefit)",https://albertarosetheatre.com/event/its-not-me-its-you-stories-from-the-dark-side-of-dating/alberta-rose-theatre/portland-oregon/
+768,2023-03-04 16:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Leave Your Troubles,https://portland.heliumcomedy.com/shows/205178
+769,2023-04-22 19:30:00.000,Majestic Theatre,https://www.majestic.org/,Naughty but Nerdy,https://app.arts-people.com/index.php?actions=10&p=1
+770,2023-04-06 20:30:00.000,Alberta St. Pub,https://www.albertastreetpub.com/,The Aftermath,NULL
+771,2023-03-04 20:00:00.000,(House Party),NULL,Comedy in the Cave,NULL
+773,2023-05-12 22:00:00.000,Here-After,https://www.thecrocodile.com/here-after,Upper Left Fest — Left Coast Icons,https://www.ticketweb.com/event/left-coast-icons-here-after-tickets/13152208?pl=crocodile
+774,2023-05-13 16:30:00.000,Here-After,https://www.thecrocodile.com/here-after,Upper Left Fest — DNDLOL,https://www.ticketweb.com/event/dndlol-here-after-tickets/13152298?pl=crocodile
+775,2023-03-16 19:00:00.000,Stage 722,https://www.stage722.com/,Pop-Up Comedy,https://www.facebook.com/harveyspopupcomedy
+777,2023-03-17 19:00:00.000,4th Wall,https://www.the4thwallpdx.com/,Everything in Between,NULL
+778,2023-03-27 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+779,2023-03-18 14:00:00.000,Concourse Coffee,https://concoursecoffee.com/,Alley-Oop Comedy Jam,https://www.facebook.com/AlleyOopComedyJam
+780,2023-03-18 19:00:00.000,JC Lillie Center for the Arts,https://goo.gl/maps/X2YHqG1d2xWWc1VH8,Fundraiser — Milwaukie Academy of the Arts,https://teachtix.com/milwaukie/improv
+781,2023-05-15 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+782,2023-04-13 20:00:00.000,The Pope House,http://www.popehouselounge.com/,Preach,https://www.instagram.com/preachcomedyshow/
+783,2023-03-22 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Space Cats Peace Turtles,https://portland.heliumcomedy.com/shows/200093
+784,2023-05-05 19:30:00.000,Chapel Theatre,https://chapeltheatremilwaukie.com/,Varieté,https://www.merctickets.com/events/137270215/variet
+785,2023-05-25 20:00:00.000,Santé Bar,http://instagram.com/pdxsantebar,Star Power!,http://instagram.com/starpowercomedy
+787,2023-05-05 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=243474&venueid=156
+788,2023-05-06 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=243478&venueid=156
+789,2023-05-13 19:30:00.000,Rabbit Box,https://www.pikeplacemarket.org/vendor/the-rabbit-box/,Upper Left Fest — Cascade Giants,https://www.ticketweb.com/event/cascade-giants-the-rabbit-box-tickets/13152348?pl=crocodile
+790,2023-05-22 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Trivi-Haha,https://portland.heliumcomedy.com/shows/217350
+791,2023-04-29 16:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,HCA 101 Graduation Show,https://portland.heliumcomedy.com/events/69900
+792,2023-05-31 21:00:00.000,Kelly's Olympian,https://kellysolympian.com/,Optimism!,https://www.instagram.com/optimism_comedy_showcase/
+793,2023-06-05 20:00:00.000,Shifters,https://www.humdingerpizza.com/shifters-bar,"Go, Comedy, Go",https://www.instagram.com/gocomedygo/
+794,2023-04-24 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+795,2023-07-15 19:00:00.000,4th Wall,https://www.the4thwallpdx.com/,You Oughta Know,NULL
+796,2023-05-29 19:30:00.000,The Goodfoot,https://thegoodfoot.com/,Laugh Basement,https://www.instagram.com/laughbasement/
+797,2023-05-21 18:00:00.000,Polaris Hall,https://polarishall.com/,Big Show of Emotions,https://www.etix.com/ticket/p/6542276
+798,2023-06-09 20:00:00.000,Adda Beer,https://www.instagram.com/addabeer,Hot Bits,https://www.instagram.com/hotbitscomedy
+799,2023-07-16 16:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Peter Antoniou,https://portland.heliumcomedy.com/shows/217418
+800,2023-06-10 20:00:00.000,Leikam Brewing,https://www.leikambeer.com/,Sorry Not Sorry,https://www.facebook.com/notsorryshow
+801,2023-06-17 20:00:00.000,House (Backyard) Show,https://goo.gl/maps/f9neDCNXLiPX2HoG6,Back(yard) to the Comedy,https://www.facebook.com/events/1244272972869415
+802,2023-08-25 19:30:00.000,Church Bar,https://www.churchbarpdx.com/,Last Friday,NULL
+803,2023-07-06 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/home,Stand-up 101 Graduation Show (come see my students!),https://portland.heliumcomedy.com/shows/222107
+804,2023-08-29 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com,Stand-up 101 Graduation Show (come see my students!),https://portland.heliumcomedy.com/shows/223736
+806,2023-07-03 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+807,2023-08-11 18:00:00.000,Laurelhurst Park,https://www.portland.gov/parks/laurelhurst-park,Comedy in the Park,https://www.kickstandcomedy.org/comedyinthepark
+808,2023-09-29 20:00:00.000,Revolution Hall,https://www.revolutionhall.com/,Todd Barry,https://event.etix.com/ticket/online/performanceSale.do?_gl=1*8bp37p*_ga*Mzg3NTcyODQwLjE2ODYxNTkwMTY.*_ga_PQG6FGEXJD*MTY4NjE1OTAxNS4xLjAuMTY4NjE1OTAxNS4wLjAuMA..&performance_id=5459538&method=restoreToken
+809,2023-09-30 20:00:00.000,Neptune Theatre,https://www.stgpresents.org/neptune/events,Todd Barry,https://www.ticketmaster.com/event/0F005EC6EBD4581D?irgwc=1&clickid=QhwU%3AFxFKxyPRcU0lo1gD27pUkF2goVtyX55Rk0&camefrom=CFC_BUYAT_219208&impradid=219208&REFERRAL_ID=tmfeedbuyat219208&wt.mc_id=aff_BUYAT_219208&utm_source=219208-Bandsintown&impradname=Bandsintown&utm_medium=affiliate&ircid=4272
+810,2023-10-01 20:00:00.000,The Pearl,https://www.livenation.com/venue/rZ7HnEZafK3/the-pearl-events,Todd Barry,https://www.ticketweb.ca/event/todd-barry-the-the-pearl-tickets/13302528?irgwc=1&clickid=QhwU%3AFxFKxyPRcU0lo1gD27pUkF2gtzlyX55Rk0&camefrom=CFC_BUYAT_219208&impradid=219208&REFERRAL_ID=tmfeedbuyat219208&wt.mc_id=aff_BUYAT_219208&utm_source=219208-Bandsintown&impradname=Bandsintown&utm_medium=affiliate&ircid=4272
+811,2023-10-28 19:00:00.000,4th Wall,https://www.the4thwallpdx.com/,You Oughta Know,https://www.eventbrite.com/e/you-oughta-know-the-comedy-show-tickets-734066812597
+812,2023-08-08 20:00:00.000,Haymaker,https://www.haymakerportland.com/,The Bechdel Set,https://www.eventbrite.com/e/fluid-comedy-presents-the-bechdel-set-tickets-677117004187
+813,2023-08-12 19:30:00.000,Siren Theater,https://www.sirentheater.com/,Two Evils,NULL
+814,2023-08-31 18:00:00.000,Doug Fir,https://www.dougfirlounge.com/,Cool Kids Patio Show,https://www.eventbrite.com/e/cool-kids-patio-show-tickets-653353737617
+815,2023-08-03 20:00:00.000,Neighbors Taproom,https://www.neighborstaproom.com/,Bangerz Comedy,https://www.facebook.com/bangerzcomedy
+816,2023-08-02 20:00:00.000,Mississippi Pizza,https://www.mississippipizza.com/,Dough,https://www.instagram.com/doughcomedy/
+817,2023-08-31 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Alex Falcone & Acquaintances,https://portland.heliumcomedy.com/shows/220481
+818,2023-10-09 20:00:00.000,EastBurn,https://www.theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+819,2023-09-07 19:30:00.000,Hollywood Theatre,https://hollywoodtheatre.org,Cine | Seen,https://hollywoodtheatre.org/events/cine-seen-2023/
+821,2023-10-07 19:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,The Teacher Show,https://www.infinityroomsalem.com/calendar/
+822,2023-10-07 21:30:00.000,Infinity Room,https://www.infinityroomsalem.com/,The Teacher Show,https://www.infinityroomsalem.com/calendar/
+823,2023-10-24 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Stand-Up 101 Graduation (come see my students!),https://portland.heliumcomedy.com/shows/237913
+824,2023-10-08 19:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Erica Rhodes,https://portland.heliumcomedy.com/shows/224306
+825,2023-10-04 19:30:00.000,Helium Comedy Club,https://portland.heliumcomedy.com,Emo Philips,https://portland.heliumcomedy.com/shows/219667
+826,2023-11-16 19:30:00.000,Kennedy School,https://www.mcmenamins.com/kennedy-school,Potluck,https://www.facebook.com/potluckimprovpdx
+827,2023-09-23 20:00:00.000,It's a Secret (buy a ticket!),https://www.donttellcomedy.com/cities/portland-or/,Don't Tell Comedy,https://www.donttellcomedy.com/shows/portland-or-09-22-23/
+828,2023-10-18 19:30:00.000,Old Zen Wine Bar,https://www.oldzenwinebar.com/,Old Zen Comedy Night,NULL
+829,2023-10-14 19:00:00.000,Underbar,https://www.underbarvancouver.com/,Laughgasm,https://www.instagram.com/laughgasmcomedy/
+830,2023-11-17 19:30:00.000,Chapel Theatre,https://chapeltheatremilwaukie.com/,Microcosmic Variety Show,https://chapeltheatremilwaukie.com/2023/10/10/microcosmic-variety-show/
+832,2023-11-18 19:30:00.000,Chapel Theatre,https://chapeltheatremilwaukie.com/,Microcosmic Variety Show,https://chapeltheatremilwaukie.com/2023/10/10/microcosmic-variety-show/
+833,2023-11-04 19:30:00.000,Alberta House,https://www.albertahouse.org/,Backfence PDX — Roulette,https://www.merctickets.com/events/133790552/backfence-pdx-roulette
+834,2023-10-26 20:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=247565&venueid=156
+835,2023-10-27 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=247569&venueid=156
+836,2023-10-28 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=247573&venueid=156
+837,2023-11-08 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Heather Shaw,https://portland.heliumcomedy.com/shows/228106
+838,2023-11-30 20:00:00.000,Pope House,http://www.popehouselounge.com/,Preach,https://www.instagram.com/preachcomedyshow/
+839,2023-12-15 20:00:00.000,Underbar,https://www.underbarvancouver.com/,NULL,NULL
+840,2024-02-23 19:30:00.000,Echo Theater,https://www.echotheaterpdx.org/,Broad Selection,https://bridgecityimprov.com/
+841,2023-11-29 20:00:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Kristin Key,https://portland.heliumcomedy.com/shows/230662
+842,2023-11-29 22:15:00.000,Helium Comedy Club,https://portland.heliumcomedy.com/,Kristin Key,https://portland.heliumcomedy.com/shows/239675
+843,2024-01-15 19:30:00.000,The Goodfoot,https://thegoodfoot.com/,Laugh Basement,https://www.instagram.com/laughbasement/
+844,2023-12-13 20:00:00.000,Mississippi Pizza,https://www.mississippipizza.com/,Dough,https://www.instagram.com/doughcomedy/
+845,2023-12-09 20:30:00.000,Covert Cafe,https://thecovertcafe.com/,Covert Comedy,https://www.eventbrite.com/e/covert-comedy-showcase-with-katie-nguyen-tickets-770040922127?utm_experiment=control_share_listing&aff=ebdsshios
+846,2024-04-19 20:00:00.000,WiseCracks,https://wisecrackscafe.com/,Breakfast Club Comedy,https://www.instagram.com/breakfast_club_comedy/
+847,2023-12-09 16:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Cooch St,NULL
+848,2024-01-27 16:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Stand-up 101 Graduation Showcase (come see my students!),https://portland.heliumcomedy.com/shows/248821
+849,2024-03-09 19:30:00.000,Loowit Brewing,https://loowitbrewing.com/the-pub,Laughs on Loowit,NULL
+850,2024-01-20 16:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Cooch Street,https://portland.heliumcomedy.com/shows/249479
+851,2024-01-13 16:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Best of Portland,https://portland.heliumcomedy.com/shows/249031
+852,2024-02-02 22:30:00.000,Funhouse Lounge,http://funhouselounge.com,Leave Your Troubles at the Door,https://www.instagram.com/leaveyourtroubles/
+853,2024-02-24 20:00:00.000,Alberta Rose Theatre,https://albertarosetheatre.com/,Great Comedy,https://albertarosetheatre.com/event/great-comedy-always-a-great-night-of-stand-up-comedy/alberta-rose-theatre/portland-oregon/
+854,2024-02-24 16:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Crowd Control,https://portland.heliumcomedy.com/shows/252440
+855,2024-03-16 20:00:00.000,The White Eagle,https://www.mcmenamins.com/white-eagle-saloon-hotel,7 Deadly Sins — Pants on Fire,https://www.facebook.com/7DeadlySinsStories
+856,2024-02-26 20:00:00.000,Eastburn,https://theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx/
+857,2024-03-08 21:00:00.000,Kelso Theater Pub,https://ktpub.com/,Alex Falcone,https://www.bandsintown.com/e/105025750?affil_code=js_alexfalcone.ninja&app_id=js_alexfalcone.ninja&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+858,2024-05-24 19:30:00.000,Siren Theater,https://www.sirentheater.com/,Minority Retort,https://www.instagram.com/minorityretort
+859,2024-03-10 21:00:00.000,Starday Tavern,https://stardaytavern.com/,Second Sunday Comedy,https://stardaytavern.com/
+860,2024-04-27 13:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Stand-up 101 Graduation (come see my students!),https://portland.heliumcomedy.com/shows/253598
+861,2024-03-14 20:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=252687&venueid=156
+862,2024-03-15 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=252691&venueid=156
+863,2024-03-16 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=252695&venueid=156
+864,2024-04-10 20:00:00.000,Mississippi Pizza,https://www.mississippipizza.com/,Dough,http://instagram.com/doughcomedy
+865,2024-03-23 20:00:00.000,(It's a secret– buy tickets first!),NULL,Don't Tell Comedy,https://www.donttellcomedy.com/cities/portland-or/
+866,2024-05-11 19:30:00.000,Portland Center Stage,https://www.pcs.org/,Nassim,https://www.pcs.org/nassim
+867,2024-05-12 19:00:00.000,Tomorrow's Verse,https://www.youenjoymybeer.com/,NULL,NULL
+868,2024-04-01 19:00:00.000,Bar Salut Chérie,https://barsalutcherie.info/,Comedy Darlings,NULL
+870,2024-07-26 20:00:00.000,Brunish Theater,https://www.portland5.com/brunish-theatre,Singu-hilarity,https://www.portland5.com/brunish-theatre/events/singu-hilarity-stem-vaudeville-comedy-show
+871,2024-04-24 20:00:00.000,Mississippi Studios,https://mississippistudios.com/,Anna Akana,https://www.etix.com/ticket/p/31421957/sold-outanna-akana-portland-mississippi-studios
+872,2024-05-18 22:00:00.000,Funhouse Lounge,http://funhouselounge.com,The Art Critique,https://www.instagram.com/lowartforms
+873,2024-06-01 14:00:00.000,Orlando Public Library,https://ocls.info/locations-hours/orlando-public-library/,Kick-Off Summer,https://attend.ocls.info/event/9840705
+874,2024-07-27 20:30:00.000,Covert Cafe,https://thecovertcafe.com/,Gold Standard,http://instagram.com/goldstandardcomedy
+875,2024-06-22 18:00:00.000,Alberta Street Pub,https://www.albertastreetpub.com/,Tits Up,https://www.instagram.com/titsupcomedy/
+876,2024-05-16 20:00:00.000,The Get Down,https://www.thegetdownpdx.com/,Fun & Flirty,http://instagram.com/wearefunandflirty
+877,2024-04-25 20:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jordan Jensen,https://portland.heliumcomedy.com/shows/235067
+878,2024-04-26 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jordan Jensen,https://portland.heliumcomedy.com/shows/235068
+879,2024-04-26 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jordan Jensen,https://portland.heliumcomedy.com/shows/235069
+880,2024-04-27 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jordan Jensen,https://portland.heliumcomedy.com/shows/235070
+881,2024-04-27 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Jordan Jensen,https://portland.heliumcomedy.com/shows/235071
+882,2024-05-09 20:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=254744&venueid=156
+883,2024-05-10 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=254727&venueid=156
+884,2024-05-11 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Comedy Night at Al's Den,https://www.mcmenamins.com/venueevent.aspx?id=254736&venueid=156
+885,2024-06-06 20:00:00.000,Chill N Fill,https://www.chillnfill.com/,Chill N Fill Comedy,https://www.instagram.com/chillnfillcomedy/
+886,2024-05-18 19:30:00.000,Integrity Beer Hall,https://www.integrity.beer/,Leave Your Troubles,https://www.instagram.com/leaveyourtroubles
+887,2024-04-27 16:30:00.000,Helium Comedy Club,http://Portland.heliumcomedy.com,Jordan Jensen,https://portland.heliumcomedy.com/shows/264044
+888,2024-05-10 19:00:00.000,The Laurelhurst Club,https://www.thelaurelhurstclub.com/,Goodness Comedy,http://instagram.com/goodnesscomedypdx
+889,2024-05-13 19:00:00.000,The Goodfoot,https://thegoodfoot.com/,Laugh Basement,https://www.instagram.com/laughbasement/
+890,2024-05-23 20:00:00.000,Pope House,https://www.popehouselounge.com/,Preach,http://instagram.com/preachcomedyshow
+891,2024-06-27 20:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,Truth in Comedy,https://www.facebook.com/events/1470712623548015
+893,2024-07-17 19:00:00.000,Big City Gamin',https://bcgeug.com/,Live Comedy at Big City Gamin',NULL
+894,2024-08-24 20:00:00.000,Wildish Theater,https://wildishtheater.com/,The Teacher Show,https://www.facebook.com/profile.php?id=100086958476900
+895,2024-06-23 16:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Stand-Up 101 Graduation Showcase (come see my students!),https://portland.heliumcomedy.com/events/93883
+896,2024-07-14 16:00:00.000,Siren Theater,https://www.sirentheater.com/,Knock Knock,https://www.merctickets.com/events/154770184/knock-knock-kid-comedy-and-open-mic-show
+897,2024-07-19 18:00:00.000,Laurelhurst Park,https://www.portland.gov/parks/laurelhurst-park,Comedy in the Park,https://www.facebook.com/kickstandcomedy
+898,2024-07-01 20:00:00.000,EastBurn,https://theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx
+899,2024-06-22 16:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Alice Wetterlund,https://portland.heliumcomedy.com/shows/258837
+900,2024-07-13 19:00:00.000,The Record Pub,https://therecordpub.com/,Alley-Oop,https://www.facebook.com/AlleyOopComedyJam
+901,2024-11-23 20:00:00.000,Revolution Hall,https://www.revolutionhall.com/,Teacher Show,https://www.etix.com/ticket/p/79494300/the-teacher-show-portland-revolution-hall?_gl=1*1gssz6m*_gcl_au*NTc3NTMzMi4xNzE4NjQ5MzY2*_ga*NTUyODc5NTk2LjE3MTg2NDkzNjc.*_ga_PQG6FGEXJD*MTcxODY0OTM2Ni4xLjEuMTcxODY0OTM4OS4wLjAuMA..&_ga=2.115913988.389075371.1718649367-552879596.1718649367
+902,2024-06-26 20:00:00.000,Nebulous Taproom,https://www.nebuloustaproom.com/,The Fuzzy Show,http://instagram.com/elcolibri_comedy
+903,2024-06-29 21:00:00.000,It's a secret (until you buy a ticket)!,NULL,Don't Tell Comedy,https://www.donttellcomedy.com/shows/portland-or-06-29-24/
+904,2024-07-31 20:00:00.000,Mississippi Pizza,https://www.mississippipizza.com/,Dough,https://www.instagram.com/doughcomedy
+905,2024-08-15 20:00:00.000,Siren Theater,https://www.sirentheater.com/,Jimmy Pardo,https://www.merctickets.com/events/151781630/jimmy-pardo
+906,2024-08-15 18:00:00.000,Siren Theater,https://www.sirentheater.com/,Jimmy Pardo,https://www.merctickets.com/events/155470049/jimmy-pardo
+907,2024-09-14 19:30:00.000,Echo Theater,https://www.echotheaterpdx.org/,Bridge City Improv,https://bridgecityimprov.com/
+908,2024-08-17 19:30:00.000,Oregon Airsoft Arena,https://www.oregon-airsoft.com/,Teacher Show,https://www.facebook.com/profile.php?id=100086958476900
+909,2024-09-19 19:30:00.000,Bingen Theater,https://bingentheater.com/,Teacher Show,https://www.facebook.com/profile.php?id=100086958476900&sk=about
+910,2024-09-30 19:00:00.000,Alberta Rose Theatre,https://albertarosetheatre.com/,Live Game the Show,https://albertarosetheatre.com/event/live-game-the-show/alberta-rose-theatre/portland-oregon/
+911,2024-09-27 21:30:00.000,Infinity Room,https://www.infinityroomsalem.com,Leave Your Troubles at the Door,https://www.infinityroomsalem.com/calendar/
+912,2024-09-28 21:30:00.000,Infinity Room,https://www.infinityroomsalem.com,Leave Your Troubles at the Door,https://www.infinityroomsalem.com/calendar/
+913,2024-09-09 20:00:00.000,EastBurn,https://theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx/
+914,2024-09-07 13:30:00.000,Laurelhurst Park,https://www.portland.gov/parks/laurelhurst-park,Comedy in the Park Fest,https://www.kickstandcomedy.org/shows/kickstand-comedy-in-the-park-kw9p3-l3xwn-3c7gj-n27gm-npstb-2a3x5-rbhez-3tgga-k6dtf
+915,2024-11-01 19:30:00.000,PRAx,https://prax.oregonstate.edu/,NULL,NULL
+916,2024-10-11 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Late Night Comedy,https://www.mcmenamins.com/venueevent.aspx?id=259020&venueid=156
+917,2024-10-12 22:00:00.000,Al's Den,https://www.mcmenamins.com/crystal-hotel/als-den,Late Night Comedy,https://www.mcmenamins.com/venueevent.aspx?id=259019&venueid=156
+918,2024-12-14 19:30:00.000,Loowit,https://loowitbrewing.com/,Laughs on Loowit,https://loowitbrewing.com/new-events/2023/2/11/laughs-on-loowit-comedy-night-49c94-23weh-fllyn-9ra4y-9pner-3khxb-4tpne-2m2r3-58b85-r3m8w-f98cd-j5zpj-psfnd-a7hdf-slbst-8lsdb
+919,2024-11-15 19:00:00.000,Infinity Room,https://www.infinityroomsalem.com/,Teacher Show,https://www.facebook.com/p/The-Teacher-Show-100086958476900/
+920,2024-11-15 21:30:00.000,Infinity Room,https://www.infinityroomsalem.com,Teacher Show,https://www.facebook.com/p/The-Teacher-Show-100086958476900/
+921,2024-12-06 19:30:00.000,Back Door Theater,https://www.fusetheatreensemble.com/,Naughty but Nerdy,https://www.instagram.com/naughtybutnerdy/
+922,2024-11-03 15:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Stand-Up 101 Graduation Showcase (come see my students!),https://portland.heliumcomedy.com/shows/283717
+923,2024-11-07 20:00:00.000,Pope House,http://www.popehouselounge.com/,Preach,https://www.instagram.com/preachcomedyshow/
+924,2024-10-28 20:00:00.000,EastBurn,https://theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx/
+925,2024-11-12 20:00:00.000,Haymaker,https://www.haymakerportland.com/,The Bechdel Set,https://www.instagram.com/thebechdelset/
+926,2024-12-05 19:30:00.000,Hood River Brewing Co.,https://hoodriverbrewing.com/,Hood River Comedy Showcase,https://www.facebook.com/events/537328179201801
+927,2024-11-29 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Leslie Liao,https://portland.heliumcomedy.com/shows/253600
+928,2024-11-29 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Leslie Liao,https://portland.heliumcomedy.com/shows/253601
+929,2024-11-30 19:30:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Leslie Liao,https://portland.heliumcomedy.com/shows/253603
+930,2024-11-30 22:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Leslie Liao,https://portland.heliumcomedy.com/shows/253604
+931,2024-12-01 19:00:00.000,Helium Comedy Club,http://portland.heliumcomedy.com,Leslie Liao,https://portland.heliumcomedy.com/shows/253602
+932,2024-12-13 21:00:00.000,Hawthorne Hideaway,https://www.hh2221.com/,A Holiday Special,NULL
+933,2024-12-20 21:00:00.000,Clinton Street Theater,https://cstpdx.com/,Earthquake Hurricane,https://www.kickstandcomedy.org/shows/kickstand-comedy-10th-anniversary-w-the-return-of-earthquake-hurricane
+934,2025-01-14 20:00:00.000,Covert Cafe,https://thecovertcafe.com,Stretch,https://thecovertcafe.com/#events
+935,2025-01-20 20:00:00.000,EastBurn,https://theeastburn.com/,It's Gonna Be Okay,https://www.facebook.com/igbokpdx/
+936,2025-01-27 20:00:00.000,The Goodfoot,https://thegoodfoot.com/,Laugh Basement,https://www.instagram.com/laughbasement/
+937,2025-01-31 19:30:00.000,Kickstand Comedy,https://www.kickstandcomedy.org/,Lunar New Year,NULL

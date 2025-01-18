@@ -25,7 +25,7 @@ public class EmailSender(IOptions<EmailOptions> options) : IEmailSender
             ToAddress = email,
             ToName = email.Split('@').FirstOrDefault() ?? string.Empty,
             Subject = subject,
-            HtmlText = htmlMessage
+            HtmlText = Utilities.SanitizeHtml(htmlMessage)
         };
 
         return SendEmailAsync(request, default);
@@ -49,7 +49,7 @@ public class EmailSender(IOptions<EmailOptions> options) : IEmailSender
 
         message.Body = new TextPart("html")
         {
-            Text = request.HtmlText
+            Text = Utilities.SanitizeHtml(request.HtmlText)
         };
 
         using var client = new SmtpClient();

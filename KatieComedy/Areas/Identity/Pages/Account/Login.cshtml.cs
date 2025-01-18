@@ -87,7 +87,7 @@ namespace KatieComedy.Web.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl ??= Url.Content("~/admin");
+            returnUrl ??= Url.Content("~/admin/index");
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 

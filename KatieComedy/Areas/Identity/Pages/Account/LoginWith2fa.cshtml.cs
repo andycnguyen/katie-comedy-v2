@@ -81,7 +81,7 @@ namespace KatieComedy.Web.Areas.Identity.Pages.Account
                 return Page();
             }
 
-            returnUrl = returnUrl ?? Url.Content("~/");
+            returnUrl ??= Url.Content("~/admin/index");
 
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
             if (user == null)

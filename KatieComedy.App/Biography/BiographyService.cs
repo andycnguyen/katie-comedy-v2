@@ -21,6 +21,7 @@ public partial class BiographyService(ApplicationDbContext dbContext)
 
     public static string FormatAsHtml(string text)
     {
+        text = Utilities.SanitizeHtml(text);
         text = LinebreakRegex().Replace(text, "<br/>");
 
         foreach (var match in LinkRegex().Matches(text).Cast<Match>())
