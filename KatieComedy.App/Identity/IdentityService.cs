@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.WebUtilities;
 using KatieComedy.App.Email;
+using static KatieComedy.App.Constants;
 
 namespace KatieComedy.App.Identity;
 
@@ -97,5 +98,22 @@ public class IdentityService(
                 throw new Exception("Failed to confirm user email.");
             }
         }
+    }
+
+    public async Task DeleteUser(string id)
+    {
+        var user = await userManager.FindByIdAsync(id);
+
+        if (user is null)
+        {
+            throw new Exception("User not found.");
+        }
+
+        if (await userManager.IsInRoleAsync(user, Roles.Owner))
+        {
+            throw new Exception("Cannot delete owner.");
+        }
+
+        await userManager.DeleteAsync(user);
     }
 }

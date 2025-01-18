@@ -4,6 +4,7 @@
 
 using System.Text;
 using System.Text.Encodings.Web;
+using KatieComedy.App.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -12,7 +13,10 @@ using Microsoft.AspNetCore.WebUtilities;
 namespace KatieComedy.Web.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
-    public class ResendEmailConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender emailSender) : PageModel
+    public class ResendEmailConfirmationModel(
+        UserManager<IdentityUser> userManager,
+        IdentityService identityService,
+        IEmailSender emailSender) : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager = userManager;
         private readonly IEmailSender _emailSender = emailSender;

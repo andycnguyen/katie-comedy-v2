@@ -28,7 +28,13 @@
                 <td>@user.UserName</td>
                 <td>@user.Email</td>
                 <td>@user.EmailConfirmed</td>
-                <td></td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <form method="post" action="~/admin/users/delete/@user.Id">
+                            <button class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </td>
             </tr>
         }
     </table>

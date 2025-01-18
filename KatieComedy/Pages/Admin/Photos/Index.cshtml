@@ -19,9 +19,11 @@
                     <img src="@photo.ThumbnailUrl" class="card-img-top">
                 </a>
                 <div class="card-body ps-1 pe-1 pt-1 pb-0">
-                    <p class="card-text">
-                        @photo.DisplayText
-                    </p>
+                    <div class="card-text mb-2">
+                        <small>
+                            @photo.DisplayText
+                        </small>
+                    </div>
                     <div class="btn-group" role="group">
                         <a asp-page="edit" asp-route-id="@photo.Id" class="btn btn-primary">Edit</a>
                         <form method="post" class="d-inline" action="~/admin/photos/delete/@photo.Id">
