@@ -5,43 +5,41 @@
     ViewData["Title"] = "Upload Photo";
 }
 
-<div class="flex-column">
+<div class="flex-column container p-0 custom-small">
     <div class="mb-3">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
-    <form enctype="multipart/form-data" method="post" class="border rounded p-3" style="max-width:30rem;">
-        <fieldset class="row">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form enctype="multipart/form-data" method="post" class="border rounded p-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="col-md-12 mb-3">
-                <label asp-for="FormFile" class="mb-2"></label>
-                <input asp-for="FormFile" type="file" class="form-control" rows="3">
-                <span asp-validation-for="FormFile" class="text-danger"></span>
-            </div>
+        <div class="col-md-12 mb-3">
+            <label asp-for="FormFile" class="mb-2"></label>
+            <input asp-for="FormFile" type="file" class="form-control" rows="3">
+            <span asp-validation-for="FormFile" class="text-danger"></span>
+        </div>
 
-            <div class="mb-3">
-                <label asp-for="Date" class="mb-2"></label>
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
+        <div class="col-md-12 mb-3">
+            <label asp-for="Date" class="mb-2"></label>
+            <input asp-for="Date" class="form-control" />
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
 
-            <div class="mb-3">
-                <label asp-for="Caption" class="mb-2"></label>
-                <input asp-for="Caption" class="form-control" />
-                <span asp-validation-for="Caption" class="text-danger"></span>
-            </div>
+        <div class="col-md-12 mb-3">
+            <label asp-for="Caption" class="mb-2"></label>
+            <input asp-for="Caption" class="form-control" />
+            <span asp-validation-for="Caption" class="text-danger"></span>
+        </div>
 
-            <div class="mb-3">
-                <label asp-for="Credit" class="mb-2"></label>
-                <input asp-for="Credit" class="form-control" />
-                <span asp-validation-for="Credit" class="text-danger"></span>
-            </div>
+        <div class="col-md-12 mb-3">
+            <label asp-for="Credit" class="mb-2"></label>
+            <input asp-for="Credit" class="form-control" />
+            <span asp-validation-for="Credit" class="text-danger"></span>
+        </div>
 
-            <div class="mb-1">
-                <button class="btn btn-primary me-1">Upload</button>
-                <a class="btn btn-secondary" asp-page="Index">Cancel</a>
-            </div>
-        </fieldset>
+        <div class="col-md-12 mb-1 d-flex">
+            <button class="btn btn-primary me-1">Save</button>
+            <a class="btn btn-secondary" asp-page="Index">Cancel</a>
+        </div>
     </form>
 </div>
 

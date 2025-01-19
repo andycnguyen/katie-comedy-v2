@@ -7,14 +7,14 @@
     var photo = await service.Get(Model.Id) ?? throw new Exception("Photo not found.");
 }
 
-<div class="flex-column">
+<div class="flex-column container p-0 custom-small">
     <div class="mb-3">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
 
     <form method="post" class="border rounded p-3">
         <a href="@photo.Url" target="_blank">
-            <img src="@photo.Url" class="mb-3" style="width:28rem;" />
+            <img src="@photo.Url" class="container mb-3 p-0" />
         </a>
 
         <div class="mb-3">

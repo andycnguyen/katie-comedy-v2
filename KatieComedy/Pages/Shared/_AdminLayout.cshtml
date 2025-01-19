@@ -66,12 +66,10 @@
             </div>
         </nav>
     </header>
-    <div class="container ">
-        <main role="main" class="pb-3 d-flex justify-content-center">
-            <partial name="_Toaster" />
-            @RenderBody()
-        </main>
-    </div>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
 
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -5,11 +5,11 @@
     ViewData["Title"] = "New Appearance";
 }
 
-<div class="flex-column">
+<div class="container p-0 custom-small">
     <div class="mb-3">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
-    <form method="post" class="border rounded p-3" style="min-width:30rem;">
+    <form method="post" class="border rounded p-3">
         <div class="col-md-12 mb-3">
             <label asp-for="DateTime" class="mb-2"></label>
             <input asp-for="DateTime" class="form-control" />

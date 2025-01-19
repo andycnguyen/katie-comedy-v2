@@ -13,29 +13,31 @@
     };
 }
 
-<div class="flex-column">
+<div class="flex-column container p-0 custom-small">
     <div class="mb-3">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
-    <form method="post" class="border rounded p-3" style="min-width:30rem;">
-        <div class="col-md-12 mb-3">
-            <label asp-for="Email" class="mb-2"></label>
-            <input asp-for="Email" class="form-control" />
-            <span asp-validation-for="Email" class="text-danger"></span>
-        </div>
+    <div class="container">
+        <form method="post" class="border rounded p-3" style="max-width:30rem;">
+            <div class="col-md-12 mb-3">
+                <label asp-for="Email" class="mb-2"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
 
-        <div class="col-md-12 mb-3">
-            <label asp-for="Role" class="mb-2"></label>
-            <select asp-for="Role" asp-items="@selectList" class="form-select">
-            </select>
-            <span asp-validation-for="Role" class="text-danger"></span>
-        </div>
+            <div class="col-md-12 mb-3">
+                <label asp-for="Role" class="mb-2"></label>
+                <select asp-for="Role" asp-items="@selectList" class="form-select">
+                </select>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
 
-        <div class="col-md-12 mb-1 d-flex">
-            <button class="btn btn-primary me-1">Send</button>
-            <a class="btn btn-secondary" asp-page="Index">Cancel</a>
-        </div>
-    </form>
+            <div class="col-md-12 mb-1 d-flex">
+                <button class="btn btn-primary me-1">Send</button>
+                <a class="btn btn-secondary" asp-page="Index">Cancel</a>
+            </div>
+        </form>
+    </div>
 </div>
 
 @section Scripts {
