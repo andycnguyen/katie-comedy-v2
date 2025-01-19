@@ -97,9 +97,7 @@ button.background-blue-grey:active {
 }
 
 .toast-container {
-    position: fixed;
     top: 4rem;
-    width: 100%;
 }
 
 .photo-card {

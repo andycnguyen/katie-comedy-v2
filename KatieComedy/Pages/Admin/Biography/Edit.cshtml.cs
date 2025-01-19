@@ -23,7 +23,7 @@ public class EditModel(BiographyService service) : BasePageModel
 
         await service.Update(Text);
 
-        Toast(ToastLevel.Success, "Biography updated");
+        Toast(ToastLevel.Success, "Biography updated.");
         return RedirectToPage("Edit");
     }
 }

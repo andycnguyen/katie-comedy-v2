@@ -40,14 +40,14 @@ public class EditModel(MediaService service) : BasePageModel
             Url = MediaUrl
         });
 
-        Toast(ToastLevel.Success, "Media updated");
-        return RedirectToPage("Index");
+        Toast(ToastLevel.Success, "Media updated.");
+        return RedirectToPage();
     }
 
     public async Task<IActionResult> OnPostDelete()
     {
         await service.Delete(Id);
-        Toast(ToastLevel.Success, "Media deleted");
+        Toast(ToastLevel.Success, "Media deleted.");
         return RedirectToPage("Index");
     }
 }

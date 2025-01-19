@@ -6,7 +6,8 @@ namespace KatieComedy.Web.Pages;
 public class ContactModel(
     EmailSender emailSender,
     CloudflareClient cloudflareClient,
-    IOptions<EmailOptions> options) : BasePageModel
+    IOptions<EmailOptions> options,
+    ILogger<ContactModel> logger) : BasePageModel
 {
     [BindProperty, EmailAddress]
     public string Email { get; set; }
@@ -69,8 +70,9 @@ public class ContactModel(
         {
             await emailSender.SendEmailAsync(request, cancel);
         }
-        catch
+        catch (Exception e)
         {
+            logger.LogError(e, "Error send email.");
             Toast(ToastLevel.Error, "Error sending message.");
             return Page();
         }

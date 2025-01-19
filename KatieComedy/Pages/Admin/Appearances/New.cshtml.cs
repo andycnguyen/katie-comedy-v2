@@ -40,7 +40,7 @@ public class NewModel(AppearanceService service) : BasePageModel
             LocationUrl = LocationUrl
         });
 
-        Toast(ToastLevel.Success, "Appearance added");
+        Toast(ToastLevel.Success, "Appearance added.");
         return RedirectToPage("Index");
     }
 }

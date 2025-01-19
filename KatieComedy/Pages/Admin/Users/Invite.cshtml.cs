@@ -23,7 +23,7 @@ public class InviteModel(IdentityService service) : BasePageModel
 
         await service.SendInvite(Email!, Role!, cancel);
 
-        Toast(ToastLevel.Success, "Invite sent");
+        Toast(ToastLevel.Success, "Invite sent.");
         return RedirectToPage("Index");
     }
 }

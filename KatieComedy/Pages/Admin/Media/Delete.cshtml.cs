@@ -7,7 +7,7 @@ public class DeleteModel(MediaService service) : BasePageModel
     public async Task<IActionResult> OnPost(int id)
     {
         await service.Delete(id);
-        Toast(ToastLevel.Success, "Media deleted");
+        Toast(ToastLevel.Success, "Media deleted.");
         return RedirectToPage("Index");
     }
 }

@@ -32,7 +32,7 @@ public class NewModel(MediaService service) : BasePageModel
             Url = MediaUrl
         });
 
-        Toast(ToastLevel.Success, "Media added");
+        Toast(ToastLevel.Success, "Media added.");
         return RedirectToPage("Index");
     }
 }

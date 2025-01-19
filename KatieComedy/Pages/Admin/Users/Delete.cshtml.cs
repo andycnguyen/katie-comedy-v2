@@ -11,7 +11,7 @@ public class DeleteModel(IdentityService service) : BasePageModel
     public async Task<IActionResult> OnPost(string id)
     {
         await service.DeleteUser(id);
-        Toast(ToastLevel.Success, "User deleted");
+        Toast(ToastLevel.Success, "User deleted.");
         return RedirectToPage("Index");
     }
 }

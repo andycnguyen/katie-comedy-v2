@@ -11,7 +11,7 @@ public class DeleteModel(AppearanceService service) : BasePageModel
     public async Task<IActionResult> OnPostAsync(int id)
     {
         await service.Delete(id);
-        Toast(ToastLevel.Success, "Appearance deleted");
+        Toast(ToastLevel.Success, "Appearance deleted.");
         return RedirectToPage("Index");
     }
 }

@@ -52,14 +52,14 @@ public class EditModel(AppearanceService service) : BasePageModel
         });
 
 
-        Toast(ToastLevel.Success, "Appearance updated");
-        return RedirectToPage("Index");
+        Toast(ToastLevel.Success, "Appearance updated.");
+        return RedirectToPage();
     }
 
     public async Task<IActionResult> OnPostDelete()
     {
         await service.Delete(Id);
-        Toast(ToastLevel.Success, "Appearance deleted");
+        Toast(ToastLevel.Success, "Appearance deleted.");
         return RedirectToPage("Index");
     }
 }

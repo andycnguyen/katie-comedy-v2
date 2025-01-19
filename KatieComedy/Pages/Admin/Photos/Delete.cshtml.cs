@@ -11,7 +11,7 @@ public class DeleteModel(PhotoService service) : BasePageModel
     public async Task<IActionResult> OnPost(int id)
     {
         await service.Delete(id);
-        Toast(ToastLevel.Success, "Photo deleted");
+        Toast(ToastLevel.Success, "Photo deleted.");
         return RedirectToPage("Index");
     }
 }

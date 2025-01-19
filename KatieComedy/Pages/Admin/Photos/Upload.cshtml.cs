@@ -61,7 +61,7 @@ public class UploadModel(PhotoService service, IOptions<PhotoOptions> options) :
             Credit = Credit
         }, cancel);
 
-        Toast(ToastLevel.Success, "Photo uploaded");
+        Toast(ToastLevel.Success, "Photo uploaded.");
         return RedirectToPage("Index");
     }
 }

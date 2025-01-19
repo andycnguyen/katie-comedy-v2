@@ -41,14 +41,14 @@ public class EditModel(PhotoService service) : BasePageModel
         });
 
 
-        Toast(ToastLevel.Success, "Photo updated");
-        return RedirectToPage("Index");
+        Toast(ToastLevel.Success, "Photo updated.");
+        return RedirectToPage();
     }
 
     public async Task<IActionResult> OnPostDeleteAsync()
     {
         await service.Delete(Id);
-        Toast(ToastLevel.Success, "Photo deleted");
+        Toast(ToastLevel.Success, "Photo deleted.");
         return RedirectToPage("Index");
     }
 }
