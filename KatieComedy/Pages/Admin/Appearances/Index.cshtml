@@ -16,7 +16,7 @@
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Date</th>
-                <th scope="col">Location</th>
+                <th scope="col">Venue</th>
                 <th scope="col">Event</th>
                 <th scope="col">Action</th>
             </tr>
@@ -28,14 +28,14 @@
                 <td>@appearance.Id</td>
                 <td>@appearance.DateTime.ToString("M/d/yy h:mm tt")</td>
                 <td>
-                    @if (string.IsNullOrEmpty(appearance.LocationUrl))
+                    @if (string.IsNullOrEmpty(appearance.VenueUrl))
                     {
-                        <text>@appearance.LocationName</text>
+                        <text>@appearance.VenueName</text>
                     }
                     else
                     {
                         <text>
-                            <a href="@appearance.LocationUrl" target="_blank">@appearance.LocationName</a>
+                            <a href="@appearance.VenueUrl" target="_blank">@appearance.VenueName</a>
                         </text>
                     }
                 </td>

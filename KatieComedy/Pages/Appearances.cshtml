@@ -13,7 +13,7 @@
         @foreach (var appearance in Model.Appearances)
         {
             <li class="list-group-item d-flex justify-content-between background-cream">
-                <span><a href="@appearance.LocationUrl" target="_blank">@appearance.LocationName</a>: <a href="@appearance.EventUrl" target="_blank">@appearance.EventName</a></span>
+                <span><a href="@appearance.VenueUrl" target="_blank">@appearance.VenueName</a>: <a href="@appearance.EventUrl" target="_blank">@appearance.EventName</a></span>
                 <h5 class="d-inline">
                     <span class="badge text-display-large fw-normal background-blue-grey">@appearance.DateTime.ToString("MMM d, h:mm tt")</span>
                 </h5>

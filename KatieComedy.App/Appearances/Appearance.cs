@@ -6,9 +6,9 @@ public record Appearance
 
     public required DateTime DateTime { get; init; }
 
-    public required string LocationName { get; init; }
+    public required string VenueName { get; init; }
 
-    public string? LocationUrl { get; init; }
+    public string? VenueUrl { get; init; }
 
     public required string EventName { get; init; }
 

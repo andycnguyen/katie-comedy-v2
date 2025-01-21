@@ -17,11 +17,11 @@ public class EditModel(AppearanceService service) : BasePageModel
     [BindProperty, Display(Name = "Event Url"), MaxLength(500), RegularExpression(Constants.UrlPattern, ErrorMessage = "Invalid Url.")]
     public string? EventUrl { get; set; }
 
-    [BindProperty, Display(Name = "Location Name"), MaxLength(500)]
-    public string LocationName { get; set; }
+    [BindProperty, Display(Name = "Venue Name"), MaxLength(500)]
+    public string VenueName { get; set; }
 
-    [BindProperty, Display(Name = "Location Url"), MaxLength(500), RegularExpression(Constants.UrlPattern, ErrorMessage = "Invalid Url.")]
-    public string? LocationUrl { get; set; }
+    [BindProperty, Display(Name = "Venue Url"), MaxLength(500), RegularExpression(Constants.UrlPattern, ErrorMessage = "Invalid Url.")]
+    public string? VenueUrl { get; set; }
 
     public async Task OnGetAsync()
     {
@@ -30,8 +30,8 @@ public class EditModel(AppearanceService service) : BasePageModel
         DateTime = appearance.DateTime;
         EventName = appearance.EventName;
         EventUrl = appearance.EventUrl;
-        LocationName = appearance.LocationName;
-        LocationUrl = appearance.LocationUrl;
+        VenueName = appearance.VenueName;
+        VenueUrl = appearance.VenueUrl;
     }
 
     public async Task<IActionResult> OnPostAsync()
@@ -47,8 +47,8 @@ public class EditModel(AppearanceService service) : BasePageModel
             DateTime = DateTime!.Value,
             EventName = EventName,
             EventUrl = EventUrl,
-            LocationName = LocationName,
-            LocationUrl = LocationUrl
+            VenueName = VenueName,
+            VenueUrl = VenueUrl
         });
 
 

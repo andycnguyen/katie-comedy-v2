@@ -13,8 +13,8 @@ public class AppearanceService(ApplicationDbContext dbContext)
                 DateTime = x.DateTime,
                 EventName = x.EventName,
                 EventUrl = x.EventUrl,
-                LocationName = x.LocationName,
-                LocationUrl = x.LocationUrl
+                VenueName = x.LocationName,
+                VenueUrl = x.LocationUrl
             })
             .ToListAsync(cancel);
     }
@@ -29,8 +29,8 @@ public class AppearanceService(ApplicationDbContext dbContext)
                 DateTime = x.DateTime,
                 EventName = x.EventName,
                 EventUrl = x.EventUrl,
-                LocationName = x.LocationName,
-                LocationUrl = x.LocationUrl
+                VenueName = x.LocationName,
+                VenueUrl = x.LocationUrl
             })
             .ToListAsync(cancel);
     }
@@ -50,8 +50,8 @@ public class AppearanceService(ApplicationDbContext dbContext)
             DateTime = appearance.DateTime,
             EventName = appearance.EventName,
             EventUrl = appearance.EventUrl,
-            LocationName = appearance.LocationName,
-            LocationUrl = appearance.LocationUrl
+            VenueName = appearance.LocationName,
+            VenueUrl = appearance.LocationUrl
         };
     }
 
@@ -63,8 +63,8 @@ public class AppearanceService(ApplicationDbContext dbContext)
             DateTime = appearance.DateTime,
             EventName = appearance.EventName,
             EventUrl = appearance.EventUrl,
-            LocationName = appearance.LocationName,
-            LocationUrl = appearance.LocationUrl
+            LocationName = appearance.VenueName,
+            LocationUrl = appearance.VenueUrl
         });
 
         await dbContext.SaveChangesAsync();

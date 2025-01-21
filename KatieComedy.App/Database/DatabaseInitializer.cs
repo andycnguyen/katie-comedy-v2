@@ -6,8 +6,7 @@ namespace KatieComedy.App.Database;
 
 public class DatabaseInitializer(
     IWebHostEnvironment env,
-    ApplicationDbContext dbContext,
-    UserManager<IdentityUser> userManager)
+    ApplicationDbContext dbContext)
 {
     public async Task InitializeAsync()
     {
@@ -34,7 +33,7 @@ public class DatabaseInitializer(
             DateTime = DateTime.Now.AddDays(random.Next(0, 30)).AddMinutes(random.Next(0, 360)),
             EventName = "Test event",
             EventUrl = "http://nytimes.com",
-            LocationName = "Test location",
+            LocationName = "Test venue",
             LocationUrl = null
         }));
 
