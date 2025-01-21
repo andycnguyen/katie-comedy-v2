@@ -18,7 +18,7 @@ public class RegisterModel(
     [FromQuery(Name = "code")]
     public string Code { get; set; }
 
-    [Required, MinLength(6), MaxLength(64), DataType(DataType.Password)]
+    [BindProperty, Required, MinLength(6), MaxLength(64), DataType(DataType.Password)]
     public string Password { get; set; }
 
     public async Task<IActionResult> OnGet()
@@ -45,7 +45,7 @@ public class RegisterModel(
         if (idUser.EmailConfirmed)
         {
             Toast(ToastLevel.Primary, "Please login to continue.");
-            return RedirectToPage("/Identity/Account/Login");
+            return RedirectToPage("/Account/Login", new { area = "Identity" });
         }
 
         return Page();
@@ -60,6 +60,6 @@ public class RegisterModel(
 
         await service.Register(DecodedEmail, Password, Code, cancel);
         Toast(ToastLevel.Success, "Registration successful. Please login.");
-        return RedirectToPage("/Account/Login");
+        return RedirectToPage("/Account/Login", new { area = "Identity" });
     }
 }

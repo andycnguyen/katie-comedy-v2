@@ -5,11 +5,11 @@
     ViewData["Title"] = "Register";
 }
 
-<div class="flex-column">
+<div class="flex-column container p-0 custom-small">
     <div class="mb-3">
         <h4 class="mb-0">@ViewData["Title"]</h4>
     </div>
-    <form method="post" class="border rounded p-3">
+    <form method="post" class="border rounded p-3 mb-3">
         <div class="form-group mb-3">
             <label asp-for="DecodedEmail" class="mb-2"></label>
             <input asp-for="DecodedEmail" class="form-control" aria-required="true" disabled readonly />
@@ -28,5 +28,5 @@
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+        <partial name="_ValidationScriptsPartial" />
 }

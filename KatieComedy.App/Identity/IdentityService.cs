@@ -42,6 +42,8 @@ public class IdentityService(
 
         var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
         code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+        //code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
+        //result = await userManager.ConfirmEmailAsync(user, code);
         var urlHelper = urlHelperFactory.GetUrlHelper(actionContextAccessor.ActionContext!);
         var callbackUrl = urlHelper.Page("/admin/users/register", null, null, httpContextAccessor.HttpContext?.Request.Scheme);
 
@@ -77,26 +79,29 @@ public class IdentityService(
         var user = await userManager.FindByEmailAsync(email)
             ?? throw new Exception("User not found.");
 
-        if (await userManager.HasPasswordAsync(user))
-        {
-            await userManager.RemovePasswordAsync(user);
-        }
+        IdentityResult result;
 
-        var result = await userManager.AddPasswordAsync(user, password);
-
-        if (!result.Succeeded)
+        if (!user.EmailConfirmed)
         {
-            throw new Exception("Failed to set password.");
-        }
-
-        if (user.EmailConfirmed)
-        {
+            code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
             result = await userManager.ConfirmEmailAsync(user, code);
 
             if (!result.Succeeded)
             {
                 throw new Exception("Failed to confirm user email.");
             }
+        }
+
+        if (await userManager.HasPasswordAsync(user))
+        {
+            await userManager.RemovePasswordAsync(user);
+        }
+
+        result = await userManager.AddPasswordAsync(user, password);
+
+        if (!result.Succeeded)
+        {
+            throw new Exception("Failed to set password.");
         }
     }
 
