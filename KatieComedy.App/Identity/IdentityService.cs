@@ -42,8 +42,6 @@ public class IdentityService(
 
         var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
         code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-        //code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
-        //result = await userManager.ConfirmEmailAsync(user, code);
         var urlHelper = urlHelperFactory.GetUrlHelper(actionContextAccessor.ActionContext!);
         var callbackUrl = urlHelper.Page("/admin/users/register", null, null, httpContextAccessor.HttpContext?.Request.Scheme);
 
