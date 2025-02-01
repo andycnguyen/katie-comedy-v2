@@ -17,6 +17,7 @@ public partial class UrlTests
     [InlineData("https://nytimes.", false)]
     [InlineData("htp://nytimes.com", false)]
     [InlineData("://nytimes.", false)]
+    [InlineData("https://app.arts-people.com/index.php?show=267862", true)]
     public void UrlRegex_WhenMatchesInput_ValidatesUrl(string input, bool isValid)
     {
         var match = UrlRegex().Match(input);

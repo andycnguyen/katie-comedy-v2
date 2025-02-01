@@ -17,7 +17,6 @@
                 <th scope="col">Date</th>
                 <th scope="col">Venue</th>
                 <th scope="col">Event</th>
-                <th scope="col">Action</th>
             </tr>
         </thead>
 
@@ -49,14 +48,6 @@
                             <a href="@appearance.EventUrl" target="_blank">@appearance.EventName</a>
                         </text>
                     }
-                </td>
-                <td>
-                    <div class="btn-group" role="group">
-                        <a asp-page="edit" asp-route-id="@appearance.Id" class="btn btn-primary">Edit</a>
-                        <form method="post" action="~/admin/appearances/delete/@appearance.Id">
-                            <button class="btn btn-danger rounded-start-0">Delete</button>
-                        </form>
-                    </div>
                 </td>
             </tr>
         }
