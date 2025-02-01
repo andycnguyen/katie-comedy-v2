@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Routing;
+using Serilog;
 using static KatieComedy.App.Constants;
 using KatieComedy.App;
 using KatieComedy.App.Database;
@@ -10,7 +11,6 @@ using KatieComedy.App.Biography;
 using KatieComedy.App.Identity;
 using KatieComedy.Web.Cloudflare;
 using KatieComedy.Web;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddEnvironmentVariables();
@@ -40,6 +40,12 @@ builder.Services
     .AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Host.UseSerilog((context, serviceProvider, configuration) =>
+{
+    configuration
+        .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day, retainedFileCountLimit: 30);
+});
 
 builder.Services.Configure<Microsoft.AspNetCore.Identity.IdentityOptions>(options =>
 {

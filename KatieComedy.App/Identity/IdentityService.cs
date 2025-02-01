@@ -74,8 +74,7 @@ public class IdentityService(
 
     public async Task Register(string email, string password, string code, CancellationToken cancel)
     {
-        var user = await userManager.FindByEmailAsync(email)
-            ?? throw new Exception("User not found.");
+        var user = await userManager.FindByEmailAsync(email) ?? throw new Exception("User not found.");
 
         IdentityResult result;
 
@@ -86,7 +85,7 @@ public class IdentityService(
 
             if (!result.Succeeded)
             {
-                throw new Exception("Failed to confirm user email.");
+                throw new Exception($"Failed to confirm user email: {string.Join(", ", result.Errors.Select(x => x.Description))}");
             }
         }
 
@@ -99,7 +98,7 @@ public class IdentityService(
 
         if (!result.Succeeded)
         {
-            throw new Exception("Failed to set password.");
+            throw new Exception($"Failed to set password: {string.Join(", ", result.Errors.Select(x => x.Description))}");
         }
     }
 

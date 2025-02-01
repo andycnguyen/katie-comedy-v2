@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Diagnostics;
 using System.Diagnostics;
 
 namespace KatieComedy.Web.Pages;
@@ -6,14 +7,17 @@ namespace KatieComedy.Web.Pages;
 [IgnoreAntiforgeryToken]
 public class ErrorModel(ILogger<ErrorModel> logger) : PageModel
 {
-    public string? RequestId { get; set; }
+    public string? RequestId => Activity.Current?.Id ?? HttpContext.TraceIdentifier;
 
     public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-    private readonly ILogger<ErrorModel> _logger = logger;
-
     public void OnGet()
     {
-        RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+        var exception = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+
+        if (exception is not null)
+        {
+            logger.LogError(exception.Error, $"Error: {exception.Error.Message}");
+        }
     }
 }

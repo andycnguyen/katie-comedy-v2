@@ -5,6 +5,7 @@
 
 # photos except original test photo
 KatieComedy/wwwroot/photos/*
+KatieComedy/logs
 
 # User-specific files
 *.rsuser
