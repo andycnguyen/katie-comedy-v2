@@ -58,7 +58,7 @@ public class RegisterModel(
             return Page();
         }
 
-        await service.Register(DecodedEmail, Password, Code, cancel);
+        await service.Register(DecodedEmail, Password, Code);
         Toast(ToastLevel.Success, "Registration successful. Please login.");
         return RedirectToPage("/Account/Login", new { area = "Identity" });
     }

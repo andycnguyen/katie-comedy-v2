@@ -30,14 +30,14 @@ public class IdentityService(
 
         if (!result.Succeeded)
         {
-            throw new Exception("Error creating user.");
+            throw new Exception($"Error creating user: {string.Join(", ", result.Errors.Select(x => x.Description))}");
         }
 
         result = await userManager.AddToRoleAsync(user, role);
 
         if (!result.Succeeded)
         {
-            throw new Exception("Error assigning roles.");
+            throw new Exception($"Error assigning roles: {string.Join(", ", result.Errors.Select(x => x.Description))}");
         }
 
         var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -72,7 +72,7 @@ public class IdentityService(
         }, cancel);
     }
 
-    public async Task Register(string email, string password, string code, CancellationToken cancel)
+    public async Task Register(string email, string password, string code)
     {
         var user = await userManager.FindByEmailAsync(email) ?? throw new Exception("User not found.");
 
@@ -91,7 +91,12 @@ public class IdentityService(
 
         if (await userManager.HasPasswordAsync(user))
         {
-            await userManager.RemovePasswordAsync(user);
+            result = await userManager.RemovePasswordAsync(user);
+
+            if (!result.Succeeded)
+            {
+                throw new Exception($"Failed to remove password: {string.Join(", ", result.Errors.Select(x => x.Description))}");
+            }
         }
 
         result = await userManager.AddPasswordAsync(user, password);
