@@ -1,0 +1,47 @@
+﻿@using KatieComedy.App.Pagination
+@model PageParameters
+
+<div class="row">
+    <div class="col-md-6">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item @(Model.HasPrevious ? null : "disabled")">
+                    <a class="page-link" asp-route-pageIndex="1" asp-route-pageSize="@Model.PageSize">
+                        First
+                    </a>
+                </li>
+
+                <li class="page-item @(Model.HasPrevious ? null : "disabled")">
+                    <a class="page-link" asp-route-pageIndex="@(Model.PageIndex - 1)" asp-route-pageSize="@Model.PageSize">
+                        &laquo;
+                    </a>
+                </li>
+
+                @foreach (var pageIndex in Model.PageNavIndices)
+                {
+                    <li class="page-item @(pageIndex == Model.PageIndex ? "active" : null)">
+                        <a class="page-link" asp-route-pageIndex="@pageIndex" asp-route-pageSize="@Model.PageSize">
+                            @pageIndex
+                        </a>
+                    </li>
+                }
+
+                <li class="page-item @(Model.HasNext ? null : "disabled")">
+                    <a class="page-link" asp-route-pageIndex="@(Model.PageIndex + 1)" asp-route-pageSize="@Model.PageSize">
+                        &raquo;
+                    </a>
+                </li>
+
+                <li class="page-item @(Model.HasNext ? null : "disabled")">
+                    <a class="page-link" asp-route-pageIndex="@Model.PageCount" asp-route-pageSize="@Model.PageSize">
+                        Last
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="col-md-6">
+        <div class="float-end">Total: @Model.TotalCount</div>
+    </div>
+</div>

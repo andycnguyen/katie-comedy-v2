@@ -3,7 +3,7 @@ using KatieComedy.App.Pagination;
 
 namespace KatieComedy.Web.Pages.Admin.Appearances;
 
-public class IndexModel(AppearanceService service) : BasePageModel
+public class ArchiveModel(AppearanceService service) : PageModel
 {
     [FromQuery]
     public int PageIndex { get; set; }
@@ -15,7 +15,7 @@ public class IndexModel(AppearanceService service) : BasePageModel
 
     public async Task OnGetAsync(CancellationToken cancel)
     {
-        Appearances = await service.GetUpcoming(new PageArgs
+        Appearances = await service.GetArchived(new PageArgs
         {
             PageIndex = Math.Max(1, PageIndex),
             PageSize = Math.Max(10, PageSize)

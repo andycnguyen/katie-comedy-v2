@@ -28,9 +28,18 @@ public class DatabaseInitializer(
 
         var random = new Random();
 
-        dbContext.Appearances.AddRange(Enumerable.Range(1, 7).Select(x => new Appearance
+        dbContext.Appearances.AddRange(Enumerable.Range(1, 25).Select(x => new Appearance
         {
             DateTime = DateTime.Now.AddDays(random.Next(0, 30)).AddMinutes(random.Next(0, 360)),
+            EventName = "Test event",
+            EventUrl = "http://nytimes.com",
+            LocationName = "Test venue",
+            LocationUrl = null
+        }));
+
+        dbContext.Appearances.AddRange(Enumerable.Range(1, 50).Select(x => new Appearance
+        {
+            DateTime = DateTime.Now.AddDays(-random.Next(0, 30)).AddMinutes(random.Next(0, 360)),
             EventName = "Test event",
             EventUrl = "http://nytimes.com",
             LocationName = "Test venue",

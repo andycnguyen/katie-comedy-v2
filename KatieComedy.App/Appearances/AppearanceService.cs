@@ -1,12 +1,18 @@
-﻿namespace KatieComedy.App.Appearances;
+﻿using KatieComedy.App.Pagination;
+
+namespace KatieComedy.App.Appearances;
 
 public class AppearanceService(ApplicationDbContext dbContext)
 {
-    public async Task<IReadOnlyList<Appearance>> GetUpcoming(CancellationToken cancel)
+    public async Task<PagedResult<Appearance>> GetUpcoming(PageArgs args, CancellationToken cancel)
     {
-        return await dbContext.Appearances
-            .Where(x => x.DateTime > DateTimeOffset.Now.Date)
+        var query = dbContext.Appearances
             .OrderBy(x => x.DateTime)
+            .Where(x => x.DateTime >= DateTimeOffset.Now.Date);
+
+        var appearances = await query
+            .Skip((args.PageIndex - 1) * args.PageSize)
+            .Take(args.PageSize)
             .Select(x => new Appearance
             {
                 Id = x.Id,
@@ -17,12 +23,30 @@ public class AppearanceService(ApplicationDbContext dbContext)
                 VenueUrl = x.LocationUrl
             })
             .ToListAsync(cancel);
+
+        var count = await query.CountAsync(cancel);
+
+        return new PagedResult<Appearance>
+        {
+            Items = appearances,
+            Parameters = new PageParameters
+            {
+                PageIndex = args.PageIndex,
+                PageSize = args.PageSize,
+                TotalCount = count
+            }
+        };
     }
 
-    public async Task<IReadOnlyList<Appearance>> Get(CancellationToken cancel)
+    public async Task<PagedResult<Appearance>> GetArchived(PageArgs args, CancellationToken cancel)
     {
-        return await dbContext.Appearances
-            .OrderByDescending(x => x.DateTime)
+        var query = dbContext.Appearances
+            .OrderBy(x => x.DateTime)
+            .Where(x => x.DateTime < DateTimeOffset.Now.Date);
+
+        var appearances = await query
+            .Skip((args.PageIndex - 1) * args.PageSize)
+            .Take(args.PageSize)
             .Select(x => new Appearance
             {
                 Id = x.Id,
@@ -33,6 +57,19 @@ public class AppearanceService(ApplicationDbContext dbContext)
                 VenueUrl = x.LocationUrl
             })
             .ToListAsync(cancel);
+
+        var count = await query.CountAsync(cancel);
+
+        return new PagedResult<Appearance>
+        {
+            Items = appearances,
+            Parameters = new PageParameters
+            {
+                PageIndex = args.PageIndex,
+                PageSize = args.PageSize,
+                TotalCount = count
+            }
+        };
     }
 
     public async Task<Appearance> Get(int id)

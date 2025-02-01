@@ -1,17 +1,13 @@
 ﻿@page
-@model KatieComedy.Web.Pages.Admin.Appearances.IndexModel
+@model KatieComedy.Web.Pages.Admin.Appearances.ArchiveModel
 
 @{
-    ViewData["Title"] = "Appearances";
+    ViewData["Title"] = "Archive";
 }
 
 <div class="flex-column container p-0 custom-large">
     <div class="mb-3 d-flex justify-content-between">
         <h4 class="mb-0">@ViewData["Title"]</h4>
-        <div>
-            <a asp-page="new" class="btn btn-primary">New</a>
-            <a asp-page="archive" class="btn btn-secondary">Archive</a>
-        </div>
     </div>
 
     <table class="table table-bordered table-hover">
