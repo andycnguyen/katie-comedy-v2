@@ -2,7 +2,7 @@
 
 public static class Constants
 {
-    public const string UrlPattern = @"^((https?):\/\/)?(www.)?([a-z0-9-]+\.)?([a-z0-9-]+\.)[a-z]+(\/[a-zA-Z0-9#-?]+)*\/?$";
+    public const string UrlPattern = @"^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$";
 
     public static class Roles
     {
