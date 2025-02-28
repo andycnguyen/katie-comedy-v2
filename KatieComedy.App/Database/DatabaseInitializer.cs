@@ -75,8 +75,14 @@ public class DatabaseInitializer(
             new Media
             {
                 Type = App.Media.MediaType.Video,
+                Title = "Youtube Media",
+                Url = "https://www.youtube.com/watch?v=0Z2veZAlkYM&t"
+            },
+            new Media
+            {
+                Type = App.Media.MediaType.Video,
                 Title = "Video Media",
-                Url = "http://youtube.com"
+                Url = "https://www.youtube.com/watch?v=0Z2veZAlkYM&t"
             }
         ]);
 
