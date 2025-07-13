@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="KatieComedy.App.Test/KatieComedy.App.Test.csproj" />
+  <Project Path="KatieComedy.App/KatieComedy.App.csproj" />
+  <Project Path="KatieComedy/KatieComedy.Web.csproj" />
+</Solution>
